@@ -11,3 +11,6 @@ w_jump = false
 on_ground = false
 
 status = "idle"
+
+b_right = x+sprite_width+1
+b_left = x-1

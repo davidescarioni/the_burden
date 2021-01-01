@@ -1,5 +1,8 @@
 scr_input();
 
+b_right = bbox_right
+b_left = bbox_left
+
 if keyboard_check(key_left) {
 	spd_x = max(spd_x - acc, -spd_x_max);
 	//status = "move"
@@ -29,8 +32,7 @@ if (on_ground && keyboard_check_pressed(key_jump)) {
 var collision_x = instance_place(x + spd_x, y, obj_block);
 var collision_y = instance_place(x, y + spd_y, obj_block);
 
-next_right = instance_place(ceil(bbox_right) + 1, y, obj_block);
-next_left = instance_place(bbox_left - 1, y, obj_block);
+
 
 
 if collision_x != noone {

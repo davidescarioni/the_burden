@@ -2,28 +2,41 @@ kLeft = keyboard_check(vk_left);
 kRight = keyboard_check(vk_right);
 kJump = keyboard_check_pressed(ord("Z"));
 
-// Movement
-if (onGround) {
-	vsp += kJump * jumpsp; 
-}
-
-//WallJump
+//Movement
 if (!move_lock) {
 	move = kRight - kLeft;
 }
 
-if (kJump) && place_meeting(x + 1, y, obj_solid) && !onGround {
-    vsp = jumpsp;
-    move = -1;
-    move_lock = true;
-    alarm[0] = move_lock_time;
-}
+//Jump
+if (kJump) {
+	buffer_counter = buffer_max;
+} 
 
-if (kJump) && place_meeting(x - 1, y, obj_solid) && !onGround {
-    vsp = jumpsp;
-    move = 1;
-    move_lock = true;
-    alarm[0] = move_lock_time;
+if (buffer_counter > 0) {
+	buffer_counter -= 1;
+	
+	// "Normal Jump"
+	if (onGround) {
+		vsp +=  jumpsp; 
+		buffer_counter = 0;
+	}
+	
+	if place_meeting(x + 1, y, obj_solid) && !onGround {
+	    vsp = jumpsp;
+	    move = -1;
+	    move_lock = true;
+	    alarm[0] = move_lock_time;
+		buffer_counter = 0;
+	}
+	
+	if place_meeting(x - 1, y, obj_solid) && !onGround {
+	    vsp = jumpsp;
+	    move = 1;
+	    move_lock = true;
+	    alarm[0] = move_lock_time;
+		buffer_counter = 0;
+	}
+	
 }
 
 hsp = move * walksp;

@@ -3,15 +3,31 @@ kRight = keyboard_check(vk_right);
 kJump = keyboard_check_pressed(ord("Z"));
 
 // Movement
-var move = kRight - kLeft;
+if (onGround) {
+	vsp += kJump * jumpsp; 
+}
+
+//WallJump
+if (!move_lock) {
+	move = kRight - kLeft;
+}
+
+if (kJump) && place_meeting(x + 1, y, obj_solid) && !onGround {
+    vsp = jumpsp;
+    move = -1;
+    move_lock = true;
+    alarm[0] = move_lock_time;
+}
+
+if (kJump) && place_meeting(x - 1, y, obj_solid) && !onGround {
+    vsp = jumpsp;
+    move = 1;
+    move_lock = true;
+    alarm[0] = move_lock_time;
+}
+
 hsp = move * walksp;
 vsp = vsp + grav;
-
-if place_meeting(x,y+1,obj_solid) {
-	if (kJump) {
-		vsp += jumpsp; 
-	}
-}
 
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_solid)) {
@@ -32,3 +48,25 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 }
 
 y += vsp;
+
+//Animation
+if (!onGround) {
+	sprite_index = spr_player_jump;
+	image_speed = 0;
+	if (sign(vsp) > 0) {
+		image_index = 1;
+	} else {
+		image_index = 0;
+	}
+} else {
+	image_speed = 1;
+	if (hsp==0) {
+		sprite_index = spr_player_idle;
+	} else {
+		sprite_index = spr_player_run;
+	}
+}
+
+if (hsp!=0) {
+	image_xscale = sign(hsp);
+}

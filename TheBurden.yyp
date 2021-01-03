@@ -1,7 +1,9 @@
 {
   "resources": [
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},"order":2,},
+    {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":2,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},
+    {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":3,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":2,},
     {"id":{"name":"obj_pg","path":"objects/obj_pg/obj_pg.yy",},"order":0,},
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},"order":0,},

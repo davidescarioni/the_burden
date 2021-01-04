@@ -23,7 +23,7 @@ if (buffer_counter > 0) {
 	
 	if place_meeting(x + 1, y, obj_solid) && !onGround {
 	    vsp = jumpsp;
-	    move = -1;
+	    move = -1*1.5;
 	    move_lock = true;
 	    alarm[0] = move_lock_time;
 		buffer_counter = 0;
@@ -31,7 +31,7 @@ if (buffer_counter > 0) {
 	
 	if place_meeting(x - 1, y, obj_solid) && !onGround {
 	    vsp = jumpsp;
-	    move = 1;
+	    move = 1*1.5;
 	    move_lock = true;
 	    alarm[0] = move_lock_time;
 		buffer_counter = 0;

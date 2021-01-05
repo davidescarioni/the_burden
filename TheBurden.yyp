@@ -1,23 +1,20 @@
 {
   "resources": [
-    {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},"order":2,},
+    {"id":{"name":"obj_semi_solid","path":"objects/obj_semi_solid/obj_semi_solid.yy",},"order":3,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":2,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":3,},
-    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":2,},
-    {"id":{"name":"obj_pg","path":"objects/obj_pg/obj_pg.yy",},"order":0,},
     {"id":{"name":"bk_trees","path":"sprites/bk_trees/bk_trees.yy",},"order":1,},
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},"order":0,},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},"order":1,},
+    {"id":{"name":"scr_movable_collision","path":"scripts/scr_movable_collision/scr_movable_collision.yy",},"order":2,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":2,},
-    {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"order":0,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":0,},
-    {"id":{"name":"spr_pg","path":"sprites/spr_pg/spr_pg.yy",},"order":1,},
+    {"id":{"name":"spr_semi_solid","path":"sprites/spr_semi_solid/spr_semi_solid.yy",},"order":4,},
     {"id":{"name":"bk_mountains","path":"sprites/bk_mountains/bk_mountains.yy",},"order":0,},
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},"order":1,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -34,11 +31,9 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Rooms.yy","order":3,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Player.yy","order":0,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Global Script.yy","order":2,"resourceVersion":"1.0","name":"Global Script","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Blocks.yy","order":1,"resourceVersion":"1.0","name":"Blocks","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects.yy","order":4,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},

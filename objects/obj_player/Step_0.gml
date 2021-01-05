@@ -1,6 +1,4 @@
-kLeft = keyboard_check(vk_left);
-kRight = keyboard_check(vk_right);
-kJump = keyboard_check_pressed(ord("Z"));
+scr_input();
 
 //Movement
 if (!move_lock) {
@@ -17,7 +15,7 @@ if (buffer_counter > 0) {
 	
 	// "Normal Jump"
 	if (onGround) {
-		vsp +=  jumpsp; 
+		vsp +=  jumpsp * kJumpHeld;
 		buffer_counter = 0;
 	}
 	
@@ -53,6 +51,7 @@ if (place_meeting(x+hsp,y,obj_solid)) {
 x += hsp;
 
 //Vertical Collision
+
 if (place_meeting(x,y+vsp,obj_solid)) {
 	while (!place_meeting(x,y+sign(vsp),obj_solid)) {
 		y+=sign(vsp)

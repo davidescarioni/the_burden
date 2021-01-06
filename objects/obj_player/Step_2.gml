@@ -23,6 +23,12 @@ if (kJump) {
 	buffer_counter = buffer_max;
 } 
 
+if(kJumpReleased) {
+	if (vsp != jumpsp) && vsp < 0 {
+		vsp /= 4;
+	}
+}
+
 if (buffer_counter > 0) {
 	buffer_counter -= 1;
 	

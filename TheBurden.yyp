@@ -9,7 +9,7 @@
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},"order":1,},
-    {"id":{"name":"scr_movable_collision","path":"scripts/scr_movable_collision/scr_movable_collision.yy",},"order":2,},
+    {"id":{"name":"scr_jumpThrougCollision","path":"scripts/scr_jumpThrougCollision/scr_jumpThrougCollision.yy",},"order":2,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":2,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":0,},
     {"id":{"name":"spr_semi_solid","path":"sprites/spr_semi_solid/spr_semi_solid.yy",},"order":4,},

@@ -1,4 +1,17 @@
+onGround = false;
+onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1, y, obj_solid) && !onGround;
+
 scr_input();
+
+onGround = place_meeting(x,y+1,obj_solid);
+
+if instance_exists(obj_semi_solid) {
+	with (obj_semi_solid) {
+		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
+			other.onGround = true;
+		} 
+	}
+}
 
 //Movement
 if (!move_lock) {
@@ -15,7 +28,7 @@ if (buffer_counter > 0) {
 	
 	// "Normal Jump"
 	if (onGround) {
-		vsp +=  jumpsp * kJumpHeld;
+		vsp +=  jumpsp;
 		buffer_counter = 0;
 	}
 	
@@ -40,6 +53,8 @@ if (buffer_counter > 0) {
 hsp = move * walksp;
 vsp = vsp + grav;
 
+scr_jumpThrougCollision(obj_semi_solid);
+
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_solid)) {
 	while (!place_meeting(x+sign(hsp),y,obj_solid)) {
@@ -51,7 +66,6 @@ if (place_meeting(x+hsp,y,obj_solid)) {
 x += hsp;
 
 //Vertical Collision
-
 if (place_meeting(x,y+vsp,obj_solid)) {
 	while (!place_meeting(x,y+sign(vsp),obj_solid)) {
 		y+=sign(vsp)

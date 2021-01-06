@@ -6,7 +6,7 @@
     "path": "folders/Global Script.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_movable_collision",
+  "name": "scr_jumpThrougCollision",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -1,6 +1,7 @@
-sprite_index = noone;
+//sprite_index = noone;
 
 hsp = 0;
+dir = 1;
 vsp = 0;
-movespd = 4;
-movedir = 1;
+movespd = .5;
+movedir = "ver";

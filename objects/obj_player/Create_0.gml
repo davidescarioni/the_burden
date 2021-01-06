@@ -4,6 +4,7 @@ grav = 0.3;
 walksp = 2;
 jumpsp = -4;
 acc = 0.02;
+onGround = false;
 
 // Double Jump Lock
 move_lock = false;

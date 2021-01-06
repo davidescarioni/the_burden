@@ -33,7 +33,7 @@ if (buffer_counter > 0) {
 	buffer_counter -= 1;
 	
 	// "Normal Jump"
-	if (onGround) {
+	if (onGround && !has_shell) {
 		vsp +=  jumpsp;
 		buffer_counter = 0;
 	}
@@ -81,8 +81,6 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 
 y += vsp;
 
-//y=round(y);
-
 //Animation
 if (!onGround) {
 	sprite_index = spr_player_jump;
@@ -95,7 +93,7 @@ if (!onGround) {
 } else {
 	image_speed = 1;
 	if (hsp==0) {
-		sprite_index = spr_player_idle;
+		sprite_index = spr_player_idle8;
 	} else {
 		sprite_index = spr_player_run;
 	}
@@ -103,4 +101,14 @@ if (!onGround) {
 
 if (hsp!=0) {
 	image_xscale = sign(hsp);
+}
+
+//Debug
+
+if kReset {
+	room_restart();
+}
+
+if kEject {
+	if has_shell has_shell = false else has_shell = true
 }

@@ -3,6 +3,7 @@
     {"id":{"name":"obj_semi_solid","path":"objects/obj_semi_solid/obj_semi_solid.yy",},"order":3,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":2,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},
+    {"id":{"name":"spr_player_idle8","path":"sprites/spr_player_idle8/spr_player_idle8.yy",},"order":5,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":3,},
     {"id":{"name":"bk_trees","path":"sprites/bk_trees/bk_trees.yy",},"order":1,},
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},"order":0,},

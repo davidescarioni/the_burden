@@ -75,6 +75,8 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 
 y += vsp;
 
+//y=round(y);
+
 //Animation
 if (!onGround) {
 	sprite_index = spr_player_jump;

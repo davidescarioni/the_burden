@@ -62,14 +62,27 @@ vsp = vsp + grav;
 scr_jumpThrougCollision(obj_semi_solid);
 
 //Horizontal Collision
-if (place_meeting(x+hsp,y,obj_solid)) {
-	while (!place_meeting(x+sign(hsp),y,obj_solid)) {
-		x+=sign(hsp)
-	}
-	hsp = 0;
+if place_meeting(x+hsp,y,obj_solid)
+{
+	// yplus logis is for slopes
+    yplus = 0;
+    while (place_meeting(x+hsp,y-yplus,obj_solid) && yplus <= abs(1*hsp)) yplus += 1;
+    if place_meeting(x+hsp,y-yplus,obj_solid) {
+        while (!place_meeting(x+sign(hsp),y,obj_solid)) x+=sign(hsp);
+        hsp = 0;
+    } else {
+        y -= yplus
+    }
 }
 
 x += hsp;
+
+// Smooth Slopes Down
+if !place_meeting(x,y,obj_solid) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),obj_solid) {
+	while(!place_meeting(x,y+1,obj_solid)) {
+		y += 1;
+	}
+}
 
 //Vertical Collision
 if (place_meeting(x,y+vsp,obj_solid)) {

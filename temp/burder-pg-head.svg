@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   inkscape:export-ydpi="19.910927"
+   inkscape:export-xdpi="19.910927"
+   inkscape:export-filename="/Users/davide/Desktop/scario.png"
+   sodipodi:docname="burder-pg.svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="25"
+     inkscape:window-x="63"
+     inkscape:window-height="847"
+     inkscape:window-width="1377"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="586.24072"
+     inkscape:cx="408.93399"
+     inkscape:zoom="0.80098466"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Livello 1">
+    <ellipse
+       ry="16.455919"
+       rx="16.368061"
+       cy="168.55727"
+       cx="110.23749"
+       id="path12"
+       style="fill:#000000;stroke:none;stroke-width:0.0957362;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+    <circle
+       r="15.563783"
+       style="fill:#00ff00;stroke:none;stroke-width:0.0907886;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="circle16"
+       cx="110.23749"
+       cy="168.55727" />
+    <circle
+       r="4.2013721"
+       style="opacity:0.452992;fill:#000000;stroke:none;stroke-width:0.0245079;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="path12-8"
+       cx="101.53038"
+       cy="165.17619" />
+    <circle
+       r="3.572999"
+       cy="164.87408"
+       cx="101.27144"
+       id="circle16-0"
+       style="fill:#ffffff;stroke:none;stroke-width:0.0208425;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+    <circle
+       r="1.485978"
+       style="fill:#000080;stroke:none;stroke-width:0.0086682;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="circle36"
+       cx="99.52359"
+       cy="164.85251" />
+    <ellipse
+       transform="rotate(33.807224)"
+       ry="0.40848342"
+       rx="0.24956261"
+       cy="81.727951"
+       cx="175.48518"
+       id="circle861"
+       style="fill:#ffffff;stroke:none;stroke-width:0.00186249;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+    <path
+       d="m 115.03233,153.41192 a 16.889606,18.356229 0 0 0 -16.614869,3.66251 19.719381,21.43173 0 0 1 15.813219,-1.45815 19.719381,21.43173 0 0 1 12.16731,13.00188 16.889606,18.356229 0 0 0 -11.30465,-15.18356 16.889606,18.356229 0 0 0 -0.061,-0.0227 z"
+       style="opacity:0.626781;fill:#000000;stroke:none;stroke-width:0.102711;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="circle871" />
+    <path
+       id="path876"
+       style="opacity:0.626781;fill:#000000;stroke:none;stroke-width:0.0907886;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       d="m 108.09787,184.25786 a 15.563783,15.563783 0 0 0 14.3769,-6.11251 18.171422,18.171422 0 0 1 -14.02798,4.13332 18.171422,18.171422 0 0 1 -13.195076,-8.55165 15.563783,15.563783 0 0 0 12.787216,10.52328 15.563783,15.563783 0 0 0 0.0589,0.008 z" />
+    <circle
+       r="4.2013721"
+       cy="165.08519"
+       cx="111.22189"
+       id="circle878"
+       style="opacity:0.452992;fill:#000000;stroke:none;stroke-width:0.0245079;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+    <circle
+       r="3.572999"
+       style="fill:#ffffff;stroke:none;stroke-width:0.0208425;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="circle880"
+       cx="110.96294"
+       cy="164.7831" />
+    <circle
+       r="1.485978"
+       cy="164.76151"
+       cx="109.21509"
+       id="circle882"
+       style="fill:#000080;stroke:none;stroke-width:0.0086682;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+    <ellipse
+       style="fill:#ffffff;stroke:none;stroke-width:0.00186249;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="ellipse884"
+       cx="183.48737"
+       cy="76.259979"
+       rx="0.24956261"
+       ry="0.40848342"
+       transform="rotate(33.807224)" />
+    <path
+       d="m 100.00769,175.18294 a 6.9415227,8.8953696 64.164254 0 0 0.0464,0.0978 6.9415227,8.8953696 64.164254 0 0 11.03132,2.37116 6.9415227,8.8953696 64.164254 0 0 0.33269,-0.16853 8.7682386,11.610797 64.164254 0 1 -11.41041,-2.30051 z"
+       style="opacity:1;fill:#000000;stroke:none;stroke-width:0.201013;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="path886" />
+    <ellipse
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       style="fill:#000000;stroke:none;stroke-width:0.0957362;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="ellipse893"
+       cx="61.562073"
+       cy="112.36636"
+       rx="16.368061"
+       ry="16.455919" />
+    <circle
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       r="15.563783"
+       cy="112.36636"
+       cx="61.562073"
+       id="circle895"
+       style="fill:#00ff00;stroke:none;stroke-width:0.0907886;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       d="m 59.422459,128.06695 a 15.563783,15.563783 0 0 0 14.376896,-6.11252 18.171422,18.171422 0 0 1 -14.027976,4.13333 18.171422,18.171422 0 0 1 -13.195078,-8.55165 15.563783,15.563783 0 0 0 12.787217,10.52328 15.563783,15.563783 0 0 0 0.05892,0.008 z"
+       style="opacity:0.626781;fill:#000000;stroke:none;stroke-width:0.0907886;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="path907" />
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       d="m 48.371956,104.01055 a 15.563783,15.563783 0 0 0 -2.373642,8.26104 15.563783,15.563783 0 0 0 0.177023,2.34111 h 30.77331 a 15.563783,15.563783 0 0 0 0.177231,-2.34111 15.563783,15.563783 0 0 0 -2.373434,-8.26104 z"
+       style="fill:#800080;stroke:none;stroke-width:0.0907886;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="circle989" />
+    <g
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       transform="matrix(0.4034853,0,0,0.4034853,26.958892,33.770039)"
+       id="g942">
+      <circle
+         r="10.412703"
+         style="opacity:0.452992;fill:#000000;stroke:none;stroke-width:0.0607406;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+         id="circle897"
+         cx="64.180962"
+         cy="187.35229" />
+      <circle
+         r="8.8553391"
+         cy="186.60356"
+         cx="63.539192"
+         id="circle899"
+         style="fill:#ffffff;stroke:none;stroke-width:0.0516561;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+      <circle
+         r="3.6828554"
+         style="fill:#000080;stroke:none;stroke-width:0.0214833;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+         id="circle901"
+         cx="59.207314"
+         cy="186.55009" />
+      <ellipse
+         transform="rotate(33.807224)"
+         ry="1.0123874"
+         rx="0.61851722"
+         cy="122.37298"
+         cx="155.63377"
+         id="ellipse903"
+         style="fill:#ffffff;stroke:none;stroke-width:0.004616;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+      <circle
+         r="10.412703"
+         cy="187.12675"
+         cx="88.200432"
+         id="circle909"
+         style="opacity:0.452992;fill:#000000;stroke:none;stroke-width:0.0607406;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+      <circle
+         r="8.8553391"
+         style="fill:#ffffff;stroke:none;stroke-width:0.0516561;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+         id="circle911"
+         cx="87.558662"
+         cy="186.37804" />
+      <circle
+         r="3.6828554"
+         cy="186.32455"
+         cx="83.226784"
+         id="circle913"
+         style="fill:#000080;stroke:none;stroke-width:0.0214833;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363" />
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.004616;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+         id="ellipse915"
+         cx="175.4664"
+         cy="108.82114"
+         rx="0.61851722"
+         ry="1.0123874"
+         transform="rotate(33.807224)" />
+    </g>
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       d="m 46.175337,116.70784 a 15.477013,12.8576 0 0 0 12.897442,11.24136 l 2.548262,0.16622 a 15.477013,12.8576 0 0 0 14.85021,-9.43202 z"
+       style="opacity:0.752137;fill:#ffb380;stroke:none;stroke-width:0.0822884;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="circle996" />
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       id="path917"
+       style="opacity:1;fill:#000000;stroke:none;stroke-width:0.201013;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       d="m 51.332277,118.99202 a 6.9415227,8.8953696 64.164254 0 0 0.0464,0.0978 6.9415227,8.8953696 64.164254 0 0 11.031319,2.37117 6.9415227,8.8953696 64.164254 0 0 0.332691,-0.16853 8.7682386,11.610797 64.164254 0 1 -11.410413,-2.30051 z" />
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       id="path905"
+       style="opacity:0.626781;fill:#000000;stroke:none;stroke-width:0.102711;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       d="M 66.356915,97.221015 A 16.889606,18.356229 0 0 0 49.742048,100.88352 19.719381,21.43173 0 0 1 65.555264,99.425376 19.719381,21.43173 0 0 1 77.722576,112.42725 16.889606,18.356229 0 0 0 66.41793,97.243691 16.889606,18.356229 0 0 0 66.35692,97.221011 Z" />
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       d="M 61.578933,95.880278 A 16.36806,16.455918 0 0 0 45.210732,112.33626 16.36806,16.455918 0 0 0 61.578933,128.79203 16.36806,16.455918 0 0 0 77.946926,112.33626 16.36806,16.455918 0 0 0 61.578933,95.880278 Z m -0.05963,0.892203 a 15.563783,15.563783 0 0 1 0.05963,0 A 15.563783,15.563783 0 0 1 77.142715,112.33626 15.563783,15.563783 0 0 1 61.578933,127.90004 15.563783,15.563783 0 0 1 46.015152,112.33626 15.563783,15.563783 0 0 1 61.5193,96.772481 Z"
+       style="fill:#000000;stroke:none;stroke-width:0.0957362;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="ellipse1002" />
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       d="m 54.212121,113.9661 a 3.1353263,3.3471529 0 0 0 0.276911,0.83901 3.1353263,3.3471529 0 0 0 4.217944,1.45952 3.1353263,3.3471529 0 0 0 1.209924,-1.16795 3.2797287,3.661012 48.487054 0 1 -0.885437,0.65257 3.2797287,3.661012 48.487054 0 1 -4.620593,-1.24011 3.2797287,3.661012 48.487054 0 1 -0.198749,-0.54304 z"
+       style="opacity:1;fill:#000000;stroke:none;stroke-width:0.0577379;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="path1013" />
+    <path
+       id="path1083"
+       style="opacity:1;fill:#000000;stroke:none;stroke-width:0.0577379;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       d="m 54.212121,113.9661 a 3.1353263,3.3471529 0 0 0 0.276911,0.83901 3.1353263,3.3471529 0 0 0 4.217944,1.45952 3.1353263,3.3471529 0 0 0 1.209924,-1.16795 3.2797287,3.661012 48.487054 0 1 -0.885437,0.65257 3.2797287,3.661012 48.487054 0 1 -4.620593,-1.24011 3.2797287,3.661012 48.487054 0 1 -0.198749,-0.54304 z"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-ydpi="19.910927" />
+    <path
+       inkscape:export-ydpi="19.910927"
+       inkscape:export-xdpi="19.910927"
+       inkscape:export-filename="/Users/davide/Desktop/scario.png"
+       d="m 103.18813,169.51094 a 3.1353263,3.3471529 0 0 0 0.27691,0.83901 3.1353263,3.3471529 0 0 0 4.21794,1.45953 3.1353263,3.3471529 0 0 0 1.20993,-1.16796 3.2797287,3.661012 48.487054 0 1 -0.88544,0.65257 3.2797287,3.661012 48.487054 0 1 -4.62059,-1.24011 3.2797287,3.661012 48.487054 0 1 -0.19875,-0.54304 z"
+       style="opacity:1;fill:#000000;stroke:none;stroke-width:0.0577379;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:28.8363"
+       id="path1085" />
+  </g>
+</svg>

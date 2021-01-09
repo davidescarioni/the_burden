@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"order":4,},
     {"id":{"name":"obj_semi_solid","path":"objects/obj_semi_solid/obj_semi_solid.yy",},"order":3,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":2,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},
@@ -11,6 +12,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},"order":1,},
     {"id":{"name":"scr_jumpThrougCollision","path":"scripts/scr_jumpThrougCollision/scr_jumpThrougCollision.yy",},"order":2,},
+    {"id":{"name":"spr_solid_slope","path":"sprites/spr_solid_slope/spr_solid_slope.yy",},"order":6,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":2,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":0,},
     {"id":{"name":"spr_semi_solid","path":"sprites/spr_semi_solid/spr_semi_solid.yy",},"order":4,},

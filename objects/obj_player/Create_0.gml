@@ -5,7 +5,9 @@ walksp = 2;
 jumpsp = -4;
 acc = 0.02;
 onGround = false;
-has_shell = true;
+has_shell = false;
+ladder = false;
+text=""
 
 // Double Jump Lock
 move_lock = false;

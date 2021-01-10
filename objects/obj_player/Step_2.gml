@@ -59,6 +59,48 @@ if (buffer_counter > 0) {
 hsp = move * walksp;
 vsp = vsp + grav;
 
+if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
+	_inst = instance_place(x,y,obj_ladder);
+	text = x - (_inst.x) 
+	if abs(x - (_inst.x)) <= 8 {
+		if (x<=_inst.x) {
+			s = 1;
+		}
+		if (x>_inst.x) {
+			s=-1;
+		}
+		hsp = .5*s;
+		move_lock = true;
+	}
+	if (x==_inst.x) {
+		hsp = 0;
+		ladder = true;
+		move_lock = false;
+	}
+}
+
+if (!place_meeting(x,y,obj_ladder)) {
+	ladder = false;
+	hsp = move * walksp;
+}
+
+if (ladder) {
+	vsp = 0;
+	hsp = 0;
+	if (kUp) {
+		vsp = -1;
+	}
+	if (kDown) {
+		vsp = +1;
+	}
+	if (kJump) {
+		ladder = false;
+	}
+	if (!place_meeting(x,y,obj_ladder)) {
+		ladder = false;
+	}
+}
+
 scr_jumpThrougCollision(obj_semi_solid);
 
 //Horizontal Collision

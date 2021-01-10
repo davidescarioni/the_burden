@@ -7,6 +7,7 @@ acc = 0.02;
 onGround = false;
 has_shell = false;
 ladder = false;
+d_to_ladder = 5;
 text=""
 
 // Double Jump Lock

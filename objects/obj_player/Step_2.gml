@@ -59,10 +59,12 @@ if (buffer_counter > 0) {
 hsp = move * walksp;
 vsp = vsp + grav;
 
+// Ladders
 if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
 	_inst = instance_place(x,y,obj_ladder);
 	text = x - (_inst.x) 
-	if abs(x - (_inst.x)) <= 8 {
+	if abs(x - (_inst.x)) <= d_to_ladder {
+		var s = 1; //hsp sign
 		if (x<=_inst.x) {
 			s = 1;
 		}
@@ -70,6 +72,7 @@ if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
 			s=-1;
 		}
 		hsp = .5*s;
+		vsp = 0;
 		move_lock = true;
 	}
 	if (x==_inst.x) {

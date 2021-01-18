@@ -168,5 +168,22 @@ if kReset {
 }
 
 if kEject {
-	if has_shell has_shell = false else has_shell = true
+	//if has_shell has_shell = false else has_shell = true
+	if (!lifting) {
+		if place_meeting(x,y,obj_box) {
+			var inst = instance_place(x,y,obj_box)
+			with (inst) {
+				lifted = true;
+				other.lifting = true;
+			}
+		}
+	} else if (lifting) {
+		if place_meeting(x,y,obj_box) {
+			var inst = instance_place(x,y,obj_box)
+			with (inst) {
+				lifted = false;
+				other.lifting = false;
+			}
+		}
+	}
 }

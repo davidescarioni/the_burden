@@ -1,9 +1,10 @@
-//function scr_init(){
+function scr_init(){
 //	window_set_size(1024, 576);
 //	window_set_position(448, 252);
 	
-//	room_speed = 60;
-//}
+	//room_speed = 60;
+	//scribble_font_add("fnt_default");
+}
 
 //scr_init();
 

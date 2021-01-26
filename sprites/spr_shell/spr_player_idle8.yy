@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_player_idle8","path":"sprites/spr_player_idle8/spr_player_idle8.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_player_idle8",
+    "name": "spr_player_idle",
     "tags": [],
     "resourceType": "GMSequence",
   },

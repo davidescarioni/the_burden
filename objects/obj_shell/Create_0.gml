@@ -1,0 +1,10 @@
+hsp = 0;
+vsp = 0;
+grav = 0.3;
+walksp = 2;
+jumpsp = -4;
+acc = 0.02;
+onGround = false;
+lifting = false;
+text=""
+move = 0

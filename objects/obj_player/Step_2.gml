@@ -16,16 +16,16 @@ if instance_exists(obj_semi_solid) {
 //Movement
 if (!move_lock) {
 	move = kRight - kLeft;
-}
 
-//Jump
-if (kJump) {
-	buffer_counter = buffer_max;
-} 
+	//Jump
+	if (kJump) {
+		buffer_counter = buffer_max;
+	} 
 
-if(kJumpReleased) {
-	if (vsp != jumpsp) && vsp < 0 {
-		vsp /= 4;
+	if(kJumpReleased) {
+		if (vsp != jumpsp) && vsp < 0 {
+			vsp /= 4;
+		}
 	}
 }
 
@@ -56,8 +56,10 @@ if (buffer_counter > 0) {
 	
 }
 
-hsp = move * walksp;
-vsp = vsp + grav;
+if (!launch) {
+	hsp = move * walksp;
+	vsp = vsp + grav;
+}
 
 // Ladders
 if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
@@ -185,5 +187,28 @@ if kEject {
 				other.lifting = false;
 			}
 		}
+	}
+}
+
+//Launch object
+if (kLeft && launch) {
+	rot+=5;
+}
+if (kRight && launch) {
+	rot-=5;
+}
+
+if (kLaunch) && (onGround) {
+	if (!launch) {
+		launch = true;
+		move_lock = true;
+		if (image_xscale==-1) {
+			rot = 180;
+		} else {
+			rot = 0;
+		}
+	} else if (launch) {
+		launch = false;
+		move_lock = false;
 	}
 }

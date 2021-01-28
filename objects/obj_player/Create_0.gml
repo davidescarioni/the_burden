@@ -19,5 +19,7 @@ move_lock_time = 10
 buffer_counter = 0;
 buffer_max = 6;
 
+// Launch object
+launch = false;
 rot = 0
 ii = 0

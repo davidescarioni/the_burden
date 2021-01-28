@@ -7,4 +7,5 @@ function scr_input(){
 	kJumpReleased = keyboard_check_released(ord("Z"));
 	kReset = keyboard_check_pressed(ord("R"));
 	kEject = keyboard_check_pressed(ord("X"));
+	kLaunch = keyboard_check_pressed(ord("A"));
 }

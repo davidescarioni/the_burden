@@ -11,7 +11,9 @@ if instance_exists(obj_semi_solid) {
 	}
 }
 
-//hsp = move * walksp;
+if (onGround) {
+	hsp = clamp(hsp, 0, hsp - sign(hsp)*.5);
+}
 vsp = vsp + grav;
 
 

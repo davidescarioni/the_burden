@@ -198,6 +198,17 @@ if (kRight && launch) {
 	rot-=5;
 }
 
+if (kJump && launch) {
+	var shell = instance_create_layer(x,y,"Player",obj_shell);
+	with (shell) {
+		dir = other.rot;
+		spd = walksp*3;
+		move = 1
+		vsp = lengthdir_y(spd, dir);
+		hsp = lengthdir_x(spd, dir);
+	}
+}
+
 if (kLaunch) && (onGround) {
 	if (!launch) {
 		launch = true;

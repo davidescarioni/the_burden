@@ -11,14 +11,14 @@ if instance_exists(obj_semi_solid) {
 	}
 }
 
-hsp = move * walksp;
+//hsp = move * walksp;
 vsp = vsp + grav;
 
 
 
 if (!place_meeting(x,y,obj_ladder)) {
 	ladder = false;
-	hsp = move * walksp;
+	//hsp = move * walksp;
 }
 
 scr_jumpThrougCollision(obj_semi_solid);

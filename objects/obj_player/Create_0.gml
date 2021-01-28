@@ -18,3 +18,6 @@ move_lock_time = 10
 // Jump buffer
 buffer_counter = 0;
 buffer_max = 6;
+
+rot = 0
+ii = 0

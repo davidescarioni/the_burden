@@ -26,6 +26,7 @@
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},"order":0,},
     {"id":{"name":"__scribble_class_page","path":"scripts/__scribble_class_page/__scribble_class_page.yy",},"order":6,},
     {"id":{"name":"__scribble_config_default_template","path":"scripts/__scribble_config_default_template/__scribble_config_default_template.yy",},"order":1,},
+    {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},"order":12,},
     {"id":{"name":"scribble_font_set_style_family","path":"scripts/scribble_font_set_style_family/scribble_font_set_style_family.yy",},"order":3,},
     {"id":{"name":"__scribble_class_vertex_buffer","path":"scripts/__scribble_class_vertex_buffer/__scribble_class_vertex_buffer.yy",},"order":7,},
     {"id":{"name":"Text_Formatting","path":"notes/Text_Formatting/Text_Formatting.yy",},"order":10,},

@@ -142,20 +142,39 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 y += vsp;
 
 //Animation
-if (!onGround) {
-	sprite_index = spr_player_jump;
-	image_speed = 0;
-	if (sign(vsp) > 0) {
-		image_index = 1;
+if (has_shell) {
+	if (!onGround) {
+		sprite_index = spr_player_jump;
+		image_speed = 0;
+		if (sign(vsp) > 0) {
+			image_index = 1;
+		} else {
+			image_index = 0;
+		}
 	} else {
-		image_index = 0;
+		image_speed = 1;
+		if (hsp==0) {
+			sprite_index = spr_player_idle;
+		} else {
+			sprite_index = spr_player_run;
+		}
 	}
 } else {
-	image_speed = 1;
-	if (hsp==0) {
-		sprite_index = spr_player_idle;
+	if (!onGround) {
+		sprite_index = spr_player_nake_jump;
+		image_speed = 0;
+		if (sign(vsp) > 0) {
+			image_index = 1;
+		} else {
+			image_index = 0;
+		}
 	} else {
-		sprite_index = spr_player_run;
+		image_speed = 1;
+		if (hsp==0) {
+			sprite_index = spr_player_nake_idle;
+		} else {
+			sprite_index = spr_player_nake_run;
+		}
 	}
 }
 
@@ -170,7 +189,7 @@ if kReset {
 }
 
 if kEject {
-	//if has_shell has_shell = false else has_shell = true
+	if has_shell has_shell = false else has_shell = true
 	if (!lifting) {
 		if place_meeting(x,y,obj_box) {
 			var inst = instance_place(x,y,obj_box)

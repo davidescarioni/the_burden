@@ -153,7 +153,7 @@ if (!onGround) {
 } else {
 	image_speed = 1;
 	if (hsp==0) {
-		sprite_index = spr_player_idle8;
+		sprite_index = spr_player_idle;
 	} else {
 		sprite_index = spr_player_run;
 	}

@@ -266,6 +266,22 @@ if (has_shell) {
 	}
 }
 
+//Camera
+if instance_exists(obj_room_camera) {
+	if place_meeting(x,y,obj_room_camera) {
+		cam = instance_position(x,y,obj_room_camera);
+		with (obj_camera) {
+			xmin = other.cam.x;
+			ymin = other.cam.y;
+			xmax = x+(other.cam.sprite_width - view_w_half);
+			ymax = y+(other.cam.sprite_height - view_h_half);
+			show_debug_message(xmin);
+			show_debug_message(xmax);
+			show_debug_message("----");
+		}
+	}
+}
+
 //Debug
 
 if kReset {

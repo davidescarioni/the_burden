@@ -182,14 +182,29 @@ if (hsp!=0) {
 	image_xscale = sign(hsp);
 }
 
-//Debug
-
-if kReset {
-	room_restart();
+// Remove shell
+if kEject {
+	if has_shell {
+		has_shell = false
+		if !layer_exists("Shell") {
+			layer_create(1,"Shell");
+		}
+		instance_create_layer(x,y,"Shell",obj_shell);
+	} else if !(has_shell) && (distance_to_object(obj_shell) < 5) {
+		has_shell = true;
+		with (obj_shell) {
+			instance_destroy(obj_shell);
+		}
+	}
+	
+	if (launch) {
+		launch = false;
+		move_lock = false;
+	}
 }
 
-if kEject {
-	if has_shell has_shell = false else has_shell = true
+//Lift Object
+if kLift {
 	if (!lifting) {
 		if place_meeting(x,y,obj_box) {
 			var inst = instance_place(x,y,obj_box)
@@ -217,28 +232,42 @@ if (kRight && launch) {
 	rot-=5;
 }
 
-if (kJump && launch) {
-	var shell = instance_create_layer(x,y,"Player",obj_shell);
-	with (shell) {
-		dir = other.rot;
-		spd = walksp*3;
-		move = 1
-		vsp = lengthdir_y(spd, dir);
-		hsp = lengthdir_x(spd, dir);
-	}
-}
-
-if (kLaunch) && (onGround) {
-	if (!launch) {
-		launch = true;
-		move_lock = true;
-		if (image_xscale==-1) {
-			rot = 180;
-		} else {
-			rot = 0;
+if (has_shell) {
+	if (kLaunch && launch) {
+		has_shell = false;
+		var shell = instance_create_layer(x,y,"Player",obj_shell);
+		with (shell) {
+			dir = other.rot;
+			spd = walksp*3;
+			move = 1
+			vsp = lengthdir_y(spd, dir);
+			hsp = lengthdir_x(spd, dir);
 		}
-	} else if (launch) {
+	}
+
+	if (kLaunch) && (onGround) {
+		if (!launch) {
+			launch = true;
+			move_lock = true;
+			if (image_xscale==-1) {
+				rot = 180;
+			} else {
+				rot = 0;
+			}
+		} else if (launch) {
+			launch = false;
+			move_lock = false;
+		}
+	}
+	
+	if (launch) && (kJump) {
 		launch = false;
 		move_lock = false;
 	}
+}
+
+//Debug
+
+if kReset {
+	room_restart();
 }

@@ -8,4 +8,5 @@ function scr_input(){
 	kReset = keyboard_check_pressed(ord("R"));
 	kEject = keyboard_check_pressed(ord("X"));
 	kLaunch = keyboard_check_pressed(ord("A"));
+	kLift = keyboard_check_pressed(ord("C"))
 }

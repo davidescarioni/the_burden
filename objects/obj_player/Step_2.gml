@@ -139,6 +139,12 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 	vsp = 0;
 }
 
+// Collision with spring
+if (place_meeting(x,y+vsp,obj_spring)) && !(place_meeting(x+hsp,y,obj_spring)) {
+	other.full = true;
+	vsp -= 6;
+}
+
 y += vsp;
 
 //Animation

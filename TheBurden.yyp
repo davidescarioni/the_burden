@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_signpost","path":"objects/obj_signpost/obj_signpost.yy",},"order":9,},
+    {"id":{"name":"obj_spring","path":"objects/obj_spring/obj_spring.yy",},"order":12,},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},"order":1,},
     {"id":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"order":4,},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"order":8,},
@@ -12,6 +13,7 @@
     {"id":{"name":"__scribble_class_model","path":"scripts/__scribble_class_model/__scribble_class_model.yy",},"order":3,},
     {"id":{"name":"spr_ladder","path":"sprites/spr_ladder/spr_ladder.yy",},"order":3,},
     {"id":{"name":"__scribble_class_null_model","path":"scripts/__scribble_class_null_model/__scribble_class_null_model.yy",},"order":5,},
+    {"id":{"name":"spr_spring","path":"sprites/spr_spring/spr_spring.yy",},"order":12,},
     {"id":{"name":"scribble_font_set_default","path":"scripts/scribble_font_set_default/scribble_font_set_default.yy",},"order":4,},
     {"id":{"name":"scribble_rgb_to_bgr","path":"scripts/scribble_rgb_to_bgr/scribble_rgb_to_bgr.yy",},"order":1,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},

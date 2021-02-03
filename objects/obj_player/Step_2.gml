@@ -5,6 +5,7 @@ scr_input();
 
 onGround = place_meeting(x,y+1,obj_solid);
 
+// Semi Solid collision
 if instance_exists(obj_semi_solid) {
 	with (obj_semi_solid) {
 		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
@@ -122,6 +123,14 @@ if place_meeting(x+hsp,y,obj_solid)
     }
 }
 
+
+if place_meeting(x+hsp,y,obj_spring) {
+    while (!place_meeting(x+sign(hsp),y,obj_spring)) {
+		x+=sign(hsp);
+	}
+	hsp = 0
+}
+
 x += hsp;
 
 // Smooth Slopes Down
@@ -139,10 +148,11 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 	vsp = 0;
 }
 
-// Collision with spring
-if (place_meeting(x,y+vsp,obj_spring)) && !(place_meeting(x+hsp,y,obj_spring)) {
-	other.full = true;
-	vsp -= 6;
+if (place_meeting(x,y+vsp,obj_spring)) {
+	while (!place_meeting(x,y+sign(vsp),obj_spring)) {
+		y+=sign(vsp)
+	}
+	vsp = jumpsp*1.2;
 }
 
 y += vsp;

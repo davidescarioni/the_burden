@@ -21,6 +21,7 @@
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},"order":4,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":1,},
     {"id":{"name":"spr_signpost","path":"sprites/spr_signpost/spr_signpost.yy",},"order":6,},
+    {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},"order":2,},
     {"id":{"name":"bk_trees","path":"sprites/bk_trees/bk_trees.yy",},"order":1,},
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},"order":0,},
     {"id":{"name":"__scribble_class_page","path":"scripts/__scribble_class_page/__scribble_class_page.yy",},"order":6,},
@@ -47,6 +48,7 @@
     {"id":{"name":"scribble_font_add_from_sprite","path":"scripts/scribble_font_add_from_sprite/scribble_font_add_from_sprite.yy",},"order":2,},
     {"id":{"name":"__scribble_gc_collect","path":"scripts/__scribble_gc_collect/__scribble_gc_collect.yy",},"order":8,},
     {"id":{"name":"__scribble_config_macros","path":"scripts/__scribble_config_macros/__scribble_config_macros.yy",},"order":2,},
+    {"id":{"name":"scr_menu","path":"scripts/scr_menu/scr_menu.yy",},"order":4,},
     {"id":{"name":"obj_room_camera","path":"objects/obj_room_camera/obj_room_camera.yy",},"order":11,},
     {"id":{"name":"spr_shell","path":"sprites/spr_shell/spr_shell.yy",},"order":3,},
     {"id":{"name":"scribble_font_bake_outline","path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},"order":0,},
@@ -67,6 +69,7 @@
     {"id":{"name":"spr_box_small","path":"sprites/spr_box_small/spr_box_small.yy",},"order":5,},
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},"order":11,},
     {"id":{"name":"__scribble_generate_model","path":"scripts/__scribble_generate_model/__scribble_generate_model.yy",},"order":9,},
+    {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":13,},
     {"id":{"name":"spr_spring","path":"sprites/spr_spring/spr_spring.yy",},"order":12,},
     {"id":{"name":"__shd_scribble_msdf","path":"shaders/__shd_scribble_msdf/__shd_scribble_msdf.yy",},"order":13,},
     {"id":{"name":"spr_semi_solid","path":"sprites/spr_semi_solid/spr_semi_solid.yy",},"order":1,},
@@ -90,6 +93,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
   ],
   "Folders": [

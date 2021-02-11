@@ -29,16 +29,48 @@ function resume_game() {
 	show_debug_message("Game Resume")
 }
 
-function exit_game() {}
+function exit_game() {
+	game_end();
+}
 
 function change_volume() {
-	show_debug_message("Volume change to " +string(argument0))
+	var type = argument0;
+	
+	switch (type) {
+		case 0:
+			audio_master_gain(argument0)
+			break;
+		case 1:
+			audio_group_set_gain(audiogroup_soundeffects, argument0, 0);
+			break;
+		case 2:
+			audio_group_set_gain(audiogroup_music, argument0, 0);
+			break;
+	}
 }
 
 function change_resolution() {
-	show_debug_message("Resolution change to " +string(argument0))
+	switch (argument0) {
+		case 0:
+			 window_set_size(100,100);
+			 break;
+		case 1:
+			window_set_size(200,200);
+			 break;
+		case 2:
+			window_set_size(300,300);
+			 break;
+	}
+	window_center();
 }
 
 function change_window_mode() {
-	show_debug_message("Windows change to " +string(argument0))
+	switch (argument0) {
+		case 0:
+			window_set_fullscreen(false);
+		break;
+		case 1:
+			window_set_fullscreen(true);
+		break;
+	}
 }

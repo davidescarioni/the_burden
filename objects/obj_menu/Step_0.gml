@@ -18,6 +18,21 @@ if (inputting) {
 			}
 			break;
 		case menu_element_type.slider:
+			switch (menu_option[page]) {
+				case 0:
+				break;
+				case 1:
+				break;
+				case 2:
+				break;
+			}
+			var hinput = keyboard_check(global.key_right) - keyboard_check(global.key_left)
+			if (hinput != 0) {
+				// TODO: audio
+				ds_grid[# 3, menu_option[page]] += hinput*0.01;
+				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]],0,1);
+			}
+			break;
 		case menu_element_type.toggle:
 			var hinput = keyboard_check_pressed(global.key_right) - keyboard_check_pressed(global.key_left)
 			show_debug_message("here")

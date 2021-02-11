@@ -60,6 +60,25 @@ repeat(ds_height) {
 			draw_text_color(rtx, rty, left_shift+current_array[current_val]+right_shift,c,c,c,c,1);
 			break;
 			
+		case menu_element_type.slider:
+			var len = 64;
+			var current_val = ds_grid[# 3, yy];
+			var current_array = ds_grid[# 4, yy];
+			var circle_pos = ((current_val - current_array[0]) / (current_array[1] - current_array[0]) );
+			c = c_white;
+			
+			if (inputting && yy = menu_option[page]) {
+				c = c_yellow;
+			}
+			
+			var xpos = room_width / 2;
+			
+			draw_line_width(xpos, rty, xpos+len, rty, 2);
+			draw_circle_color(xpos + (circle_pos * len), rty, 4, c, c, false);
+			draw_text_color(rtx, rty, string(floor(circle_pos*100))+"%",c,c,c,c,1);
+			
+			break;
+			
 		case menu_element_type.toggle:
 			var current_val = ds_grid[# 3, yy];
 			var c1, c2;
@@ -70,11 +89,11 @@ repeat(ds_height) {
 			}
 			
 			if (current_val == 0 ) {
-				c1 = c;
-				c2 = c_dkgray;
-			} else {
 				c1 = c_dkgray;
 				c2 = c;
+			} else {
+				c1 = c;
+				c2 = c_dkgray;
 			}
 			
 			draw_text_color(rtx, rty, "ON", c1, c1, c1, c1, 1)

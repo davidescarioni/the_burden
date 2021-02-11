@@ -25,12 +25,20 @@ function create_menu_page(){
 	return ds_grid_id;
 }
 
-function resume_game() {}
+function resume_game() {
+	show_debug_message("Game Resume")
+}
 
 function exit_game() {}
 
-function change_volume() {}
+function change_volume() {
+	show_debug_message("Volume change to " +string(argument0))
+}
 
-function change_resolution() {}
+function change_resolution() {
+	show_debug_message("Resolution change to " +string(argument0))
+}
 
-function change_window_mode() {}
+function change_window_mode() {
+	show_debug_message("Windows change to " +string(argument0))
+}

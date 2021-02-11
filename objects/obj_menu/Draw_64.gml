@@ -47,9 +47,16 @@ repeat(ds_height) {
 			var right_shift = " >>";
 			c = c_white;
 			
-			if (current_val == 0) left_shift = "";
-			if (current_val == array_length(ds_grid[# 4,yy])-1) right_shift = "";
+			if (current_val == 0) {
+				left_shift = "";
+			}
+			if (current_val == array_length(ds_grid[# 4,yy])-1) {
+				right_shift = "";
+			}
 			
+			if (inputting && yy = menu_option[page]) {
+				c = c_yellow;
+			}
 			draw_text_color(rtx, rty, left_shift+current_array[current_val]+right_shift,c,c,c,c,1);
 			break;
 			
@@ -57,6 +64,10 @@ repeat(ds_height) {
 			var current_val = ds_grid[# 3, yy];
 			var c1, c2;
 			c = c_white;
+			
+			if (inputting && yy = menu_option[page]) {
+				c = c_yellow;
+			}
 			
 			if (current_val == 0 ) {
 				c1 = c;
@@ -84,6 +95,9 @@ repeat(ds_height) {
 			}
 			
 			c = c_white;
+			if (inputting && yy = menu_option[page]) {
+				c = c_yellow;
+			}
 			draw_text_color(rtx, rty, string_val, c, c, c, c, 1);
 			
 			break;

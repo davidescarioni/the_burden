@@ -51,7 +51,7 @@ enum menu_page {
  );
  
  ds_menu_graphics = create_menu_page(
-	["RESOLUTION", menu_element_type.shift, change_resolution, 0, ["100x100","200x200"]],
+	["RESOLUTION", menu_element_type.shift, change_resolution, 0, ["100x100","200x200","300x300"]],
 	["FULLSCREEN", menu_element_type.toggle, change_window_mode, 1, ["FULLSCREEN","WINDOWED"]],
 	["BACK", menu_element_type.page_transfer, menu_page.settings]
  );
@@ -74,3 +74,5 @@ enum menu_page {
 	menu_option[i] = 0;
 	i++;
  }
+ 
+ inputting = false;

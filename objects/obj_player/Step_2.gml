@@ -293,9 +293,9 @@ if instance_exists(obj_room_camera) {
 			ymin = camera.y + view_w_half;
 			xmax = camera.x + camera.camera_width - view_w_half;
 			ymax = camera.y + camera.camera_height - view_h_half;
-			show_debug_message(camera);
-			show_debug_message(camera.camera_height);
-			show_debug_message("----");
+			//show_debug_message(camera);
+			//show_debug_message(camera.camera_height);
+			//show_debug_message("----");
 			
 			// Force the camera to stay inside the obj camera room
 			x = clamp(x,xmin,xmax);

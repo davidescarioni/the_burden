@@ -10,7 +10,7 @@ var y_buffer = 32;
 var x_buffer = 16;
 
 // Sfondo Menu
-var c = c_black;
+var c = c_red;
 draw_rectangle_color(0, 0, gwidth, gheight,c,c,c,c, false);
 
 // Elementi a sinistra del menu

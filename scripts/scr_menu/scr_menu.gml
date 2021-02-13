@@ -26,7 +26,61 @@ function create_menu_page(){
 }
 
 function resume_game() {
-	show_debug_message("Game Resume")
+	
+	//Make Save Array
+
+	var _saveData = array_create(0);
+
+	//for every instance create a struct in the array
+	save_data(_saveData, "key_revert");
+	save_data(_saveData, "key_enter");
+	save_data(_saveData, "key_left");
+	save_data(_saveData, "key_right");
+	save_data(_saveData, "key_up");
+	save_data(_saveData, "key_down");
+
+	// Turn this data in JSON string and save it via buffer
+	var _string = json_stringify(_saveData);
+	var _buffer = buffer_create(string_byte_length(_string) + 1, buffer_fixed, 1);
+	buffer_write(_buffer, buffer_string, _string);
+	buffer_save(_buffer,"settings.burden"); 
+	buffer_delete(_buffer);
+
+	show_debug_message("Global Saved")
+	
+	global.pause = false;
+}
+
+function save_data() {
+	_saveData = argument0;
+	_saveVariable = argument1;
+	var _saveEntity = {
+		variable : _saveVariable,
+		value : variable_global_get(_saveVariable),
+	}
+	
+	array_push(_saveData, _saveEntity);
+	show_debug_message("Save: " + _saveVariable)
+}
+
+function load_data() {
+	if file_exists("settings.burden") {
+	var _buffer = buffer_load("settings.burden");
+	var _string = buffer_read( _buffer, buffer_string);
+	buffer_delete(_buffer);
+	
+	var _loadData = json_parse(_string);
+	
+	while (array_length(_loadData) > 0) {
+		var _loadEntity = array_pop(_loadData);
+		variable_global_set(string(_loadEntity.variable), _loadEntity.value)
+		show_debug_message("Load entity: " + string(_loadEntity));
+		show_debug_message(string(_loadEntity.variable));
+		show_debug_message("------------------------");
+	}
+	
+	show_debug_message("Load")
+}
 }
 
 function exit_game() {

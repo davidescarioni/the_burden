@@ -38,6 +38,10 @@ function resume_game() {
 	save_data(_saveData, "key_right");
 	save_data(_saveData, "key_up");
 	save_data(_saveData, "key_down");
+	save_data(_saveData, "key_jump");
+	save_data(_saveData, "key_eject");
+	save_data(_saveData, "key_launch");
+	save_data(_saveData, "key_lift");
 
 	// Turn this data in JSON string and save it via buffer
 	var _string = json_stringify(_saveData);
@@ -74,12 +78,8 @@ function load_data() {
 	while (array_length(_loadData) > 0) {
 		var _loadEntity = array_pop(_loadData);
 		variable_global_set(string(_loadEntity.variable), _loadEntity.value)
-		show_debug_message("Load entity: " + string(_loadEntity.variable));
-		show_debug_message(string(_loadEntity.value));
-		show_debug_message("------------------------");
 	}
 	
-	show_debug_message("Key_up: "+string(chr(global.key_up)))
 }
 }
 

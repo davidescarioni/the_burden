@@ -46,10 +46,10 @@ ds_menu_graphics = create_menu_page(
 );
  
 ds_menu_controls = create_menu_page(
-	["UP", menu_element_type.input, "key_up", vk_up],
-	["DOWN", menu_element_type.input, "key_down", vk_down],
-	["LEFT", menu_element_type.input, "key_left", vk_left],
-	["RIGHT", menu_element_type.input, "key_right", vk_right],
+	["UP", menu_element_type.input, "key_up", global.key_up],
+	["DOWN", menu_element_type.input, "key_down", global.key_down],
+	["LEFT", menu_element_type.input, "key_left", global.key_left],
+	["RIGHT", menu_element_type.input, "key_right", global.key_right],
 	
 	["BACK", menu_element_type.page_transfer, menu_page.settings]
 );

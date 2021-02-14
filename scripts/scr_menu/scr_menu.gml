@@ -74,12 +74,12 @@ function load_data() {
 	while (array_length(_loadData) > 0) {
 		var _loadEntity = array_pop(_loadData);
 		variable_global_set(string(_loadEntity.variable), _loadEntity.value)
-		show_debug_message("Load entity: " + string(_loadEntity));
-		show_debug_message(string(_loadEntity.variable));
+		show_debug_message("Load entity: " + string(_loadEntity.variable));
+		show_debug_message(string(_loadEntity.value));
 		show_debug_message("------------------------");
 	}
 	
-	show_debug_message("Load")
+	show_debug_message("Key_up: "+string(chr(global.key_up)))
 }
 }
 

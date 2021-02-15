@@ -10,7 +10,6 @@ lifting = false;
 ladder = false;
 d_to_ladder = 5;
 text=""
-state = "shellState"
 
 // Double Jump Lock
 move_lock = false;

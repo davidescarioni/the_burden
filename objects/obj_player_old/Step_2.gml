@@ -5,17 +5,16 @@ scr_input();
 
 onGround = place_meeting(x,y+1,obj_solid);
 
-#region Semi Solid collision
-if instance_exists(obj_semi_solid) && (ladder==false) {
+// Semi Solid collision
+if instance_exists(obj_semi_solid) {
 	with (obj_semi_solid) {
 		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
 			other.onGround = true;
 		} 
 	}
 }
-#endregion
 
-#region Movement
+//Movement
 if (!move_lock) {
 	move = kRight - kLeft;
 
@@ -62,9 +61,8 @@ if (!launch) {
 	hsp = move * walksp;
 	vsp = vsp + grav;
 }
-#endregion
 
-#region Ladders / Scale
+// Ladders
 if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
 	_inst = instance_place(x,y,obj_ladder);
 	text = x - (_inst.x) 
@@ -108,12 +106,8 @@ if (ladder) {
 		ladder = false;
 	}
 }
-#endregion
 
-#region Collisioni
-if (!ladder) {
-	scr_jumpThrougCollision(obj_semi_solid);
-}
+scr_jumpThrougCollision(obj_semi_solid);
 
 //Horizontal Collision
 if place_meeting(x+hsp,y,obj_solid)
@@ -163,9 +157,7 @@ if (place_meeting(x,y+vsp,obj_spring)) {
 
 y += vsp;
 
-#endregion
-
-#region Animazioni
+//Animation
 if (has_shell) {
 	if (!onGround) {
 		sprite_index = spr_player_jump;
@@ -205,9 +197,8 @@ if (has_shell) {
 if (hsp!=0) {
 	image_xscale = sign(hsp);
 }
-#endregion
 
-#region Remove shell
+// Remove shell
 if kEject {
 	if has_shell {
 		has_shell = false
@@ -227,9 +218,8 @@ if kEject {
 		move_lock = false;
 	}
 }
-#endregion
 
-#region Lift Object
+//Lift Object
 if kLift {
 	if (!lifting) {
 		if place_meeting(x,y,obj_box) {
@@ -249,9 +239,8 @@ if kLift {
 		}
 	}
 }
-#endregion
 
-#region Launch object
+//Launch object
 if (kLeft && launch) {
 	rot+=5;
 }
@@ -292,9 +281,8 @@ if (has_shell) {
 		move_lock = false;
 	}
 }
-#endregion
 
-#region Camera
+//Camera
 if instance_exists(obj_room_camera) {
 	if place_meeting(x,y,obj_room_camera) {
 		oCam = instance_position(x,y,obj_room_camera);
@@ -316,10 +304,9 @@ if instance_exists(obj_room_camera) {
 		}
 	}
 }
-#endregion
 
-#region Debug
+//Debug
+
 if kReset {
 	room_restart();
 }
-#endregion

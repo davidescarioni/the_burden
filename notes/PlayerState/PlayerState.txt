@@ -1,0 +1,8 @@
+- Normale, con guscio
+	- Togliere guscio
+	- Lanciare guscio -> Stato lancio
+	- Scalare -> Stato scalata
+
+- Normale, senza guscio
+	- Saltare
+	- Scalare -> Stato scalata

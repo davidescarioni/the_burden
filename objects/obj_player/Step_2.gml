@@ -296,23 +296,34 @@ if (has_shell) {
 
 #region Camera
 if instance_exists(obj_room_camera) {
+	show_debug_message("Yes, exist");
 	if place_meeting(x,y,obj_room_camera) {
 		oCam = instance_position(x,y,obj_room_camera);
-		with (obj_camera) {
-			camera = other.oCam;
+		if (oCam != noone) {
+			with (obj_camera) {
+				camera = other.oCam;
 
-			xmin = camera.x + view_w_half;
-			ymin = camera.y + view_w_half;
-			xmax = camera.x + camera.camera_width - view_w_half;
-			ymax = camera.y + camera.camera_height - view_h_half;
-			//show_debug_message(camera);
-			//show_debug_message(camera.camera_height);
-			//show_debug_message("----");
+				xmin = camera.x + view_w_half;
+				ymin = camera.y + view_w_half;
+				xmax = camera.x + camera.camera_width - view_w_half;
+				ymax = camera.y + camera.camera_height - view_h_half;
+				//show_debug_message(camera);
+				//show_debug_message(camera.camera_height);
+				//show_debug_message("----");
 			
-			// Force the camera to stay inside the obj camera room
-			x = clamp(x,xmin,xmax);
-			y = clamp(y,ymin,ymax);
+				// Force the camera to stay inside the obj camera room
+				x = clamp(x,xmin,xmax);
+				y = clamp(y,ymin,ymax);
 
+			}
+		} else {
+			with (obj_camera) {
+				// Mantain or delete?
+				xmin = view_w_half;
+				ymin = view_h_half;
+				xmax = room_width - view_w_half;
+				ymax = room_height - view_h_half;
+			}
 		}
 	}
 }

@@ -296,12 +296,14 @@ if (has_shell) {
 
 #region Camera
 if instance_exists(obj_room_camera) {
-	show_debug_message("Yes, exist");
 	if place_meeting(x,y,obj_room_camera) {
 		oCam = instance_position(x,y,obj_room_camera);
-		if (oCam != noone) {
+		if (oCam != noone) && (oCam != oldCam) {
+			oldCam = oCam;
 			with (obj_camera) {
 				camera = other.oCam;
+				
+				camera.camera_width = camera.camera_width * camera.image_xscale
 
 				xmin = camera.x + view_w_half;
 				ymin = camera.y + view_w_half;
@@ -316,15 +318,16 @@ if instance_exists(obj_room_camera) {
 				y = clamp(y,ymin,ymax);
 
 			}
-		} else {
-			with (obj_camera) {
-				// Mantain or delete?
-				xmin = view_w_half;
-				ymin = view_h_half;
-				xmax = room_width - view_w_half;
-				ymax = room_height - view_h_half;
-			}
-		}
+		} 
+		// Camera "normale" segue il giocatore
+		//else {
+		//	with (obj_camera) {
+		//		xmin = view_w_half;
+		//		ymin = view_h_half;
+		//		xmax = room_width - view_w_half;
+		//		ymax = room_height - view_h_half;
+		//	}
+		//}
 	}
 }
 #endregion

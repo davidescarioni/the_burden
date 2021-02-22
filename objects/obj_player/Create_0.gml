@@ -24,3 +24,6 @@ buffer_max = 6;
 launch = false;
 rot = 0
 ii = 0
+
+// Camera set
+oldCam = noone;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_solid_slope",
-    "path": "sprites/spr_solid_slope/spr_solid_slope.yy",
+    "name": "spr_solid_slope_dx",
+    "path": "sprites/spr_solid_slope_dx/spr_solid_slope_dx.yy",
   },
   "solid": false,
   "visible": true,

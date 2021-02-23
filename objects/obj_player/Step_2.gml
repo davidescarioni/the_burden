@@ -62,6 +62,10 @@ if (!launch) {
 	hsp = move * walksp;
 	vsp = vsp + grav;
 }
+
+if (vsp>0) && onWall {
+	vsp = vsp*2/3;
+}
 #endregion
 
 #region Ladders / Scale

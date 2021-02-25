@@ -5,16 +5,6 @@ scr_input();
 
 onGround = place_meeting(x,y+1,obj_solid);
 
-#region Semi Solid collision
-if instance_exists(obj_semi_solid) && (ladder==false) {
-	with (obj_semi_solid) {
-		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
-			other.onGround = true;
-		} 
-	}
-}
-#endregion
-
 #region Movement
 if (!move_lock) {
 	move = kRight - kLeft;
@@ -118,10 +108,19 @@ if (ladder) {
 }
 #endregion
 
-#region Collisioni
-if (!ladder) {
+#region Semi Solid collision
+if instance_exists(obj_semi_solid) && (ladder==false) {
 	scr_jumpThrougCollision(obj_semi_solid);
+	
+	with (obj_semi_solid) {
+		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
+			other.onGround = true;
+		} 
+	}
 }
+#endregion
+
+#region Collisioni
 
 //Horizontal Collision
 if place_meeting(x+hsp,y,obj_solid)

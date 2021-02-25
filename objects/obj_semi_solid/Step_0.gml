@@ -8,7 +8,7 @@ if instance_exists(obj_player) {
 	
 			if (wallCollision) {
 				while (!place_meeting(x+hsp,y,obj_solid)) {
-					x+=dir
+					x+=dir;
 				}
 				dir*=-1;
 			}

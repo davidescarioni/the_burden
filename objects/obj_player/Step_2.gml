@@ -58,6 +58,10 @@ if (buffer_counter > 0) {
 	
 }
 
+if (onGround) {
+	move_lock = false;
+}
+
 if (!launch) {
 	hsp = move * walksp;
 	vsp = vsp + grav;

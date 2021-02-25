@@ -1,6 +1,6 @@
 if instance_exists(obj_player) {
-	if (obj_player.ladder) {
-		if (movedir=="hor") {
+	//if (obj_player.ladder) {
+		if (movedir=="horizontal") {
 	
 			hsp = movespd * dir;
 	
@@ -24,7 +24,7 @@ if instance_exists(obj_player) {
 			}
 		}
 	
-		if (movedir=="ver") {
+		if (movedir=="vertical") {
 		
 			vsp = movespd * dir;
 		
@@ -45,6 +45,6 @@ if instance_exists(obj_player) {
 		
 			y+=vsp 
 		}
-	}
+	//}
 }
 

@@ -26,4 +26,5 @@ rot = 0
 ii = 0
 
 // Camera set
+oCam = noone;
 oldCam = noone;

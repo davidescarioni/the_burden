@@ -3,7 +3,7 @@ onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1,
 
 scr_input();
 
-onGround = place_meeting(x,y+1,obj_solid);
+onGround = place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_semi_solid) ;
 
 #region Movement
 if (!move_lock) {

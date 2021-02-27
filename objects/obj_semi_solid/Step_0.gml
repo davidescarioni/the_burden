@@ -3,6 +3,16 @@ if instance_exists(obj_player) {
 		if (movedir=="horizontal") {
 	
 			hsp = movespd * dir;
+			
+			//if (dir==1) {
+			//	x = lerp(x+hsp,maxx,.005)
+			//} else {
+			//	x = lerp(x+hsp,minx,.005)
+			//}
+			
+			//if (x>=maxx) || (x<=minx) {
+			//	dir*=-1;
+			//}
 	
 			var wallCollision = place_meeting(x+hsp,y,obj_solid);
 	
@@ -12,7 +22,6 @@ if instance_exists(obj_player) {
 				}
 				dir*=-1;
 			}
-	
 			x+=hsp
 	
 			with (obj_player) {

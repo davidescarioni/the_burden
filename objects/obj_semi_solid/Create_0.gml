@@ -5,13 +5,23 @@ dir = 1;
 vsp = 0;
 movespd = 1; //Attenzione, con i decimali fallisce il controllo verticale
 
+startx = x
+starty = y
 minx=x;
-maxy=y;
+miny=y;
+maxx=x+sprite_width
 i=0;
 
-for (i=0; i<200; i++) {
-	if place_meeting(x-i,y,obj_solid) {
-		minx=x-i;
+for (i=0; i<250; i++) {
+	minx=startx-i;
+	if place_meeting(startx-i,y,obj_solid) {
+		break;
+	}
+}
+
+for (i=0; i<250; i++) {
+	maxx=startx+i;
+	if place_meeting(startx+i,y,obj_solid) {
 		break;
 	}
 }

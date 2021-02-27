@@ -1,5 +1,4 @@
 status = "one";
 
-movedir = "horizontal";
-movespd = 2;
-dir = -1;
+//movedir = "vertical";
+movespd = .5;

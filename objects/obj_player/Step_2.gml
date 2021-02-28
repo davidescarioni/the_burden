@@ -258,11 +258,7 @@ if kLift {
 	if place_meeting(x,y,obj_activator) {
 		var inst = instance_place(x,y,obj_activator)
 		with (inst) {
-			if status == "one" {
-				status = "two"
-			} else {
-				status = "one"
-			}
+			alarm[0] = 1;
 		}
 	}
 }

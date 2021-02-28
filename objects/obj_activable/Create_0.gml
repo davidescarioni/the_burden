@@ -1,4 +1,5 @@
-status = "one";
+//status = "one";
+sprite_index = sprite;
 
 //movedir = "vertical";
-movespd = .5;
+//movespd = .5;

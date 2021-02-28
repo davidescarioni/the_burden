@@ -15,6 +15,10 @@ global.key_eject = ord("X");
 global.key_launch = ord("A");
 global.key_lift = ord("C");
 
+global.lastRoom = "";
+global.lastCheckpointX = 0;
+global.lastCheckpointY = 0;
+
 /// Load saved settings
 load_data();
 

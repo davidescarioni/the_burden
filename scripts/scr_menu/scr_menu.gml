@@ -69,18 +69,17 @@ function save_data() {
 
 function load_data() {
 	if file_exists("settings.burden") {
-	var _buffer = buffer_load("settings.burden");
-	var _string = buffer_read( _buffer, buffer_string);
-	buffer_delete(_buffer);
+		var _buffer = buffer_load("settings.burden");
+		var _string = buffer_read( _buffer, buffer_string);
+		buffer_delete(_buffer);
 	
-	var _loadData = json_parse(_string);
+		var _loadData = json_parse(_string);
 	
-	while (array_length(_loadData) > 0) {
-		var _loadEntity = array_pop(_loadData);
-		variable_global_set(string(_loadEntity.variable), _loadEntity.value)
+		while (array_length(_loadData) > 0) {
+			var _loadEntity = array_pop(_loadData);
+			variable_global_set(string(_loadEntity.variable), _loadEntity.value)
+		}
 	}
-	
-}
 }
 
 function exit_game() {

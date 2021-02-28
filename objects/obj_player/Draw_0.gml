@@ -6,3 +6,5 @@ if (launch) {
 
 //Draw Turtles
 draw_self()
+
+draw_text(x,y+10,global.lastCheckpointX);

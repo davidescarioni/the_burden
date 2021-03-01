@@ -11,9 +11,7 @@ if (instance_exists(obj_player)) {
 		global.lastRoom = room;
 		global.lastCheckpointX = obj_player.x;
 		global.lastCheckpointY = obj_player.y;
-		show_debug_message(global.lastRoom);
-		show_debug_message(global.lastCheckpointX);
-		show_debug_message(global.lastCheckpointY);
+		saveGame();
 		with (obj_checkpoint) {
 			checkpoint = false;
 		}

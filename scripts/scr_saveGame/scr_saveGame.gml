@@ -1,9 +1,9 @@
 function saveGame() {
 	var _saveData = array_create(0);
 	
-	save_data(_saveData, "global.lastCheckpointX");
-	save_data(_saveData, "global.lastCheckpointY");
-	save_data(_saveData, "global.lastRoom");
+	save_data(_saveData, "lastCheckpointX");
+	save_data(_saveData, "lastCheckpointY");
+	save_data(_saveData, "lastRoom");
 	
 	// Turn this data in JSON string and save it via buffer
 	var _string = json_stringify(_saveData);
@@ -23,9 +23,10 @@ function loadGame() {
 		buffer_delete(_buffer);
 	
 		var _loadData = json_parse(_string);
-		show_debug_message(_loadData)
+		
 		while (array_length(_loadData) > 0) {
 			var _loadEntity = array_pop(_loadData);
+			show_debug_message(_loadEntity)
 			variable_global_set(string(_loadEntity.variable), _loadEntity.value)
 		}
 	}

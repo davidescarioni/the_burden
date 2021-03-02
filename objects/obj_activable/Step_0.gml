@@ -1,4 +1,4 @@
-if (init_dir==-1) {
+if (init_dir==-1) && (movedir!="") {
 	if status == "one" {
 		dir = -1;
 	} else {
@@ -54,4 +54,15 @@ switch(movedir) {
 		
 		y+=vsp 
 	break;
+}
+
+if (activable) {
+	switch(status) {
+		case "one":
+			active = true;
+		break;
+		case "two":
+			active = false;
+		break;
+	}
 }

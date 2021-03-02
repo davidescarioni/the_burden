@@ -8,9 +8,11 @@ onGround = place_meeting(x,y+1,obj_solid);
 // Semi Solid collision
 if instance_exists(obj_semi_solid) {
 	with (obj_semi_solid) {
-		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
-			other.onGround = true;
-		} 
+		if (active) {
+			if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
+				other.onGround = true;
+			} 
+		}
 	}
 }
 

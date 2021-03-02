@@ -50,6 +50,7 @@
     {"id":{"name":"obj_shell","path":"objects/obj_shell/obj_shell.yy",},"order":10,},
     {"id":{"name":"__scribble_init","path":"scripts/__scribble_init/__scribble_init.yy",},"order":10,},
     {"id":{"name":"scribble_Methods","path":"notes/scribble_Methods/scribble_Methods.yy",},"order":9,},
+    {"id":{"name":"spr_solid_activable","path":"sprites/spr_solid_activable/spr_solid_activable.yy",},"order":17,},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},"order":1,},
     {"id":{"name":"Methods_Quick_Reference","path":"notes/Methods_Quick_Reference/Methods_Quick_Reference.yy",},"order":6,},
     {"id":{"name":"scribble_font_add_from_sprite","path":"scripts/scribble_font_add_from_sprite/scribble_font_add_from_sprite.yy",},"order":2,},

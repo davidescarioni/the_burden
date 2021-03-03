@@ -19,8 +19,12 @@ global.lastRoom = "";
 global.lastCheckpointX = 0;
 global.lastCheckpointY = 0;
 
+//Keys
+global.roomOneKey = false;
+
 /// Load saved settings
 load_data();
+loadGame();
 
 if !layer_exists("Pause") {
 	layer_create(10,"Pause");

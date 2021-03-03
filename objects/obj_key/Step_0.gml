@@ -1,7 +1,12 @@
 if instance_exists(obj_player) {
 	if (place_meeting(x,y,obj_player)) {
 		if (door!=noone) {
-			door.open = true;
+			global.roomOneKey = true;
 		}
 	}
+}
+
+if (global.roomOneKey == true) {
+	door.open = true;
+	instance_destroy();
 }

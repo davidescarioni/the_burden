@@ -34,6 +34,9 @@
         "\"right\"",
         "\"bottom\"",
       ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"opening_direction","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"spr_key_door","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMSprite",
+      ],"resourceVersion":"1.0","name":"sprite","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

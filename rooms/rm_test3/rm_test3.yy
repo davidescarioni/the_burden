@@ -509,6 +509,7 @@
         {"properties":[
             {"propertyId":{"name":"door","path":"objects/obj_key/obj_key.yy",},"objectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"value":"inst_2FDCFA51","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":688.0,"y":260.0,"resourceVersion":"1.0","name":"inst_7A2232A3","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_collectible","path":"objects/obj_collectible/obj_collectible.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":664.0,"y":180.0,"resourceVersion":"1.0","name":"inst_21F438D8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Walls","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"bk_trees","path":"sprites/bk_trees/bk_trees.yy",},"colour":4294967295,"x":0,"y":10,"htiled":true,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"SecondBk","tags":[],"resourceType":"GMRBackgroundLayer",},
     {"spriteId":{"name":"bk_mountains","path":"sprites/bk_mountains/bk_mountains.yy",},"colour":4294967295,"x":0,"y":-30,"htiled":true,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"ThirdBk","tags":[],"resourceType":"GMRBackgroundLayer",},
@@ -983,6 +984,7 @@
     {"name":"inst_20363F23","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_2FDCFA51","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_7A2232A3","path":"rooms/rm_test3/rm_test3.yy",},
+    {"name":"inst_21F438D8","path":"rooms/rm_test3/rm_test3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

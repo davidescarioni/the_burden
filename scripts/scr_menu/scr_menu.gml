@@ -74,6 +74,8 @@ function load_data() {
 		buffer_delete(_buffer);
 	
 		var _loadData = json_parse(_string);
+		show_debug_message("---------------------------")
+		show_debug_message(_loadData)
 	
 		while (array_length(_loadData) > 0) {
 			var _loadEntity = array_pop(_loadData);

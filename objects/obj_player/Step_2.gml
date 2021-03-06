@@ -28,6 +28,8 @@ if (buffer_counter > 0) {
 	if (onGround && !has_shell) {
 		vsp +=  jumpsp;
 		buffer_counter = 0;
+		audio_sound_pitch(snd_jump,choose(.9,1,1.1));
+		audio_play_sound(snd_jump,1,false);
 	}
 	
 	if place_meeting(x + 1, y, obj_solid) && !onGround {
@@ -36,6 +38,8 @@ if (buffer_counter > 0) {
 	    move_lock = true;
 	    alarm[0] = move_lock_time;
 		buffer_counter = 0;
+		audio_sound_pitch(snd_jump,choose(.9,1,1.1));
+		audio_play_sound(snd_jump,1,false);
 	}
 	
 	if place_meeting(x - 1, y, obj_solid) && !onGround {
@@ -44,6 +48,8 @@ if (buffer_counter > 0) {
 	    move_lock = true;
 	    alarm[0] = move_lock_time;
 		buffer_counter = 0;
+		audio_sound_pitch(snd_jump,choose(.9,1,1.1));
+		audio_play_sound(snd_jump,1,false);
 	}
 	
 }

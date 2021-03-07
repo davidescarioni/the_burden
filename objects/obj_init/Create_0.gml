@@ -25,6 +25,10 @@ global.roomOneKey = false;
 /// Load saved settings
 load_data();
 loadGame();
+if !audio_group_is_loaded(audiogroup_soundeffects)
+   {
+   audio_group_load(audiogroup_soundeffects);
+   }
 
 if !layer_exists("Pause") {
 	layer_create(10,"Pause");

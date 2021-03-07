@@ -519,8 +519,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_4839EB95","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_8D6860D","path":"rooms/rm_test3/rm_test3.yy",},
+    {"name":"inst_4839EB95","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_FC94ED4","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_5E8675","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_4FE687B6","path":"rooms/rm_test3/rm_test3.yy",},

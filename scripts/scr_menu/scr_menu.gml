@@ -32,7 +32,6 @@ function resume_game() {
 	var _saveData = array_create(0);
 
 	//for every instance create a struct in the array
-	save_data(_saveData, "key_revert");
 	save_data(_saveData, "key_enter");
 	save_data(_saveData, "key_left");
 	save_data(_saveData, "key_right");
@@ -42,6 +41,9 @@ function resume_game() {
 	save_data(_saveData, "key_eject");
 	save_data(_saveData, "key_launch");
 	save_data(_saveData, "key_lift");
+	
+	save_data(_saveData, "volume_effects");
+	save_data(_saveData, "volume_music");
 
 	// Turn this data in JSON string and save it via buffer
 	var _string = json_stringify(_saveData);
@@ -58,13 +60,15 @@ function resume_game() {
 function save_data() {
 	_saveData = argument0;
 	_saveVariable = argument1;
-	var _saveEntity = {
-		variable : _saveVariable,
-		value : variable_global_get(_saveVariable),
-	}
+	if (string(_saveVariable) != "null") {
+		var _saveEntity = {
+			variable : _saveVariable,
+			value : variable_global_get(_saveVariable),
+		}
 	
-	array_push(_saveData, _saveEntity);
-	show_debug_message("Save: " + _saveVariable)
+		array_push(_saveData, _saveEntity);
+		show_debug_message("Save: " + _saveVariable)
+	}
 }
 
 function load_data() {
@@ -74,8 +78,6 @@ function load_data() {
 		buffer_delete(_buffer);
 	
 		var _loadData = json_parse(_string);
-		show_debug_message("---------------------------")
-		show_debug_message(_loadData)
 	
 		while (array_length(_loadData) > 0) {
 			var _loadEntity = array_pop(_loadData);
@@ -97,9 +99,11 @@ function change_volume() {
 			break;
 		case 1:
 			audio_group_set_gain(audiogroup_soundeffects, argument0, 0);
+			global.volume_effects = argument0;
 			break;
 		case 2:
 			audio_group_set_gain(audiogroup_music, argument0, 0);
+			global.volume_music = argument0;
 			break;
 	}
 }

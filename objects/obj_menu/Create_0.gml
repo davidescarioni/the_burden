@@ -34,8 +34,8 @@ ds_settings = create_menu_page(
  
 ds_menu_audio = create_menu_page(
 	["MASTER", menu_element_type.slider, change_volume, 1, [0,1]],
-	["SUONI", menu_element_type.slider, change_volume, 1, [0,1]],
-	["MUSICA", menu_element_type.slider, change_volume, 1, [0,1]],
+	["SUONI", menu_element_type.slider, change_volume, global.volume_effects, [0,1]],
+	["MUSICA", menu_element_type.slider, change_volume, global.volume_music, [0,1]],
 	["INDIETRO", menu_element_type.page_transfer, menu_page.settings]
 );
  

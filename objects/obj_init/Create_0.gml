@@ -15,6 +15,9 @@ global.key_eject = ord("X");
 global.key_launch = ord("A");
 global.key_lift = ord("C");
 
+global.volume_effects = 1;
+global.volume_music = 1;
+
 global.lastRoom = "";
 global.lastCheckpointX = 0;
 global.lastCheckpointY = 0;

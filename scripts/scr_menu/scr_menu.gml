@@ -89,7 +89,7 @@ function exit_game() {
 }
 
 function change_volume() {
-	var type = argument0;
+	var type = menu_option[page];
 	
 	switch (type) {
 		case 0:

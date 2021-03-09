@@ -30,7 +30,6 @@ if (buffer_counter > 0) {
 		buffer_counter = 0;
 		audio_sound_pitch(snd_jump,choose(.9,1,1.1));
 		audio_play_sound(snd_jump,1,false);
-		audio_group_set_gain(audiogroup_soundeffects,1,0)
 	}
 	
 	if place_meeting(x + 1, y, obj_solid) && !onGround {

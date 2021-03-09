@@ -20,10 +20,13 @@ if (inputting) {
 		case menu_element_type.slider:
 			switch (menu_option[page]) {
 				case 0:
+				//test master audio
 				break;
 				case 1:
+				//test soundeffect
 				break;
 				case 2:
+				//test music
 				break;
 			}
 			var hinput = keyboard_check(global.key_right) - keyboard_check(global.key_left)

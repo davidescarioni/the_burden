@@ -20,6 +20,10 @@ move_lock_time = 10
 buffer_counter = 0;
 buffer_max = 6;
 
+//Animate
+draw_xscale = 1
+draw_yscale = 1
+
 // Launch object
 launch = false;
 rot = 0

@@ -30,6 +30,8 @@ if (buffer_counter > 0) {
 		buffer_counter = 0;
 		audio_sound_pitch(snd_jump,choose(.9,1,1.1));
 		audio_play_sound(snd_jump,1,false);
+		draw_yscale=1.20
+        draw_xscale=.65
 	}
 	
 	if place_meeting(x + 1, y, obj_solid) && !onGround {
@@ -168,6 +170,11 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 }
 
 if (place_meeting(x,y+vsp,obj_spring)) {
+	var inst = instance_place(x,y+vsp,obj_spring);
+	with (inst) {
+		coll = true;
+		alarm[0] = 8;
+	}
 	while (!place_meeting(x,y+sign(vsp),obj_spring)) {
 		y+=sign(vsp)
 	}
@@ -179,6 +186,10 @@ y += vsp;
 #endregion
 
 #region Animazioni
+
+draw_xscale = lerp(draw_xscale, 1, .1)
+draw_yscale = lerp(draw_yscale, 1, .1)
+
 if (has_shell) {
 	if (!onGround) {
 		sprite_index = spr_player_jump;

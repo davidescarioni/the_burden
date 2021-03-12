@@ -173,12 +173,12 @@ if (place_meeting(x,y+vsp,obj_spring)) {
 	var inst = instance_place(x,y+vsp,obj_spring);
 	with (inst) {
 		coll = true;
-		alarm[0] = 8;
+		alarm[0] = 5;
 	}
 	while (!place_meeting(x,y+sign(vsp),obj_spring)) {
 		y+=sign(vsp)
 	}
-	vsp = jumpsp*1.2;
+	vsp = jumpsp*1.5;
 }
 
 y += vsp;

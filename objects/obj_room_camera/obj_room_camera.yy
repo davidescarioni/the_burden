@@ -4,7 +4,7 @@
     "path": "sprites/spr_room_camera/spr_room_camera.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

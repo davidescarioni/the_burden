@@ -23,7 +23,17 @@ if (!place_meeting(x,y,obj_ladder)) {
 	//hsp = move * walksp;
 }
 
-scr_jumpThrougCollision(obj_semi_solid);
+#region Semi Solid collision
+if instance_exists(obj_semi_solid)  {
+	scr_jumpThrougCollision(obj_semi_solid);
+	
+	with (obj_semi_solid) {
+		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
+			other.onGround = true;
+		} 
+	}
+}
+#endregion
 
 //Horizontal Collision
 if place_meeting(x+hsp,y,obj_solid)
@@ -39,8 +49,6 @@ if place_meeting(x+hsp,y,obj_solid)
     }
 }
 
-x += hsp;
-
 //Vertical Collision
 if (place_meeting(x,y+vsp,obj_solid)) {
 	while (!place_meeting(x,y+sign(vsp),obj_solid)) {
@@ -48,5 +56,17 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 	}
 	vsp = 0;
 }
+
+//if (!place_meeting(x+other.hsp,y,obj_solid)) {
+	if (place_meeting(x,y+1,obj_semi_solid) && !place_meeting(x,y,obj_semi_solid)) {
+		var item = instance_place(x,y+1,obj_semi_solid)
+		show_debug_message("Qui")
+		hsp=item.hsp;
+	}
+//}
+
+//hsp = move * walksp;
+
+x += hsp;
 
 y += vsp;

@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_semi_solid_wood","path":"sprites/spr_semi_solid_wood/spr_semi_solid_wood.yy",},"order":20,},
     {"id":{"name":"obj_signpost","path":"objects/obj_signpost/obj_signpost.yy",},"order":9,},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},"order":1,},
     {"id":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"order":4,},
@@ -97,6 +98,7 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":12,},
     {"id":{"name":"spr_key_door","path":"sprites/spr_key_door/spr_key_door.yy",},"order":19,},
     {"id":{"name":"spr_spring","path":"sprites/spr_spring/spr_spring.yy",},"order":12,},
+    {"id":{"name":"spr_semi_solid_wood31","path":"sprites/spr_semi_solid_wood31/spr_semi_solid_wood31.yy",},"order":21,},
     {"id":{"name":"__shd_scribble_msdf","path":"shaders/__shd_scribble_msdf/__shd_scribble_msdf.yy",},"order":13,},
     {"id":{"name":"spr_semi_solid","path":"sprites/spr_semi_solid/spr_semi_solid.yy",},"order":1,},
     {"id":{"name":"scribble_typewriter_add_character_delay","path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},"order":2,},

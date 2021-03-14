@@ -145,12 +145,12 @@ if place_meeting(x+hsp,y,obj_solid)
 }
 
 
-if place_meeting(x+hsp,y,obj_spring) {
-    while (!place_meeting(x+sign(hsp),y,obj_spring)) {
-		x+=sign(hsp);
-	}
-	hsp = 0
-}
+//if place_meeting(x+hsp,y,obj_spring) {
+//    while (!place_meeting(x+sign(hsp),y,obj_spring)) {
+//		x+=sign(hsp);
+//	}
+//	hsp = 0
+//}
 
 x += hsp;
 
@@ -169,7 +169,7 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 	vsp = 0;
 }
 
-if (place_meeting(x,y+vsp,obj_spring)) {
+if (place_meeting(x,y+vsp,obj_spring) && vsp > 0) {
 	var inst = instance_place(x,y+vsp,obj_spring);
 	with (inst) {
 		coll = true;

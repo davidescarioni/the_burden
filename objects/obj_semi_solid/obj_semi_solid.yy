@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_semi_solid",
-    "path": "sprites/spr_semi_solid/spr_semi_solid.yy",
+    "name": "spr_semi_solid_wood31",
+    "path": "sprites/spr_semi_solid_wood31/spr_semi_solid_wood31.yy",
   },
   "solid": false,
   "visible": true,

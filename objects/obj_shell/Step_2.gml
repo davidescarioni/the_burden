@@ -16,8 +16,6 @@ if (onGround) {
 }
 vsp = vsp + grav;
 
-
-
 if (!place_meeting(x,y,obj_ladder)) {
 	ladder = false;
 	//hsp = move * walksp;
@@ -60,7 +58,6 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 //if (!place_meeting(x+other.hsp,y,obj_solid)) {
 	if (place_meeting(x,y+1,obj_semi_solid) && !place_meeting(x,y,obj_semi_solid)) {
 		var item = instance_place(x,y+1,obj_semi_solid)
-		show_debug_message("Qui")
 		hsp=item.hsp;
 	}
 //}

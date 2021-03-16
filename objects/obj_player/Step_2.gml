@@ -118,7 +118,9 @@ if (ladder) {
 
 #region Semi Solid collision
 if instance_exists(obj_semi_solid) && (ladder==false) {
-	scr_jumpThrougCollision(obj_semi_solid);
+	if (!keyboard_check(global.key_down)) {
+		scr_jumpThrougCollision(obj_semi_solid);
+	}
 	
 	with (obj_semi_solid) {
 		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {

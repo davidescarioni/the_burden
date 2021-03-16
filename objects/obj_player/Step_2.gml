@@ -333,15 +333,18 @@ if instance_exists(obj_room_camera) {
 			with (obj_camera) {
 				camera = other.oCam;
 				
-				camera.camera_width = camera.camera_width * camera.image_xscale
+				cwidth = camera.camera_width * camera.image_xscale
 
 				xmin = camera.x + view_w_half;
 				ymin = camera.y + view_w_half;
-				xmax = camera.x + camera.camera_width - view_w_half;
+				xmax = camera.x + cwidth - view_w_half;
 				ymax = camera.y + camera.camera_height - view_h_half;
-				//show_debug_message(camera);
+				show_debug_message("----");
+				show_debug_message(camera.x);
+				show_debug_message(camera.camera_width);
+				show_debug_message(view_w_half);
 				//show_debug_message(camera.camera_height);
-				//show_debug_message("----");
+				show_debug_message("----");
 			
 				// Force the camera to stay inside the obj camera room
 				x = clamp(x,xmin,xmax);

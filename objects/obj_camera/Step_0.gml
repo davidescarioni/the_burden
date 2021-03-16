@@ -5,8 +5,8 @@ if (instance_exists(follow)) {
 }
 
 // Update object position
-x += (xTo - x) / 25;
-y += (yTo - y) / 25;
+x += (xTo - x)// / 25;
+y += (yTo - y)// / 25;
 
 
 // Force the camera to stay inside the room

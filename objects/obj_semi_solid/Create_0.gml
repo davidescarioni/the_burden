@@ -13,16 +13,7 @@ miny=y;
 maxx=x+sprite_width
 i=0;
 
-for (i=0; i<250; i++) {
-	minx=startx-i;
-	if place_meeting(startx-i,y,obj_solid) {
-		break;
-	}
-}
-
-for (i=0; i<250; i++) {
-	maxx=startx+i;
-	if place_meeting(startx+i,y,obj_solid) {
-		break;
-	}
+left_d = 0;
+while !(instance_place(x+left_d,y,obj_solid)) {
+	left_d--;
 }

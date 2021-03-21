@@ -201,6 +201,9 @@ if (has_shell) {
 		} else {
 			image_index = 0;
 		}
+		if (vsp>0) && onWall {
+			sprite_index = spr_player_wall
+		}
 	} else {
 		image_speed = 1;
 		if (hsp==0) {
@@ -217,6 +220,9 @@ if (has_shell) {
 			image_index = 1;
 		} else {
 			image_index = 0;
+		}
+		if (vsp>0) && onWall {
+			sprite_index = spr_player_nake_wall
 		}
 	} else {
 		image_speed = 1;

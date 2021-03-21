@@ -16,6 +16,7 @@ switch(movedir) {
 		hsp = movespd * dir;
 		
 		var wallCollision = place_meeting(x+hsp,y,obj_solid);
+
 		if (wallCollision) {
 			while (!place_meeting(x+hsp,y,obj_solid)) {
 				x+=dir;

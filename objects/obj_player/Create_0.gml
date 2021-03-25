@@ -11,6 +11,11 @@ ladder = false;
 d_to_ladder = 5;
 text=""
 state = "shellState"
+dust = false;
+do_dust = true;
+dust_time_wall = 10
+dust_time_ground = 5
+dust_time = 5;
 
 // Double Jump Lock
 move_lock = false;

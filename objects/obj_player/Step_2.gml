@@ -8,6 +8,10 @@ onGround = place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_semi_solid)
 #region Movement
 if (!move_lock) {
 	move = kRight - kLeft;
+	if (move != 0) && (onGround) {
+		dust = true;
+		dust_time = dust_time_ground
+	}
 
 	//Jump
 	if (kJump) {
@@ -67,26 +71,31 @@ if (!launch) {
 
 if (vsp>0) && onWall {
 	vsp = vsp*2/3;
+	dust = true;
+	dust_time = dust_time_wall;
+} 
+if onWall && onGround{
+	dust = false;
 }
 #endregion
 
 #region Ladders / Scale
 if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
 	_inst = instance_place(x,y,obj_ladder);
-	text = x - (_inst.x) 
 	if abs(x - (_inst.x)) <= d_to_ladder {
-		var s = 1; //hsp sign
-		if (x<=_inst.x) {
-			s = 1;
-		}
-		if (x>_inst.x) {
-			s=-1;
-		}
-		hsp = .5*s;
-		vsp = 0;
-		move_lock = true;
-	}
-	if (x==_inst.x) {
+	// TODO: FIX
+	//	var s = 1; //hsp sign
+	//	if (x<=_inst.x) {
+	//		s = 1;
+	//	}
+	//	if (x>_inst.x) {
+	//		s=-1;
+	//	}
+	//	hsp = .5*s;
+	//	vsp = 0;
+	//	move_lock = true;
+	//}
+	//if (x==_inst.x) {
 		hsp = 0;
 		ladder = true;
 		move_lock = false;
@@ -193,23 +202,28 @@ draw_xscale = lerp(draw_xscale, 1, .1)
 draw_yscale = lerp(draw_yscale, 1, .1)
 
 if (has_shell) {
-	if (!onGround) {
-		sprite_index = spr_player_jump;
-		image_speed = 0;
-		if (sign(vsp) > 0) {
-			image_index = 1;
-		} else {
-			image_index = 0;
-		}
-		if (vsp>0) && onWall {
-			sprite_index = spr_player_wall
-		}
+	if (ladder) {
+		sprite_index = spr_player_ladder;
+		image_index = 4
 	} else {
-		image_speed = 1;
-		if (hsp==0) {
-			sprite_index = spr_player_idle;
+		if (!onGround) {
+			sprite_index = spr_player_jump;
+			image_speed = 0;
+			if (sign(vsp) > 0) {
+				image_index = 1;
+			} else {
+				image_index = 0;
+			}
+			if (vsp>0) && onWall {
+				sprite_index = spr_player_wall
+			}
 		} else {
-			sprite_index = spr_player_run;
+			image_speed = 1;
+			if (hsp==0) {
+				sprite_index = spr_player_idle;
+			} else {
+				sprite_index = spr_player_run;
+			}
 		}
 	}
 } else {
@@ -236,6 +250,15 @@ if (has_shell) {
 
 if (hsp!=0) {
 	image_xscale = sign(hsp);
+}
+#endregion
+
+#region Sfx
+if (dust) {
+	if (do_dust) {
+		alarm[1] = dust_time;
+		do_dust = false;
+	}
 }
 #endregion
 

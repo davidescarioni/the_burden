@@ -4,3 +4,5 @@ sprite_index = sprite;
 active = true;
 //movedir = "vertical";
 //movespd = .5;
+hsp = 0;
+vsp = 0;

@@ -1,7 +1,7 @@
 if instance_exists(obj_player) {
 	//if (obj_player.ladder) {
 		if (movedir=="horizontal") {
-			hsp = xstart-abs((left_d+1)/2)+sin(current_time/800)*abs(left_d/2);
+			x = xstart-abs((left_d+1)/2)+sin(current_time/800)*abs(left_d/2);
 			//hsp = movespd * dir;
 			
 			//if (dir==1) {
@@ -22,12 +22,14 @@ if instance_exists(obj_player) {
 			//	}
 			//	dir*=-1;
 			//}
-			x=hsp
+			//x=hsp
 	
 			with (obj_player) {
 				if (!place_meeting(x+other.hsp,y,obj_solid)) {
 					if (place_meeting(x,y+1,other) && !place_meeting(x,y,other)) {
-						x+=other.hsp;
+						//x+=other.hsp;
+						delta = other.x - other.xprevious
+						x+=delta
 					}
 				}
 			}

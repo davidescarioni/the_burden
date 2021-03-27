@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_semi_solid_wood","path":"sprites/spr_semi_solid_wood/spr_semi_solid_wood.yy",},"order":17,},
+    {"id":{"name":"spr_start_platform","path":"sprites/spr_start_platform/spr_start_platform.yy",},"order":25,},
     {"id":{"name":"obj_signpost","path":"objects/obj_signpost/obj_signpost.yy",},"order":9,},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},"order":1,},
     {"id":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"order":4,},
@@ -72,6 +73,7 @@
     {"id":{"name":"spr_player_nake_wall","path":"sprites/spr_player_nake_wall/spr_player_nake_wall.yy",},"order":9,},
     {"id":{"name":"scribble_font_add_from_sprite","path":"scripts/scribble_font_add_from_sprite/scribble_font_add_from_sprite.yy",},"order":2,},
     {"id":{"name":"__scribble_gc_collect","path":"scripts/__scribble_gc_collect/__scribble_gc_collect.yy",},"order":8,},
+    {"id":{"name":"spr_start_block","path":"sprites/spr_start_block/spr_start_block.yy",},"order":24,},
     {"id":{"name":"__scribble_config_macros","path":"scripts/__scribble_config_macros/__scribble_config_macros.yy",},"order":2,},
     {"id":{"name":"snd_landing","path":"sounds/snd_landing/snd_landing.yy",},"order":2,},
     {"id":{"name":"scr_menu","path":"scripts/scr_menu/scr_menu.yy",},"order":4,},

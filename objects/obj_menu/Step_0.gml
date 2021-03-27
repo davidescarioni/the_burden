@@ -38,7 +38,7 @@ if (inputting) {
 			break;
 		case menu_element_type.toggle:
 			var hinput = keyboard_check_pressed(global.key_right) - keyboard_check_pressed(global.key_left)
-			show_debug_message("here")
+
 			if (hinput != 0) {
 				// TODO: audio
 				ds_grid[# 3, menu_option[page]] += hinput;

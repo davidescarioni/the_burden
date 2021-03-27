@@ -11,7 +11,6 @@ if (place_meeting(x,y+1,obj_semi_solid) && !place_meeting(x,y,obj_semi_solid)) {
 	var item = instance_place(x,y+1,obj_semi_solid)
 	hsp=item.hsp;
 	vsp=item.vsp;
-	show_debug_message("VSP: "+string(vsp))
 }
 
 x += hsp;

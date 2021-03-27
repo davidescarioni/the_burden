@@ -7,3 +7,4 @@ if !taken {
 	timer++;
 }
 
+if instance_exists(item) item.y = y;

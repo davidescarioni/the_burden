@@ -401,3 +401,8 @@ if kReset {
 	room_restart();
 }
 #endregion
+
+#region Light
+light.x = x;
+light.y = y+2;
+#endregion

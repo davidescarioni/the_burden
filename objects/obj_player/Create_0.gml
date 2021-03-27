@@ -37,3 +37,7 @@ ii = 0
 // Camera set
 oCam = noone;
 oldCam = noone;
+
+light = instance_create_layer(x,y,"Camera",obj_lighting_cutout);
+light.image_xscale = 1.5
+light.image_yscale = 1.5

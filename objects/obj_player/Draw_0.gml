@@ -5,4 +5,14 @@ if (launch) {
 }
 
 //Draw Turtles
-draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * draw_xscale, draw_yscale, image_angle, image_blend, image_alpha)
+draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * draw_xscale, draw_yscale, image_angle, image_blend, image_alpha);
+
+//Draw Respawn Circle
+if drawCircle && drawCircleDim > 0 {
+	draw_set_color(c_black);
+	draw_circle(x,y,drawCircleDim,false);
+	drawCircleDim-=10;
+} else {
+	drawCircleDim = 250;
+	drawCircle = false;
+}

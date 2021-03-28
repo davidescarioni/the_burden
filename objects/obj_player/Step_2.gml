@@ -189,7 +189,7 @@ if (place_meeting(x,y+vsp,obj_spring) && vsp > 0) {
 	while (!place_meeting(x,y+sign(vsp),obj_spring)) {
 		y+=sign(vsp)
 	}
-	vsp = jumpsp*1.5;
+	vsp = inst.jumpPower;
 }
 
 y += vsp;
@@ -365,11 +365,12 @@ if instance_exists(obj_room_camera) {
 				camera = other.oCam;
 				
 				cwidth = camera.camera_width * camera.image_xscale
+				cheight = camera.camera_height * camera.image_yscale
 
 				xmin = camera.x + view_w_half;
-				ymin = camera.y + view_w_half;
+				ymin = camera.y + view_h_half;
 				xmax = camera.x + cwidth - view_w_half;
-				ymax = camera.y + camera.camera_height - view_h_half;
+				ymax = camera.y + cheight - view_h_half;
 			
 				// Force the camera to stay inside the obj camera room
 				x = clamp(x,xmin,xmax);
@@ -399,4 +400,11 @@ if kReset {
 #region Light
 light.x = x;
 light.y = y+2;
+#endregion
+
+#region Death
+if place_meeting(x,y,obj_enemies) {
+	move_lock = true;
+	death = true;
+}
 #endregion

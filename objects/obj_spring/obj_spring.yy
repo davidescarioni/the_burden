@@ -29,7 +29,11 @@
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_spring","path":"objects/obj_spring/obj_spring.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_spring","path":"objects/obj_spring/obj_spring.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [],
+  "properties": [
+    {"varType":0,"value":"-5.5","rangeEnabled":false,"rangeMin":-5.0,"rangeMax":-6.0,"listItems":[
+        "\"Item 0\"",
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"jumpPower","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "Items",

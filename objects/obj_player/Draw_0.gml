@@ -16,3 +16,12 @@ if drawCircle && drawCircleDim > 0 {
 	drawCircleDim = 250;
 	drawCircle = false;
 }
+
+if death {
+	draw_set_color(c_black);
+	draw_circle(x,y,drawDeathCircleDim,false);
+	drawDeathCircleDim+=10;
+	if (drawDeathCircleDim >= drawCircleDim) {
+		room_restart();
+	}
+}

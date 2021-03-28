@@ -45,3 +45,5 @@ light.image_yscale = 1.5
 //Death
 drawCircle = false;
 drawCircleDim = 250;
+death = false;
+drawDeathCircleDim = 0;

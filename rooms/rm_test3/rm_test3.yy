@@ -55,6 +55,9 @@
             {"propertyId":{"name":"obj_one","path":"objects/obj_activator/obj_activator.yy",},"objectId":{"name":"obj_activator","path":"objects/obj_activator/obj_activator.yy",},"value":"inst_1901E4B8","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_activator","path":"objects/obj_activator/obj_activator.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":528.0,"y":320.0,"resourceVersion":"1.0","name":"inst_41247C2E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_collectible","path":"objects/obj_collectible/obj_collectible.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":560.0,"y":324.0,"resourceVersion":"1.0","name":"inst_A25478A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"obj_one","path":"objects/obj_press_button/obj_press_button.yy",},"objectId":{"name":"obj_press_button","path":"objects/obj_press_button/obj_press_button.yy",},"value":"inst_3B9D9218","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_press_button","path":"objects/obj_press_button/obj_press_button.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1204.0,"y":240.0,"resourceVersion":"1.0","name":"inst_7B6F6A07","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Activators","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_spine","path":"objects/obj_spine/obj_spine.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1044.0,"y":268.0,"resourceVersion":"1.0","name":"inst_539D6617","tags":[],"resourceType":"GMRInstance",},
@@ -1662,6 +1665,7 @@
     {"name":"inst_622EBA51","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_53F8FB42","path":"rooms/rm_test3/rm_test3.yy",},
     {"name":"inst_5169FE04","path":"rooms/rm_test3/rm_test3.yy",},
+    {"name":"inst_7B6F6A07","path":"rooms/rm_test3/rm_test3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

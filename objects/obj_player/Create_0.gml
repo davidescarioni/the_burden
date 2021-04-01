@@ -38,9 +38,11 @@ ii = 0
 oCam = noone;
 oldCam = noone;
 
-light = instance_create_layer(x,y,"Camera",obj_lighting_cutout);
-light.image_xscale = 1.5
-light.image_yscale = 1.5
+if (room==rm_lv1) {
+	light = instance_create_layer(x,y,"Camera",obj_lighting_cutout);
+	light.image_xscale = 1.5
+	light.image_yscale = 1.5
+}
 
 //Death
 drawCircle = false;

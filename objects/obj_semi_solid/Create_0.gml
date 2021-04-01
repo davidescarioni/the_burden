@@ -16,4 +16,7 @@ i=0;
 left_d = 0;
 while !(instance_place(x+left_d,y,obj_solid)) {
 	left_d--;
+	if left_d < 256 {
+		break;
+	}
 }

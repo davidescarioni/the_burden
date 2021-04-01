@@ -398,8 +398,10 @@ if kReset {
 #endregion
 
 #region Light
-light.x = x;
-light.y = y+2;
+if (room==rm_lv1) {
+	light.x = x;
+	light.y = y+2;
+}
 #endregion
 
 #region Death

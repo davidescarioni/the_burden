@@ -45,6 +45,7 @@
     {"id":{"name":"spr_player_wall","path":"sprites/spr_player_wall/spr_player_wall.yy",},"order":8,},
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},"order":0,},
     {"id":{"name":"__scribble_class_page","path":"scripts/__scribble_class_page/__scribble_class_page.yy",},"order":6,},
+    {"id":{"name":"spr_thumb_turtle","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},"order":0,},
     {"id":{"name":"__scribble_config_default_template","path":"scripts/__scribble_config_default_template/__scribble_config_default_template.yy",},"order":1,},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},"order":4,},
     {"id":{"name":"scribble_font_set_style_family","path":"scripts/scribble_font_set_style_family/scribble_font_set_style_family.yy",},"order":3,},
@@ -185,6 +186,7 @@
     {"folderPath":"folders/Sprites/Enemies.yy","order":4,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemies.yy","order":5,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Texts.yy","order":8,"resourceVersion":"1.0","name":"Texts","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Thumbnails.yy","order":6,"resourceVersion":"1.0","name":"Thumbnails","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

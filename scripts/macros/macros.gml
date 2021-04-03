@@ -1,0 +1,2 @@
+#macro RESOLUTION_W 256
+#macro RESOLUTION_H 144

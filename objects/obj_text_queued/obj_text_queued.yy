@@ -1,9 +1,9 @@
 {
   "spriteId": null,
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Texts",
+    "path": "folders/Objects/Texts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_init",
+  "name": "obj_text_queued",
   "tags": [],
   "resourceType": "GMObject",
 }

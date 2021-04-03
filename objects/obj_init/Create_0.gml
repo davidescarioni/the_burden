@@ -15,15 +15,21 @@ global.key_eject = ord("X");
 global.key_launch = ord("A");
 global.key_lift = ord("C");
 
+//Audio
 global.volume_effects = 1;
 global.volume_music = 1;
 
+//Checkpoints
 global.lastRoom = "";
 global.lastCheckpointX = 0;
 global.lastCheckpointY = 0;
 
 //Keys
 global.roomOneKey = false;
+
+//Texts
+global.textSpeed = .75;
+surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
 
 /// Load saved settings
 load_data();

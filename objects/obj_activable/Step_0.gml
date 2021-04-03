@@ -35,13 +35,31 @@ switch(movedir) {
 	break;
 	
 	case "vertical":
+		//vsp = movespd * dir;
+		//var wallCollision = place_meeting(x,y+vsp,obj_solid);
+		
+		//if (wallCollision) {
+		//	while (!place_meeting(x,y+vsp,obj_solid)) {
+		//		y+=dir;
+		//	}
+		//	vsp=0;
+		//}
+		
+		//with (obj_player) {
+		//	if (!place_meeting(x,y+other.vsp,obj_solid)) {
+		//		if (place_meeting(x,y+abs(other.vsp),other) && !place_meeting(x,y,other)) {
+		//			y+=other.vsp;
+		//		}
+		//	}
+		//}
+		
+		//y+=vsp
 		vsp = movespd * dir;
-		var wallCollision = place_meeting(x,y+vsp,obj_solid);
+		
+		//var heightOffset = sprite_get_height(spr_player_idle)
+		var wallCollision = place_meeting(x,y+dir,obj_solid);
 		
 		if (wallCollision) {
-			while (!place_meeting(x,y+vsp,obj_solid)) {
-				y+=dir;
-			}
 			vsp=0;
 		}
 		
@@ -53,7 +71,16 @@ switch(movedir) {
 			}
 		}
 		
+		with (obj_shell) {
+			if (!place_meeting(x,y+other.vsp,obj_solid)) {
+				if (place_meeting(x,y+abs(other.vsp),other) && !place_meeting(x,y,other)) {
+					y+=other.vsp;
+				}
+			}
+		}
+		
 		y+=vsp 
+		
 	break;
 }
 

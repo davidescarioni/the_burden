@@ -7,7 +7,7 @@ if (checkpoint) {
 }
 
 if (instance_exists(obj_player)) {
-	if (place_meeting(x,y,obj_player)) {
+	if (place_meeting(x,y,obj_player) && obj_player.has_shell) {
 		global.lastRoom = room;
 		global.lastCheckpointX = obj_player.x;
 		global.lastCheckpointY = obj_player.y;

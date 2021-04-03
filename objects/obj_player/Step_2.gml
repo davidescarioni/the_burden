@@ -155,6 +155,16 @@ if place_meeting(x+hsp,y,obj_solid)
     }
 }
 
+if instance_exists(obj_block_wshell) {
+	if place_meeting(x+hsp,y,obj_block_wshell) {
+		var block = instance_place(x+hsp,y,obj_block_wshell);
+		if !block.player_has_shell {
+		    while (!place_meeting(x+sign(hsp),y,obj_block_wshell)) x+=sign(hsp);
+		    hsp = 0;
+		}
+	}
+}
+
 
 //if place_meeting(x+hsp,y,obj_spring) {
 //    while (!place_meeting(x+sign(hsp),y,obj_spring)) {
@@ -180,7 +190,7 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 	vsp = 0;
 }
 
-if (place_meeting(x,y+vsp,obj_spring) && vsp > 0) {
+if (place_meeting(x,y+vsp,obj_spring) && vsp > 0 && !place_meeting(x,y,obj_spring)) {
 	var inst = instance_place(x,y+vsp,obj_spring);
 	with (inst) {
 		coll = true;
@@ -264,22 +274,24 @@ if (dust) {
 
 #region Remove shell
 if kEject {
-	if has_shell {
-		has_shell = false
-		if !layer_exists("Shell") {
-			layer_create(1,"Shell");
+	if (instance_exists(obj_block_wshell) && !place_meeting(x,y,obj_block_wshell)) || !instance_exists(obj_block_wshell) {
+		if has_shell {
+			has_shell = false
+			if !layer_exists("Shell") {
+				layer_create(1,"Shell");
+			}
+			instance_create_layer(x,y,"Shell",obj_shell);
+		} else if !(has_shell) && (distance_to_object(obj_shell) < 5) {
+			has_shell = true;
+			with (obj_shell) {
+				instance_destroy(obj_shell);
+			}
 		}
-		instance_create_layer(x,y,"Shell",obj_shell);
-	} else if !(has_shell) && (distance_to_object(obj_shell) < 5) {
-		has_shell = true;
-		with (obj_shell) {
-			instance_destroy(obj_shell);
-		}
-	}
 	
-	if (launch) {
-		launch = false;
-		move_lock = false;
+		if (launch) {
+			launch = false;
+			move_lock = false;
+		}
 	}
 }
 #endregion

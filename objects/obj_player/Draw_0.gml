@@ -22,6 +22,6 @@ if death {
 	draw_circle(x,y,drawDeathCircleDim,false);
 	drawDeathCircleDim+=10;
 	if (drawDeathCircleDim >= drawCircleDim) {
-		//room_restart();
+		room_restart();
 	}
 }

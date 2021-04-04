@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_dust",
-    "path": "sprites/spr_dust/spr_dust.yy",
+    "name": "spr_semi_solid_wood31",
+    "path": "sprites/spr_semi_solid_wood31/spr_semi_solid_wood31.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,18 +21,26 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [],
+  "properties": [
+    {"varType":6,"value":"\"\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+        "\"\"",
+        "\"horizontal\"",
+        "\"vertical\"",
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"movedir","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"sprite_index","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMSprite",
+      ],"resourceVersion":"1.0","name":"sprite_index","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects",
-    "path": "folders/Objects/Effects.yy",
+    "name": "Blocks",
+    "path": "folders/Objects/Blocks.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_dust",
+  "name": "obj_semi_solid",
   "tags": [],
   "resourceType": "GMObject",
 }

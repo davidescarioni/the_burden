@@ -1,7 +1,7 @@
 if instance_exists(obj_player) {
 	//if (obj_player.ladder) {
 		if (movedir=="horizontal") {
-			x = startx-abs((left_d+1)/2)+sin(current_time/800)*abs(left_d/2);
+			x = xstart-abs((left_d+1)/2)+sin(current_time/800)*abs(left_d/2);
 			//hsp = movespd * dir;
 			
 			//if (dir==1) {

@@ -23,5 +23,7 @@ if death {
 	drawDeathCircleDim+=10;
 	if (drawDeathCircleDim >= drawCircleDim) {
 		room_restart();
+		x = global.lastCheckpointX;
+		y = global.lastCheckpointY;
 	}
 }

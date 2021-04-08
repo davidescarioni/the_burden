@@ -97,6 +97,7 @@ if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
 	//}
 	//if (x==_inst.x) {
 		hsp = 0;
+		x=_inst.x;
 		ladder = true;
 		move_lock = false;
 	}
@@ -214,7 +215,7 @@ draw_yscale = lerp(draw_yscale, 1, .1)
 if (has_shell) {
 	if (ladder) {
 		sprite_index = spr_player_ladder;
-		image_index = 4
+		if floor(image_index) == 4 image_speed = 0;
 	} else {
 		if (!onGround) {
 			sprite_index = spr_player_jump;

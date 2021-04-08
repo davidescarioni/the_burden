@@ -22,8 +22,9 @@ if death {
 	draw_circle(x,y,drawDeathCircleDim,false);
 	drawDeathCircleDim+=10;
 	if (drawDeathCircleDim >= drawCircleDim) {
-		room_restart();
 		x = global.lastCheckpointX;
 		y = global.lastCheckpointY;
+		instance_change(obj_player, true);
+		drawCircleDim = 0;
 	}
 }

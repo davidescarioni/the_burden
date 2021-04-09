@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_menu",
+  "name": "obj_start_menu",
   "tags": [],
   "resourceType": "GMObject",
 }

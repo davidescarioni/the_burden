@@ -1,6 +1,6 @@
 display_set_gui_size(global.view_width, global.view_height);
 
-/*enum menu_page {
+enum menu_page {
 	main,
 	settings,
 	audio,
@@ -16,7 +16,7 @@ enum menu_element_type {
 	shift,
 	toggle,
 	input
-}*/
+}
  
 // Create Menu Pages
 ds_menu_main = create_menu_page(

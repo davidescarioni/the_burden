@@ -27,8 +27,9 @@ global.lastCheckpointY = 0;
 //Keys
 global.roomOneKey = false;
 
-//Leve
+//Level
 global.maxLevel = 1;
+global.load = false;
 
 //Texts
 global.textSpeed = .75;
@@ -46,5 +47,5 @@ if !audio_group_is_loaded(audiogroup_soundeffects) {
 if !layer_exists("Pause") {
 	layer_create(10,"Pause");
 }
-if (room==rm_menu) instance_create_layer(x,y,"Pause",obj_start_menu)
+if (room==rm_menu) instance_create_layer(room_width/2,room_height/2,"Pause",obj_title)
 else instance_create_layer(x,y,"Pause",obj_menu)

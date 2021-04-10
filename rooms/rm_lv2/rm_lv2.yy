@@ -797,8 +797,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Livello 2",
+    "path": "folders/Rooms/Livello 2.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_lv2",

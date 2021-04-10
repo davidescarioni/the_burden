@@ -2110,8 +2110,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Livello 1",
+    "path": "folders/Rooms/Livello 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_lv1",

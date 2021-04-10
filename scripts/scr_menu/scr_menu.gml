@@ -35,7 +35,7 @@ function resume_game() {
 }
 
 function new_game() {
-	room_goto(rm_lv1);
+	room_goto(rm_cutscene_lvl1);
 	show_debug_message("Nuova Partita");
 }
 

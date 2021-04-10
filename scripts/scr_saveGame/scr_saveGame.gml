@@ -31,6 +31,7 @@ function loadGame() {
 		}
 	}
 	
+	global.load = true;
 	if (room != global.lastRoom) {
 		room_goto(global.lastRoom);
 	}

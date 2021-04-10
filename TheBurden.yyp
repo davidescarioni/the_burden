@@ -163,8 +163,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_lv2","path":"rooms/rm_lv2/rm_lv2.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_lv2","path":"rooms/rm_lv2/rm_lv2.yy",},},
     {"roomId":{"name":"rm_lv1","path":"rooms/rm_lv1/rm_lv1.yy",},},
     {"roomId":{"name":"rm_test4","path":"rooms/rm_test4/rm_test4.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},

@@ -27,13 +27,16 @@ global.lastCheckpointY = 0;
 //Keys
 global.roomOneKey = false;
 
+//Leve
+global.maxLevel = 1;
+
 //Texts
 global.textSpeed = .75;
 surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
 
 /// Load saved settings
 load_data();
-loadGame();
+//loadGame();
 
 if !audio_group_is_loaded(audiogroup_soundeffects) {
 	audio_group_load(audiogroup_soundeffects)
@@ -43,4 +46,5 @@ if !audio_group_is_loaded(audiogroup_soundeffects) {
 if !layer_exists("Pause") {
 	layer_create(10,"Pause");
 }
-instance_create_layer(x,y,"Pause",obj_menu)
+if (room==rm_menu) instance_create_layer(x,y,"Pause",obj_start_menu)
+else instance_create_layer(x,y,"Pause",obj_menu)

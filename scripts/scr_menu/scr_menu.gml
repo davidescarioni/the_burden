@@ -27,6 +27,19 @@ function create_menu_page(){
 
 function resume_game() {
 	
+	save_options();
+
+	show_debug_message("Global Saved")
+	
+	global.pause = false;
+}
+
+function new_game() {
+	room_goto(rm_lv1);
+	show_debug_message("Nuova Partita");
+}
+
+function save_options() {
 	//Make Save Array
 
 	var _saveData = array_create(0);
@@ -51,10 +64,6 @@ function resume_game() {
 	buffer_write(_buffer, buffer_string, _string);
 	buffer_save(_buffer,"settings.burden"); 
 	buffer_delete(_buffer);
-
-	show_debug_message("Global Saved")
-	
-	global.pause = false;
 }
 
 function save_data() {
@@ -86,6 +95,22 @@ function load_data() {
 	}
 }
 
+function reset_settings() {
+	global.key_enter = vk_enter;
+	global.key_left = vk_left;
+	global.key_right = vk_right;
+	global.key_up = vk_up;
+	global.key_down = vk_down;
+	global.key_jump = ord("Z");
+	global.key_eject = ord("X");
+	global.key_launch = ord("A");
+	global.key_lift = ord("C");
+
+	global.volume_effects = 1;
+	global.volume_music = 1;
+	save_options();
+}
+
 function exit_game() {
 	game_end();
 }
@@ -111,13 +136,13 @@ function change_volume() {
 function change_resolution() {
 	switch (argument0) {
 		case 0:
-			 window_set_size(100,100);
+			 window_set_size(256,144);
 			 break;
 		case 1:
-			window_set_size(200,200);
+			window_set_size(512,288);
 			 break;
 		case 2:
-			window_set_size(300,300);
+			window_set_size(1024,576);
 			 break;
 	}
 	window_center();

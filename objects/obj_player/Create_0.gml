@@ -49,3 +49,6 @@ drawCircle = false;
 drawCircleDim = 250;
 death = false;
 drawDeathCircleDim = 0;
+
+x = global.lastCheckpointX;
+y = global.lastCheckpointY;

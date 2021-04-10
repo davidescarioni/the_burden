@@ -1,16 +1,18 @@
-if !(global.pause) exit;
-
 var gwidth = global.view_width;
 var gheight = global.view_height;
 
 var ds_grid = menu_pages[page];
 var ds_height = ds_grid_height(ds_grid);
 
-var y_buffer = 32;
+var y_buffer = 16;
 var x_buffer = 16;
 
+var start_y = (gheight/2) - ((((ds_height-1)/2)*y_buffer));
+
+draw_set_font(fnt_game)
+
 // Sfondo Menu
-var c = c_red;
+var c = c_blue;
 draw_rectangle_color(0, 0, gwidth, gheight,c,c,c,c, false);
 
 // Elementi a sinistra del menu
@@ -20,7 +22,7 @@ draw_set_halign(fa_left);
 var ltx = 20;
 
 for (var yy = 0; yy<(ds_height); yy++) {
-	lty = 20 + (yy*y_buffer);
+	lty = start_y + (yy*y_buffer);
 	c = c_white;
 	
 	if (yy == menu_option[page]) {
@@ -38,7 +40,7 @@ var rty;
 
 yy = 0;
 repeat(ds_height) {
-	rty = 20 + (yy*y_buffer);
+	rty = 10 + (yy*y_buffer);
 	switch (ds_grid[# 1, yy]) {
 		case menu_element_type.shift:
 			var current_val = ds_grid[# 3, yy];
@@ -68,7 +70,7 @@ repeat(ds_height) {
 			c = c_white;
 			
 			if (inputting && yy = menu_option[page]) {
-				c = c_yellow;
+				c = c_orange;
 			}
 			
 			var xpos = room_width / 2;
@@ -106,10 +108,10 @@ repeat(ds_height) {
 			var string_val;
 			
 			switch(current_val) {
-				case vk_up: string_val = "UP"; break;
-				case vk_left: string_val = "LEFT"; break;
-				case vk_right: string_val = "RIGHT"; break;
-				case vk_down: string_val = "DOWN"; break;
+				case vk_up: string_val = "FRECCIA SU"; break;
+				case vk_left: string_val = "FRECCIA SINISTRA"; break;
+				case vk_right: string_val = "FRECCIA DESTRA"; break;
+				case vk_down: string_val = "FRECCIA GIU"; break;
 				default: string_val = chr(current_val) break;
 			}
 			

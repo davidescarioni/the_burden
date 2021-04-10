@@ -30,6 +30,11 @@ function loadGame() {
 			variable_global_set(string(_loadEntity.variable), _loadEntity.value)
 		}
 	}
+	
+	if (room != global.lastRoom) {
+		room_goto(global.lastRoom);
+	}
+	
 }
 
 function saveCollectibles() {

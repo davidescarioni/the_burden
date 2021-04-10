@@ -1,6 +1,24 @@
-newTextBox("QUESTO E' UN, Questo è un testo di prova, Questo è un testo di prova, Questo è un testo di prova, Questo è un testo di prova, Questo è un testo di prova",c_blue);
-newTextBox("Anche questo è un testo di prova",c_orange);
-newTextBox("E anche questo è un testo di prova",c_green);
-show_debug_message("AAAAAAAAAAAAAAA");
+newTextBox("$%&$%&!!!",c_blue,spr_thumb_turtle);
+newTextBox("Cosa è successo, nipote?",c_orange,spr_thumb_turtle);
+newTextBox("I miei amici conigli sono andati tutti a giocare giù in paese..",c_green,spr_thumb_turtle);
+newTextBox("E..",c_green,spr_thumb_turtle);
+newTextBox("E volevo andare con loro, ma questo grosso fardello mi impedisce di saltare!",c_green,spr_thumb_turtle);
+newTextBox("Quale fardello?",c_green,spr_thumb_turtle);
+newTextBox("Il guscio, no? E' grosso, pesante e inutile!",c_green,spr_thumb_turtle);
+newTextBox("Come vorrei non averlo..",c_green,spr_thumb_turtle);
+newTextBox("Ma sei una tartaruga, è parte di te!",c_green,spr_thumb_turtle);
+newTextBox("Lo so nonno.. è solo che a volte non vorrei proprio esserlo..",c_green,spr_thumb_turtle);
+newTextBox("Nipote..",c_green,spr_thumb_turtle);
+newTextBox("Lo so..",c_green,spr_thumb_turtle);
+newTextBox("Ma parliamo di cose allegre.. cosa regali a nonna per il compleanno?",c_green,spr_thumb_turtle);
+newTextBox("Aaaa! Mi ero proprio scordato!! Hai dei suggerimenti?",c_green,spr_thumb_turtle);
+newTextBox("Perchè non le prepari il suo dolce preferito?",c_green,spr_thumb_turtle);
+newTextBox("I babbà?",c_green,spr_thumb_turtle);
+newTextBox("Ma quali babbà, i tartascotti!",c_green,spr_thumb_turtle);
+newTextBox("Tartascotti? Ma non saprei da dove cominciare..",c_green,spr_thumb_turtle);
+newTextBox("Ti aiuto io, ho una ricetta fantastica!",c_green,spr_thumb_turtle);
+newTextBox("Corri giù in paese a prendere il primo ingrediente",c_green,spr_thumb_turtle);
+newTextBox("Ma questa volta non seguire i conigli, prendi la scorciatoia dietro casa",c_green,spr_thumb_turtle);
+newTextBox("Scorciatoria??",c_green,spr_thumb_turtle);
 
 can_escape = true;

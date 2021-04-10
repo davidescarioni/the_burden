@@ -50,8 +50,8 @@ drawCircleDim = 250;
 death = false;
 drawDeathCircleDim = 0;
 
-if (global.load) {
-	x = global.lastCheckpointX;
-	y = global.lastCheckpointY;
-	global.load = false;
-}
+//if (global.load) {
+//	x = global.lastCheckpointX;
+//	y = global.lastCheckpointY;
+//	global.load = false;
+//}

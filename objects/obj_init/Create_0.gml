@@ -28,7 +28,7 @@ global.lastCheckpointY = 0;
 global.roomOneKey = false;
 
 //Level
-global.maxLevel = 1;
+global.maxLevel = 0;
 global.load = false;
 
 //Texts
@@ -37,7 +37,7 @@ surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
 
 /// Load saved settings
 load_data();
-//loadGame();
+loadDataGame();
 
 if !audio_group_is_loaded(audiogroup_soundeffects) {
 	audio_group_load(audiogroup_soundeffects)

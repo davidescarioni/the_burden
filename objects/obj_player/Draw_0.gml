@@ -20,11 +20,12 @@ if drawCircle && drawCircleDim > 0 {
 if death {
 	draw_set_color(c_black);
 	draw_circle(x,y,drawDeathCircleDim,false);
-	drawDeathCircleDim+=10;
+	drawDeathCircleDim+=5;
 	if (drawDeathCircleDim >= drawCircleDim) {
 		x = global.lastCheckpointX;
 		y = global.lastCheckpointY;
 		instance_change(obj_player, true);
-		drawCircleDim = 0;
+		death = false;
+		drawDeathCircleDim = 0;
 	}
 }

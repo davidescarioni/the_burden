@@ -1,6 +1,7 @@
 function saveGame() {
 	var _saveData = array_create(0);
 	
+	save_data(_saveData, "maxLevel");
 	save_data(_saveData, "lastCheckpointX");
 	save_data(_saveData, "lastCheckpointY");
 	save_data(_saveData, "lastRoom");
@@ -14,6 +15,22 @@ function saveGame() {
 	saveCollectibles();
 
 	show_debug_message("Game Saved");
+}
+
+function loadDataGame() {
+	if file_exists("game.burden") {
+		var _buffer = buffer_load("game.burden");
+		var _string = buffer_read( _buffer, buffer_string);
+		buffer_delete(_buffer);
+	
+		var _loadData = json_parse(_string);
+		
+		while (array_length(_loadData) > 0) {
+			var _loadEntity = array_pop(_loadData);
+			show_debug_message(_loadEntity)
+			variable_global_set(string(_loadEntity.variable), _loadEntity.value)
+		}
+	}
 }
 
 function loadGame() {

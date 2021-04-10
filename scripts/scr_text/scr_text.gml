@@ -1,4 +1,4 @@
-function newTextBox(text,color){
+function newTextBox(text,color,sprite){
 	var _obj;
 	if instance_exists(obj_text) {
 		_obj = obj_text_queued;
@@ -9,6 +9,7 @@ function newTextBox(text,color){
 	with (instance_create_layer(0,0,"Player",_obj)) {
 		message = text;
 		col = color;
+		spr = sprite;
 		if instance_exists(other) {
 			originInstance = other.id;
 		} else {

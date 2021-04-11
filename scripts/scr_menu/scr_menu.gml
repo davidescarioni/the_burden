@@ -39,6 +39,10 @@ function new_game() {
 	show_debug_message("Nuova Partita");
 }
 
+function sel_level() {
+	room_goto(rm_sel_level);
+}
+
 function save_options() {
 	//Make Save Array
 

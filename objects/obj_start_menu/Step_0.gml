@@ -1,6 +1,6 @@
 input_up_p = keyboard_check_pressed(global.key_up);
 input_down_p = keyboard_check_pressed(global.key_down);
-input_enter_p = keyboard_check_pressed(global.key_enter) || keyboard_check_pressed(global.key_jump) ;
+input_enter_p = keyboard_check_released(global.key_enter) || keyboard_check_released(global.key_jump) ;
 
 var ds_grid = menu_pages[page];
 var ds_height = ds_grid_height(ds_grid);

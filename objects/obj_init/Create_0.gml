@@ -28,27 +28,21 @@ global.lastCheckpointY = 0;
 global.roomOneKey = false;
 
 //Level
-global.maxLevel = 0;
+global.maxLevel = 4;
 global.load = false;
 global.completeLevel1 = false;
-global.completeLevel2 = false;
+global.completeLevel2 = true;
 global.completeLevel3 = false;
+global.specialLevel = false;
 
 //Texts
 global.textSpeed = .75;
 surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
 
 /// Load saved settings
-load_data();
-loadDataGame();
+//load_data();
+//loadDataGame();
 
 if !audio_group_is_loaded(audiogroup_soundeffects) {
 	audio_group_load(audiogroup_soundeffects)
 }
-
-
-if !layer_exists("Pause") {
-	layer_create(10,"Pause");
-}
-if (room==rm_menu) instance_create_layer(room_width/2,room_height/2,"Pause",obj_title)
-else instance_create_layer(x,y,"Pause",obj_menu)

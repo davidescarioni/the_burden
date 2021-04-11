@@ -28,7 +28,7 @@ if (global.maxLevel==0) {
 	);
 } else if (global.maxLevel>=3) {
 	ds_menu_main = create_menu_page(
-		["SCEGLI LIVELLO", menu_element_type.script_runner, loadGame],
+		["SCEGLI LIVELLO", menu_element_type.script_runner, sel_level],
 		["CONTINUA", menu_element_type.script_runner, loadGame],
 		["NUOVA PARTITA", menu_element_type.script_runner, new_game],
 		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],

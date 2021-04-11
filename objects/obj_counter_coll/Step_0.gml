@@ -1,3 +1,3 @@
-if (counter_total == counter_taken) {
+if (count_total == count_taken) {
 	//TODO
 }

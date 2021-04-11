@@ -8,3 +8,10 @@ if !taken {
 }
 
 if instance_exists(item) item.y = y;
+
+if instance_exists(obj_counter_coll) {
+	if taken && !counted {
+		obj_counter_coll.count_taken += 1;
+		counted = true;
+	}
+}

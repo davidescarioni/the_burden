@@ -2,6 +2,9 @@ function saveGame() {
 	var _saveData = array_create(0);
 	
 	save_data(_saveData, "maxLevel");
+	save_data(_saveData, "completeLevel1");
+	save_data(_saveData, "completeLevel2");
+	save_data(_saveData, "completeLevel3");
 	save_data(_saveData, "lastCheckpointX");
 	save_data(_saveData, "lastCheckpointY");
 	save_data(_saveData, "lastRoom");

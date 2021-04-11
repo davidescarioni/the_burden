@@ -141,6 +141,7 @@
     {"id":{"name":"obj_slope_dx","path":"objects/obj_slope_dx/obj_slope_dx.yy",},"order":5,},
     {"id":{"name":"obj_spine","path":"objects/obj_spine/obj_spine.yy",},"order":0,},
     {"id":{"name":"__scribble_generate_model","path":"scripts/__scribble_generate_model/__scribble_generate_model.yy",},"order":9,},
+    {"id":{"name":"obj_counter_coll","path":"objects/obj_counter_coll/obj_counter_coll.yy",},"order":0,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":1,},
     {"id":{"name":"obj_text_queued","path":"objects/obj_text_queued/obj_text_queued.yy",},"order":1,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":6,},
@@ -216,6 +217,7 @@
     {"folderPath":"folders/Objects/Main Menu.yy","order":9,"resourceVersion":"1.0","name":"Main Menu","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Livello 1.yy","order":1,"resourceVersion":"1.0","name":"Livello 1","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Livello 2.yy","order":2,"resourceVersion":"1.0","name":"Livello 2","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Controllers.yy","order":13,"resourceVersion":"1.0","name":"Controllers","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -1,0 +1,1 @@
+draw_text(10,10,string(count_taken) + " / " + string(count_total));

@@ -30,6 +30,9 @@ global.roomOneKey = false;
 //Level
 global.maxLevel = 0;
 global.load = false;
+global.completeLevel1 = false;
+global.completeLevel2 = false;
+global.completeLevel3 = false;
 
 //Texts
 global.textSpeed = .75;

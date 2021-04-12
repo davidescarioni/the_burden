@@ -35,6 +35,8 @@ global.completeLevel2 = true;
 global.completeLevel3 = false;
 global.specialLevel = false;
 
+global.tasklvl1 = false;
+
 //Texts
 global.textSpeed = .75;
 surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)

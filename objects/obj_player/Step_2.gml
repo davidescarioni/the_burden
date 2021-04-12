@@ -1,9 +1,22 @@
+if buying exit;
+
 onGround = false;
 onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1, y, obj_solid) && !onGround;
 
 scr_input();
 
 onGround = place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_semi_solid);
+
+#region Enter Shop
+if place_meeting(x,y,obj_fakedoor) && (keyboard_check_released(global.key_enter) || keyboard_check_released(global.key_jump)) {
+	if (!buying) {
+		buying = true;
+		alarm[2]=room_speed;
+		move_lock = true;
+	}
+}
+
+#endregion
 
 #region Movement
 if (!move_lock) {

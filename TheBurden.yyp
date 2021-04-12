@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_semi_solid_wood","path":"sprites/spr_semi_solid_wood/spr_semi_solid_wood.yy",},"order":5,},
+    {"id":{"name":"obj_fakedoor","path":"objects/obj_fakedoor/obj_fakedoor.yy",},"order":10,},
     {"id":{"name":"spr_start_platform","path":"sprites/spr_start_platform/spr_start_platform.yy",},"order":11,},
     {"id":{"name":"obj_signpost","path":"objects/obj_signpost/obj_signpost.yy",},"order":0,},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},"order":1,},
@@ -88,6 +89,7 @@
     {"id":{"name":"spr_solid_activable","path":"sprites/spr_solid_activable/spr_solid_activable.yy",},"order":4,},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},"order":1,},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"order":8,},
+    {"id":{"name":"key_to_string","path":"scripts/key_to_string/key_to_string.yy",},"order":8,},
     {"id":{"name":"Methods_Quick_Reference","path":"notes/Methods_Quick_Reference/Methods_Quick_Reference.yy",},"order":6,},
     {"id":{"name":"spr_grandmother","path":"sprites/spr_grandmother/spr_grandmother.yy",},"order":0,},
     {"id":{"name":"obj_block_wshell","path":"objects/obj_block_wshell/obj_block_wshell.yy",},"order":8,},
@@ -145,9 +147,12 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"PlayerState","path":"notes/PlayerState/PlayerState.yy",},"order":9,},
     {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},"order":2,},
+    {"id":{"name":"spr_shop","path":"sprites/spr_shop/spr_shop.yy",},"order":2,},
     {"id":{"name":"spr_fake_square","path":"sprites/spr_fake_square/spr_fake_square.yy",},"order":13,},
     {"id":{"name":"spr_box_small","path":"sprites/spr_box_small/spr_box_small.yy",},"order":2,},
+    {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":3,},
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},"order":11,},
+    {"id":{"name":"obj_shop","path":"objects/obj_shop/obj_shop.yy",},"order":1,},
     {"id":{"name":"scr_saveGame","path":"scripts/scr_saveGame/scr_saveGame.yy",},"order":5,},
     {"id":{"name":"obj_slope_dx","path":"objects/obj_slope_dx/obj_slope_dx.yy",},"order":5,},
     {"id":{"name":"obj_spine","path":"objects/obj_spine/obj_spine.yy",},"order":0,},

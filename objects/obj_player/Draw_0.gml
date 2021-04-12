@@ -1,3 +1,5 @@
+if buying exit;
+
 if (launch) {
 	//Draw Arrow
 	ii+=.2

@@ -36,11 +36,14 @@ function resume_game() {
 
 function new_game() {
 	room_goto(rm_cutscene_lvl1);
-	show_debug_message("Nuova Partita");
 }
 
 function sel_level() {
 	room_goto(rm_sel_level);
+}
+
+function credits() {
+	room_goto(rm_credits);
 }
 
 function save_options() {

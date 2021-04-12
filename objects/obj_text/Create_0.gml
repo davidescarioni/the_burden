@@ -10,3 +10,6 @@ y2Target = RESOLUTION_H;
 
 lerpProgress = 0;
 textProgress = 0;
+
+
+maxWidth = x2-8-8-8-34;

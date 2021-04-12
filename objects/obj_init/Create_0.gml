@@ -1,5 +1,5 @@
 /// Initialize Scribble
-//scribble_font_add("fnt_default");
+scribble_font_add("fnt_normal");
 
 global.pause = false;
 global.view_width = camera_get_view_width(view_camera[0]);

@@ -1,4 +1,4 @@
-txt = "[fa_center][fa_middle]Stai leggendo.";
+txt = "[fa_center][fa_middle][scale,.5]Stai leggendo.[/s]";
 
 txt_wt = scribble(txt).get_width();
 txt_wt_max = 100

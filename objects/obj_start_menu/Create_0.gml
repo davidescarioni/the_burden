@@ -24,6 +24,7 @@ if (global.maxLevel==0) {
 	ds_menu_main = create_menu_page(
 		["NUOVA PARTITA", menu_element_type.script_runner, new_game],
 		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
+		["CREDITI", menu_element_type.script_runner, credits],
 		["ESCI", menu_element_type.script_runner, exit_game]
 	);
 } else if (global.maxLevel>=3) {
@@ -32,6 +33,7 @@ if (global.maxLevel==0) {
 		["CONTINUA", menu_element_type.script_runner, loadGame],
 		["NUOVA PARTITA", menu_element_type.script_runner, new_game],
 		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
+		["CREDITI", menu_element_type.script_runner, credits],
 		["ESCI", menu_element_type.script_runner, exit_game]
 	);
 } else {
@@ -39,6 +41,7 @@ if (global.maxLevel==0) {
 		["CONTINUA", menu_element_type.script_runner, loadGame],
 		["NUOVA PARTITA", menu_element_type.script_runner, new_game],
 		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
+		["CREDITI", menu_element_type.script_runner, credits],
 		["ESCI", menu_element_type.script_runner, exit_game]
 	);
 }

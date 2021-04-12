@@ -225,6 +225,7 @@
 ],},"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tiles_1","tags":[],"resourceType":"GMRTileLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_house","path":"objects/obj_house/obj_house.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":168.0,"y":96.0,"resourceVersion":"1.0","name":"inst_120A8AA7","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_signpost","path":"objects/obj_signpost/obj_signpost.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":88.0,"y":88.0,"resourceVersion":"1.0","name":"inst_28CB9C4E","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Decoration","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":8.0,"y":136.0,"resourceVersion":"1.0","name":"inst_5E8675","tags":[],"resourceType":"GMRInstance",},
@@ -2099,6 +2100,7 @@
     {"name":"inst_6AF2B729","path":"rooms/rm_lv1/rm_lv1.yy",},
     {"name":"inst_6D7E20EE","path":"rooms/rm_lv1/rm_lv1.yy",},
     {"name":"inst_74DD4F4F","path":"rooms/rm_lv1/rm_lv1.yy",},
+    {"name":"inst_28CB9C4E","path":"rooms/rm_lv1/rm_lv1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

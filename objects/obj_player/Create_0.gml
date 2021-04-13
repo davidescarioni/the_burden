@@ -40,8 +40,8 @@ oCam = noone;
 oldCam = noone;
 
 //Death
-drawCircle = false;
-drawCircleDim = 250;
+drawCircle = true;
+drawCircleDim = 350;
 death = false;
 drawDeathCircleDim = 0;
 

@@ -15,7 +15,7 @@ if drawCircle && drawCircleDim > 0 {
 	draw_circle(x,y,drawCircleDim,false);
 	drawCircleDim-=10;
 } else {
-	drawCircleDim = 250;
+	drawCircleDim = 350;
 	drawCircle = false;
 }
 
@@ -24,10 +24,12 @@ if death {
 	draw_circle(x,y,drawDeathCircleDim,false);
 	drawDeathCircleDim+=5;
 	if (drawDeathCircleDim >= drawCircleDim) {
-		x = global.lastCheckpointX;
-		y = global.lastCheckpointY;
-		instance_change(obj_player, true);
-		death = false;
-		drawDeathCircleDim = 0;
+		//x = global.lastCheckpointX;
+		//y = global.lastCheckpointY;
+		//death = false;
+		//drawDeathCircleDim = 0;
+		instance_destroy();
+		instance_create_layer(global.lastCheckpointX,global.lastCheckpointY,"Player",obj_player)
+		//instance_change(obj_player, true);
 	}
 }

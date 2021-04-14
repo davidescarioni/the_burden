@@ -326,6 +326,7 @@ if kLift {
 			with (inst) {
 				lifted = false;
 				other.lifting = false;
+				x+=other.dir
 			}
 		}
 	}

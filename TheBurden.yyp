@@ -116,7 +116,7 @@
     {"id":{"name":"obj_lighting_cutout","path":"objects/obj_lighting_cutout/obj_lighting_cutout.yy",},"order":1,},
     {"id":{"name":"obj_activable_limited_horizontal","path":"objects/obj_activable_limited_horizontal/obj_activable_limited_horizontal.yy",},"order":10,},
     {"id":{"name":"spr_fake_big_rectangle","path":"sprites/spr_fake_big_rectangle/spr_fake_big_rectangle.yy",},"order":14,},
-    {"id":{"name":"spr_springbox","path":"sprites/spr_springbox/spr_springbox.yy",},"order":11,},
+    {"id":{"name":"spr_springbox","path":"sprites/spr_springbox/spr_springbox.yy",},"order":16,},
     {"id":{"name":"rm_sel_level","path":"rooms/rm_sel_level/rm_sel_level.yy",},"order":1,},
     {"id":{"name":"scribble_glyph_get","path":"scripts/scribble_glyph_get/scribble_glyph_get.yy",},"order":4,},
     {"id":{"name":"spr_dust_ground","path":"sprites/spr_dust_ground/spr_dust_ground.yy",},"order":0,},

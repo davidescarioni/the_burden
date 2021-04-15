@@ -1,4 +1,4 @@
-txt = "[wave][fa_center][fa_middle][scale,.5]"+key_to_string(global.key_jump);
+txt = "[wave][fa_center][fa_middle][scale,.5]"+key_to_string(global.key_up);
 
 txt_wt = scribble(txt).get_width();
 txt_wt_max = 100

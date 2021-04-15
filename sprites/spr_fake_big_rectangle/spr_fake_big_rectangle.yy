@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Sprites/Blocks.yy",
+    "name": "Fake Terrain",
+    "path": "folders/Sprites/Blocks/Fake Terrain.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fake_big_rectangle",

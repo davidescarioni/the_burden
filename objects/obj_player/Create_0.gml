@@ -17,6 +17,7 @@ dust_time_wall = 10
 dust_time_ground = 5
 dust_time = 5;
 buying = false;
+reading = false;
 
 // Double Jump Lock
 move_lock = false;
@@ -52,6 +53,7 @@ drawDeathCircleDim = 0;
 //}
 
 // Level Variables
+light = noone;
 if (room==rm_lv1) {
 	light = instance_create_layer(x,y,"Camera",obj_lighting_cutout);
 	light.image_xscale = 1.5

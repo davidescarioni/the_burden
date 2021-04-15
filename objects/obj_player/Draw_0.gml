@@ -21,9 +21,17 @@ if drawCircle && drawCircleDim > 0 {
 
 if death {
 	draw_set_color(c_black);
-	draw_circle(x,y,drawDeathCircleDim,false);
+	draw_circle(death_x,death_y,drawDeathCircleDim,false);
 	drawDeathCircleDim+=5;
 	if (drawDeathCircleDim >= drawCircleDim) {
+		if light != noone {
+			with (light) {
+				instance_destroy();
+			}
+		}
+		with (obj_shell) {
+			instance_destroy();
+		}
 		//x = global.lastCheckpointX;
 		//y = global.lastCheckpointY;
 		//death = false;

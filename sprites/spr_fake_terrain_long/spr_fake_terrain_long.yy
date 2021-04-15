@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 47,
+  "bbox_right": 175,
   "bbox_top": 0,
-  "bbox_bottom": 47,
+  "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 48,
-  "height": 48,
+  "width": 176,
+  "height": 16,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9da73f73-5975-4d66-843a-0d6f55529ba3","path":"sprites/spr_fake_square/spr_fake_square.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9da73f73-5975-4d66-843a-0d6f55529ba3","path":"sprites/spr_fake_square/spr_fake_square.yy",},"LayerId":{"name":"01110274-7bda-417a-a7cd-86027faa4ee9","path":"sprites/spr_fake_square/spr_fake_square.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fake_square","path":"sprites/spr_fake_square/spr_fake_square.yy",},"resourceVersion":"1.0","name":"9da73f73-5975-4d66-843a-0d6f55529ba3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d0e4406b-721f-4e7f-9354-0708d837f758","path":"sprites/spr_fake_terrain_long/spr_fake_terrain_long.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d0e4406b-721f-4e7f-9354-0708d837f758","path":"sprites/spr_fake_terrain_long/spr_fake_terrain_long.yy",},"LayerId":{"name":"c90d078a-555d-4d69-9ab1-8fb1d92dbe37","path":"sprites/spr_fake_terrain_long/spr_fake_terrain_long.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_fake_terrain_long","path":"sprites/spr_fake_terrain_long/spr_fake_terrain_long.yy",},"resourceVersion":"1.0","name":"d0e4406b-721f-4e7f-9354-0708d837f758","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_fake_square","path":"sprites/spr_fake_square/spr_fake_square.yy",},
+    "spriteId": {"name":"spr_fake_terrain_long","path":"sprites/spr_fake_terrain_long/spr_fake_terrain_long.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fad39d18-001f-4b48-a87e-df5b05bfecfe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9da73f73-5975-4d66-843a-0d6f55529ba3","path":"sprites/spr_fake_square/spr_fake_square.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"79296288-c174-49eb-97d1-e9bb90a0d571","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0e4406b-721f-4e7f-9354-0708d837f758","path":"sprites/spr_fake_terrain_long/spr_fake_terrain_long.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 24,
-    "yorigin": 24,
+    "xorigin": 88,
+    "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_fake_square","path":"sprites/spr_fake_square/spr_fake_square.yy",},
+    "parent": {"name":"spr_fake_terrain_long","path":"sprites/spr_fake_terrain_long/spr_fake_terrain_long.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_fake_square",
+    "name": "spr_fake_terrain_long",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"01110274-7bda-417a-a7cd-86027faa4ee9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c90d078a-555d-4d69-9ab1-8fb1d92dbe37","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Blocks/Fake Terrain.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_fake_square",
+  "name": "spr_fake_terrain_long",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -1,4 +1,8 @@
 if buying exit;
+if !instance_exists(obj_text) && !instance_exists(obj_text_queued) {
+	reading = false;
+}
+if reading exit;
 
 onGround = false;
 onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1, y, obj_solid) && !onGround;
@@ -8,7 +12,7 @@ scr_input();
 onGround = place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_semi_solid);
 
 #region Enter Shop
-if place_meeting(x,y,obj_fakedoor) && (keyboard_check_released(global.key_enter) || keyboard_check_released(global.key_jump)) {
+if place_meeting(x,y,obj_fakedoor) && (keyboard_check_released(global.key_up)) {
 	if (!buying) {
 		buying = true;
 		alarm[2]=room_speed;
@@ -326,7 +330,7 @@ if kLift {
 			with (inst) {
 				lifted = false;
 				other.lifting = false;
-				x+=other.dir
+				x+=sign(other.image_xscale)*2
 			}
 		}
 	}
@@ -434,6 +438,8 @@ if (room==rm_lv1) {
 #region Death
 if place_meeting(x,y,obj_enemies) {
 	move_lock = true;
+	death_x = x;
+	death_y = y;
 	death = true;
 }
 #endregion

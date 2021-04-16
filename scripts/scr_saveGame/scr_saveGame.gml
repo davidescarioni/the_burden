@@ -15,7 +15,7 @@ function saveGame() {
 	buffer_write(_buffer, buffer_string, _string);
 	buffer_save(_buffer,"game.burden"); 
 	buffer_delete(_buffer);
-	saveCollectibles();
+	//saveCollectibles();
 
 	show_debug_message("Game Saved");
 }
@@ -88,6 +88,7 @@ function saveCollectibles() {
 
 function loadCollectibles() {
 	fileName = "collectibles.burden"
+	show_debug_message("Loading...");
 	if file_exists(fileName) {
 
 		var str = "";
@@ -97,18 +98,31 @@ function loadCollectibles() {
 	
 		while (array_length(_loadData) > 0) {
 			var _loadEntity = array_pop(_loadData);
-			with (instance_create_layer(0,0,"Instances",asset_get_index(_loadEntity.obj))) {
-				if (room == _loadEntity.room_name) {
-					x = _loadEntity.x;
-					y = _loadEntity.y;
-					taken = _loadEntity.taken;
+			show_debug_message(_loadEntity)
+			if _loadEntity.taken {
+				var inst = instance_place(_loadEntity.x,_loadEntity.y,obj_collectible)
+				with inst {
+					taken = true
+				}
+			} else {
+				var inst = instance_place(_loadEntity.x,_loadEntity.y,obj_collectible)
+				with inst {
+					taken = false
 				}
 			}
+			//with (instance_create_layer(0,0,"Instances",asset_get_index(_loadEntity.obj))) {
+			//	if (room == _loadEntity.room_name) {
+			//		x = _loadEntity.x;
+			//		y = _loadEntity.y;
+			//		taken = _loadEntity.taken;
+			//	}
+			//}
 		}
 		file_text_close(file);
 	} else {
-		saveCollectibles();
+		//saveCollectibles();
 	}
+	show_debug_message("Loaded!");
 }
 
 function saveCheckpoint() {

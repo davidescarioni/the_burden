@@ -1,1 +1,2 @@
-saveGame();
+//saveGame();
+saveCollectibles();

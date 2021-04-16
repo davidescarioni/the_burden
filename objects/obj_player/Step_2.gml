@@ -441,5 +441,6 @@ if place_meeting(x,y,obj_enemies) {
 	death_x = x;
 	death_y = y;
 	death = true;
+	loadCollectibles();
 }
 #endregion

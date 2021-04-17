@@ -74,7 +74,12 @@ if (buffer_counter > 0) {
 		audio_sound_pitch(snd_jump,choose(.9,1,1.1));
 		audio_play_sound(snd_jump,1,false);
 	}
-	
+	if instance_exists(obj_water) {
+		if place_meeting(x,y,obj_water) && !has_shell {
+			vsp = jumpsp*(2/3);
+			onGround = true;
+		}
+	}
 }
 
 if (onGround) {
@@ -85,6 +90,7 @@ if (!launch) {
 	hsp = move * walksp;
 	vsp = vsp + grav;
 }
+
 
 if (vsp>0) && onWall {
 	vsp = vsp*2/3;
@@ -218,6 +224,11 @@ if (place_meeting(x,y+vsp,obj_spring) && vsp > 0 && !place_meeting(x,y,obj_sprin
 		y+=sign(vsp)
 	}
 	vsp = inst.jumpPower;
+}
+if instance_exists(obj_waterballs) {
+	if place_meeting(x,y,obj_waterballs) && !has_shell {
+		vsp = jumpsp/2;
+	}
 }
 
 y += vsp;

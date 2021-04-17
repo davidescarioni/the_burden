@@ -17,5 +17,9 @@ if keyboard_check_released(global.key_jump) || keyboard_check_released(global.ke
 		case 2:
 			room_goto(rm_lv2);
 		break;
+		
+		case 3:
+			room_goto(rm_lv3);
+		break;
 	}
 }

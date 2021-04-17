@@ -36,6 +36,7 @@ global.completeLevel3 = false;
 global.specialLevel = false;
 
 global.tasklvl1 = false;
+global.tasklvl2 = false;
 
 //Texts
 global.textSpeed = .75;

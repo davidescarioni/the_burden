@@ -40,7 +40,7 @@ var rty;
 
 yy = 0;
 repeat(ds_height) {
-	rty = 10 + (yy*y_buffer);
+	rty = start_y + (yy*y_buffer);
 	switch (ds_grid[# 1, yy]) {
 		case menu_element_type.shift:
 			var current_val = ds_grid[# 3, yy];

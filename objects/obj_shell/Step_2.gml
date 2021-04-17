@@ -3,13 +3,13 @@ onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1,
 
 onGround = place_meeting(x,y+1,obj_solid);
 
-if instance_exists(obj_semi_solid) {
-	with (obj_semi_solid) {
-		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
-			other.onGround = true;
-		} 
-	}
-}
+//if instance_exists(obj_semi_solid) {
+//	with (obj_semi_solid) {
+//		if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
+//			other.onGround = true;
+//		} 
+//	}
+//}
 
 if (onGround) {
 	hsp = clamp(hsp, 0, hsp - sign(hsp)*.5);

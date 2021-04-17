@@ -18,6 +18,12 @@ if (lifted) {
 		}
 		vsp = 0;
 	}
+	if (place_meeting(x,y+vsp,obj_activable_limited)) {
+		while (!place_meeting(x,y+sign(vsp),obj_activable_limited)) {
+			y+=sign(vsp)
+		}
+		vsp = other.vsp;
+	}
 	y += vsp;
 	
 	//Adjusting x pos

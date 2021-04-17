@@ -71,6 +71,14 @@ if instance_exists(obj_player) {
 					}
 				}
 			}
+			
+			with (obj_box) {
+				if (!place_meeting(x,y+other.vsp,obj_solid)) {
+					if (place_meeting(x,y+abs(other.vsp),other) && !place_meeting(x,y,other)) {
+						y+=other.vsp;
+					}
+				}
+			}
 		
 			y+=vsp 
 		}

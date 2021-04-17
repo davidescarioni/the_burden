@@ -25,7 +25,7 @@ move_lock_time = 10
 
 // Jump buffer
 buffer_counter = 0;
-buffer_max = 6;
+buffer_max = 1;
 
 //Animate
 draw_xscale = 1

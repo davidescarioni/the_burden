@@ -43,6 +43,10 @@ function new_game() {
 	room_goto(rm_cutscene_lvl1);
 }
 
+function ricetta() {
+	url_open("https://www.cucinabotanica.com/post/cookies-americani-vegani-la-ricetta-senza-burro-e-uova")
+}
+
 function sel_level() {
 	room_goto(rm_sel_level);
 }

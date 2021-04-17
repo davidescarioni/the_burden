@@ -24,16 +24,23 @@ if (global.maxLevel==0) {
 	ds_menu_main = create_menu_page(
 		["NUOVA PARTITA", menu_element_type.script_runner, new_game],
 		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
-		["CREDITI", menu_element_type.script_runner, credits],
 		["ESCI", menu_element_type.script_runner, exit_game]
 	);
-} else if (global.maxLevel>=3) {
+} else if (global.maxLevel>=3) && !(global.completeLevel1) && !(global.completeLevel2) &&  !(global.completeLevel3)  {
 	ds_menu_main = create_menu_page(
 		["SCEGLI LIVELLO", menu_element_type.script_runner, sel_level],
 		["CONTINUA", menu_element_type.script_runner, loadGame],
 		["NUOVA PARTITA", menu_element_type.script_runner, new_game],
 		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
-		["CREDITI", menu_element_type.script_runner, credits],
+		["ESCI", menu_element_type.script_runner, exit_game]
+	);
+} else if (global.maxLevel>=3) && (global.completeLevel1) && (global.completeLevel2) &&  (global.completeLevel3)  {
+	ds_menu_main = create_menu_page(
+		["SCEGLI LIVELLO", menu_element_type.script_runner, sel_level],
+		["CONTINUA", menu_element_type.script_runner, loadGame],
+		["NUOVA PARTITA", menu_element_type.script_runner, new_game],
+		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
+		["RICETTA", menu_element_type.script_runner, ricetta],
 		["ESCI", menu_element_type.script_runner, exit_game]
 	);
 } else {
@@ -62,7 +69,7 @@ ds_menu_audio = create_menu_page(
 );
  
 ds_menu_graphics = create_menu_page(
-	["RISOLUZIONE", menu_element_type.shift, change_resolution, 0, ["256X144","512x288","1024x576"]],
+	["RISOLUZIONE", menu_element_type.shift, change_resolution, 0, ["512x288","1024x576"]],
 	["FULLSCREEN", menu_element_type.toggle, change_window_mode, 0, ["WINDOWED","FULLSCREEN"]],
 	["INDIETRO", menu_element_type.page_transfer, menu_page.settings]
 );

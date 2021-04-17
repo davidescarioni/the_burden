@@ -21,6 +21,7 @@ enum menu_element_type {
 // Create Menu Pages
 ds_menu_main = create_menu_page(
 	["CONTINUA", menu_element_type.script_runner, resume_game],
+	["TORNA AL MENU PRINCIPALE", menu_element_type.script_runner,back_to_main_menu],
 	["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
 	["ESCI", menu_element_type.script_runner, exit_game]
 );
@@ -33,14 +34,14 @@ ds_settings = create_menu_page(
 );
  
 ds_menu_audio = create_menu_page(
-	["MASTER", menu_element_type.slider, change_volume, 1, [0,1]],
+	["TOTALE", menu_element_type.slider, change_volume, 1, [0,1]],
 	["SUONI", menu_element_type.slider, change_volume, global.volume_effects, [0,1]],
 	["MUSICA", menu_element_type.slider, change_volume, global.volume_music, [0,1]],
 	["INDIETRO", menu_element_type.page_transfer, menu_page.settings]
 );
  
 ds_menu_graphics = create_menu_page(
-	["RISOLUZIONE", menu_element_type.shift, change_resolution, 0, ["100x100","200x200","300x300"]],
+	["RISOLUZIONE", menu_element_type.shift, change_resolution, 0, ["256X144","512x288","1024x576"]],
 	["FULLSCREEN", menu_element_type.toggle, change_window_mode, 0, ["WINDOWED","FULLSCREEN"]],
 	["INDIETRO", menu_element_type.page_transfer, menu_page.settings]
 );
@@ -51,9 +52,9 @@ ds_menu_controls = create_menu_page(
 	["SINISTRA", menu_element_type.input, "key_left", global.key_left],
 	["DESTRA", menu_element_type.input, "key_right", global.key_right],
 	["SALTO", menu_element_type.input, "key_jump", global.key_jump],
-	["ESPULSIONE", menu_element_type.input, "key_eject", global.key_eject],
-	["LANCIO", menu_element_type.input, "key_eject", global.key_launch],
+	["TOGLI / METTI GUSCIO", menu_element_type.input, "key_eject", global.key_eject],
 	["SOLLEVA", menu_element_type.input, "key_eject", global.key_lift],
+	["LANCIO", menu_element_type.input, "key_eject", global.key_launch],
 
 	["INDIETRO", menu_element_type.page_transfer, menu_page.settings]
 );

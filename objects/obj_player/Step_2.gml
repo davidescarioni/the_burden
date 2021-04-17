@@ -89,6 +89,8 @@ if (onGround) {
 if (!launch) {
 	hsp = move * walksp;
 	vsp = vsp + grav;
+} else {
+	hsp = 0;
 }
 
 
@@ -128,7 +130,7 @@ if (kUp || kDown) && (place_meeting(x,y,obj_ladder) && ladder==false) {
 
 if (!place_meeting(x,y,obj_ladder)) {
 	ladder = false;
-	hsp = move * walksp;
+	//hsp = move * walksp;
 }
 
 if (ladder) {
@@ -368,7 +370,7 @@ if (has_shell) {
 		var shell = instance_create_layer(x,y,"Player",obj_shell);
 		with (shell) {
 			dir = other.rot;
-			spd = walksp*3;
+			spd = walksp*3.5;
 			move = 1
 			vsp = lengthdir_y(spd, dir);
 			hsp = lengthdir_x(spd, dir);

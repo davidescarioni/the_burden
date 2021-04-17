@@ -29,8 +29,13 @@ function resume_game() {
 	
 	save_options();
 
-	show_debug_message("Global Saved")
+	//show_debug_message("Global Saved")
 	
+	global.pause = false;
+}
+
+function back_to_main_menu() {
+	room_goto(rm_menu);
 	global.pause = false;
 }
 

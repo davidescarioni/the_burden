@@ -9,8 +9,12 @@ var ds_height = ds_grid_height(ds_grid);
 var y_buffer = 32;
 var x_buffer = 16;
 
+var start_y = (gheight/2) - ((((ds_height-1)/2)*y_buffer));
+
+draw_set_font(fnt_game)
+
 // Sfondo Menu
-var c = c_red;
+var c = c_black;
 draw_rectangle_color(0, 0, gwidth, gheight,c,c,c,c, false);
 
 // Elementi a sinistra del menu
@@ -20,7 +24,7 @@ draw_set_halign(fa_left);
 var ltx = 20;
 
 for (var yy = 0; yy<(ds_height); yy++) {
-	lty = 20 + (yy*y_buffer);
+	lty = start_y + (yy*y_buffer);
 	c = c_white;
 	
 	if (yy == menu_option[page]) {
@@ -38,7 +42,7 @@ var rty;
 
 yy = 0;
 repeat(ds_height) {
-	rty = 20 + (yy*y_buffer);
+	rty = start_y + (yy*y_buffer);
 	switch (ds_grid[# 1, yy]) {
 		case menu_element_type.shift:
 			var current_val = ds_grid[# 3, yy];

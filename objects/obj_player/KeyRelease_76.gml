@@ -1,2 +1,0 @@
-//loadGame();
-loadCollectibles();

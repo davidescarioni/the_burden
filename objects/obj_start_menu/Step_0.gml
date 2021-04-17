@@ -84,3 +84,9 @@ if (input_enter_p) {
 	
 	// TODO: audio transition
 }
+
+if instance_exists(obj_part_embers) {
+	with (obj_part_embers) {
+		instance_destroy();
+	}
+}

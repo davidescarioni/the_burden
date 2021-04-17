@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"af048816-28eb-4f05-a4bb-0418e30cb963","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"af048816-28eb-4f05-a4bb-0418e30cb963","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},"LayerId":{"name":"6779bf50-f6ca-4d83-adab-9661e6beda66","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_thumb_turtle","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},"resourceVersion":"1.0","name":"af048816-28eb-4f05-a4bb-0418e30cb963","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bbbdbc3b-aaa7-446a-8d4a-bccbf271a389","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bbbdbc3b-aaa7-446a-8d4a-bccbf271a389","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},"LayerId":{"name":"8d5ffa52-8be9-4ad9-ac4c-60fbcdd3d506","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_thumb_turtle70","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},"resourceVersion":"1.0","name":"bbbdbc3b-aaa7-446a-8d4a-bccbf271a389","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_thumb_turtle","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},
+    "spriteId": {"name":"spr_thumb_turtle70","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8af69fd5-07d9-4515-afaa-7715f33d0a75","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"af048816-28eb-4f05-a4bb-0418e30cb963","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d3bf307b-1182-4bab-9c22-a60cfbbbf826","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bbbdbc3b-aaa7-446a-8d4a-bccbf271a389","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_thumb_turtle","path":"sprites/spr_thumb_turtle/spr_thumb_turtle.yy",},
+    "parent": {"name":"spr_thumb_turtle70","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},
     "resourceVersion": "1.3",
     "name": "spr_thumb_turtle",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6779bf50-f6ca-4d83-adab-9661e6beda66","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8d5ffa52-8be9-4ad9-ac4c-60fbcdd3d506","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Thumbnails.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_thumb_turtle",
+  "name": "spr_thumb_turtle70",
   "tags": [],
   "resourceType": "GMSprite",
 }

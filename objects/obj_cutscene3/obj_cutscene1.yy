@@ -29,7 +29,7 @@
     "path": "folders/Objects/PGs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_cutscene_fine1",
+  "name": "obj_cutscene1",
   "tags": [],
   "resourceType": "GMObject",
 }

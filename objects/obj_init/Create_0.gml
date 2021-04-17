@@ -31,12 +31,16 @@ global.roomOneKey = false;
 global.maxLevel = 4;
 global.load = false;
 global.completeLevel1 = false;
-global.completeLevel2 = true;
+global.completeLevel2 = false;
 global.completeLevel3 = false;
 global.specialLevel = false;
 
 global.tasklvl1 = false;
 global.tasklvl2 = false;
+
+global.finishLvl1 = false;
+global.finishLvl2 = false;
+global.finishLvl3 = false;
 
 //Texts
 global.textSpeed = .75;

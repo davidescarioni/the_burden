@@ -41,3 +41,7 @@ if death {
 		//instance_change(obj_player, true);
 	}
 }
+
+if (room=rm_lv3) {
+	layer_y("Mountains",obj_camera. follow.y )
+}

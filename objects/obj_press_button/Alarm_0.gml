@@ -1,4 +1,4 @@
-if (instance_exists(obj_activable)) {
+//if (instance_exists(obj_activable)) {
 	if (obj_one!=noone && instance_exists(obj_one)) {
 		if (obj_one.status=="one") {
 			obj_one.status="two"
@@ -25,4 +25,4 @@ if (instance_exists(obj_activable)) {
 		}
 		//obj_three.status = other.status;
 	}
-}
+//}

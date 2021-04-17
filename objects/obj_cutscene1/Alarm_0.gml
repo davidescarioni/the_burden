@@ -17,7 +17,7 @@ newTextBox("I babbà?",c_green,spr_thumb_turtle);
 newTextBox("Ma quali babbà, i tartascotti!",c_green,spr_thumb_turtle);
 newTextBox("Tartascotti? Ma non saprei da dove cominciare..",c_green,spr_thumb_turtle);
 newTextBox("Ti aiuto io, ho una ricetta fantastica!",c_green,spr_thumb_turtle);
-newTextBox("Corri giù in paese a prendere il primo ingrediente",c_green,spr_thumb_turtle);
+newTextBox("Corri giù in paese a prendere  la farina!",c_green,spr_thumb_turtle);
 newTextBox("Ma questa volta non seguire i conigli, prendi la scorciatoia dietro casa",c_green,spr_thumb_turtle);
 newTextBox("Scorciatoria??",c_green,spr_thumb_turtle);
 

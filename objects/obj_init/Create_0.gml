@@ -28,7 +28,7 @@ global.lastCheckpointY = 0;
 global.roomOneKey = false;
 
 //Level
-global.maxLevel = 4;
+global.maxLevel = 0;
 global.load = false;
 global.completeLevel1 = false;
 global.completeLevel2 = false;

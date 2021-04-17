@@ -12,8 +12,8 @@ var start_y = (gheight/2) - ((((ds_height-1)/2)*y_buffer));
 draw_set_font(fnt_game)
 
 // Sfondo Menu
-var c = c_blue;
-draw_rectangle_color(0, 0, gwidth, gheight,c,c,c,c, false);
+//var c = c_blue;
+//draw_rectangle_color(0, 0, gwidth, gheight,c,c,c,c, false);
 
 // Elementi a sinistra del menu
 draw_set_valign(fa_middle);

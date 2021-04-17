@@ -245,7 +245,6 @@ draw_yscale = lerp(draw_yscale, 1, .1)
 if (has_shell) {
 	if (ladder) {
 		sprite_index = spr_player_ladder;
-		if floor(image_index) == 4 image_speed = 0;
 	} else {
 		if (!onGround) {
 			sprite_index = spr_player_jump;
@@ -268,23 +267,27 @@ if (has_shell) {
 		}
 	}
 } else {
-	if (!onGround) {
-		sprite_index = spr_player_nake_jump;
-		image_speed = 0;
-		if (sign(vsp) > 0) {
-			image_index = 1;
-		} else {
-			image_index = 0;
-		}
-		if (vsp>0) && onWall {
-			sprite_index = spr_player_nake_wall
-		}
+	if (ladder) {
+		sprite_index = spr_player_nake_ladder;
 	} else {
-		image_speed = 1;
-		if (hsp==0) {
-			sprite_index = spr_player_nake_idle;
+		if (!onGround) {
+			sprite_index = spr_player_nake_jump;
+			image_speed = 0;
+			if (sign(vsp) > 0) {
+				image_index = 1;
+			} else {
+				image_index = 0;
+			}
+			if (vsp>0) && onWall {
+				sprite_index = spr_player_nake_wall
+			}
 		} else {
-			sprite_index = spr_player_nake_run;
+			image_speed = 1;
+			if (hsp==0) {
+				sprite_index = spr_player_nake_idle;
+			} else {
+				sprite_index = spr_player_nake_run;
+			}
 		}
 	}
 }
@@ -304,7 +307,7 @@ if (dust) {
 #endregion
 
 #region Remove shell
-if kEject {
+if kEject && can_remove_shell {
 	if (instance_exists(obj_block_wshell) && !place_meeting(x,y,obj_block_wshell)) || !instance_exists(obj_block_wshell) {
 		if has_shell {
 			has_shell = false
@@ -377,7 +380,7 @@ if (has_shell) {
 		}
 	}
 
-	if (kLaunch) && (onGround) {
+	if (kLaunch) && (onGround) && (can_launch_shell) {
 		if (!launch) {
 			launch = true;
 			move_lock = true;

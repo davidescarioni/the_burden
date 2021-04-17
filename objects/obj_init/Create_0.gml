@@ -48,7 +48,7 @@ surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
 
 /// Load saved settings
 //load_data();
-//loadDataGame();
+loadDataGame();
 
 if !audio_group_is_loaded(audiogroup_soundeffects) {
 	audio_group_load(audiogroup_soundeffects)

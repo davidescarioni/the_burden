@@ -34,6 +34,7 @@ function loadDataGame() {
 			variable_global_set(string(_loadEntity.variable), _loadEntity.value)
 		}
 	}
+	show_debug_message("Game Loaded");
 }
 
 function loadGame() {

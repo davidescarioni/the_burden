@@ -14,6 +14,9 @@ if instance_exists(obj_player) {
 				newTextBox("Fortuna che tu hai un guscio, non come le mie inutili penne nere!",col,spr_thumb_signpost);
 				newTextBox("Come promesso ti apro la porta, grazie ancora!",col,spr_thumb_signpost);
 				newTextBox("(Fortuna che ho un guscio? Sta scherzando?)",col,spr_thumb_signpost);
+				with (inst_1784AAC0) {
+					open = true;
+				}
 			}
 		}
 	}

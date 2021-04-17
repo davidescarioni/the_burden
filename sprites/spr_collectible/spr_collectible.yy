@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 7,
   "bbox_top": 0,
-  "bbox_bottom": 7,
+  "bbox_bottom": 9,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 8,
-  "height": 8,
+  "height": 10,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 4,
-    "yorigin": 4,
+    "yorigin": 5,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_collectible","path":"sprites/spr_collectible/spr_collectible.yy",},
@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d2aca1fe-3b93-4d4e-9047-3e9bdd81ee0b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Items",
     "path": "folders/Sprites/Items.yy",

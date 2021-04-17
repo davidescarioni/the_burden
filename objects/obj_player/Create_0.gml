@@ -18,6 +18,14 @@ dust_time_ground = 5
 dust_time = 5;
 buying = false;
 reading = false;
+can_remove_shell = false;
+if (room!=rm_lv1) {
+	can_remove_shell = true;
+}
+can_launch_shell = false;
+if (room==rm_lv3) {
+	can_launch_shell = true;
+}
 
 // Double Jump Lock
 move_lock = false;

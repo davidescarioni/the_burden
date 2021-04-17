@@ -11,3 +11,12 @@ if (room==rm_lv2) {
 		}
 	}
 }
+if (room==rm_lv3) {
+	with (instance_create_depth(x,y,-1000,obj_fade)) {
+		rm = rm_cutscene_fine_lv3;
+		if (global.maxLevel <= 3) {
+			global.maxLevel = 3;
+			saveGame();
+		}
+	}
+}

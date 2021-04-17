@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_grandmother",
-    "path": "sprites/spr_grandmother/spr_grandmother.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,15 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PGs",
-    "path": "folders/Objects/PGs.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Controllers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_grandmother",
+  "name": "obj_finale",
   "tags": [],
   "resourceType": "GMObject",
 }

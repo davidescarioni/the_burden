@@ -12,6 +12,7 @@ with (obj_player) {
 	if (place_meeting(x,y+vsp,other)) {
 		other.coll = true;
 		other.alarm[0] = 5;
+		audio_play_sound(snd_bonk,1,false);
 
 		while (!place_meeting(x,y+sign(vsp),other)) {
 			y+=sign(vsp)

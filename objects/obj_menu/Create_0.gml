@@ -41,7 +41,7 @@ ds_menu_audio = create_menu_page(
 );
  
 ds_menu_graphics = create_menu_page(
-	["RISOLUZIONE", menu_element_type.shift, change_resolution, 0, ["256X144","512x288","1024x576"]],
+	["RISOLUZIONE", menu_element_type.shift, change_resolution, 0, ["512x288","1024x576"]],
 	["FULLSCREEN", menu_element_type.toggle, change_window_mode, 0, ["WINDOWED","FULLSCREEN"]],
 	["INDIETRO", menu_element_type.page_transfer, menu_page.settings]
 );

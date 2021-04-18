@@ -47,9 +47,13 @@ global.textSpeed = .75;
 surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
 
 /// Load saved settings
-//load_data();
+load_data();
 loadDataGame();
 
 if !audio_group_is_loaded(audiogroup_soundeffects) {
 	audio_group_load(audiogroup_soundeffects)
+}
+
+if !audio_group_is_loaded(audiogroup_music) {
+	audio_group_load(audiogroup_music)
 }

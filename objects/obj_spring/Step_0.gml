@@ -8,8 +8,13 @@ if (coll == true) {
 
 if (place_meeting(x,y+1,obj_semi_solid) && !place_meeting(x,y,obj_semi_solid)) {
 	var item = instance_place(x,y+1,obj_semi_solid)
-	hsp=item.hsp;
+	//hsp=item.hsp;
 	vsp=item.vsp;
+}
+
+if (place_meeting(x,y+1,obj_activable) && !place_meeting(x,y,obj_activable)) {
+	var item = instance_place(x,y+1,obj_activable)
+	//hsp=item.hsp;
 }
 
 

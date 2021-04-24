@@ -5,7 +5,9 @@ if !instance_exists(obj_text) && !instance_exists(obj_text_queued) {
 if reading exit;
 
 onGround = false;
+
 onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1, y, obj_solid) && !onGround;
+
 
 scr_input();
 
@@ -55,7 +57,7 @@ if (buffer_counter > 0) {
         draw_xscale=.65
 	}
 	
-	if place_meeting(x + 1, y, obj_solid) && !onGround {
+	if place_meeting(x + 1, y, obj_solid) && !onGround && !has_shell {
 	    vsp = jumpsp;
 	    move = -1*1.5;
 	    move_lock = true;
@@ -65,7 +67,7 @@ if (buffer_counter > 0) {
 		audio_play_sound(snd_jump,1,false);
 	}
 	
-	if place_meeting(x - 1, y, obj_solid) && !onGround {
+	if place_meeting(x - 1, y, obj_solid) && !onGround && !has_shell {
 	    vsp = jumpsp;
 	    move = 1*1.5;
 	    move_lock = true;
@@ -214,6 +216,16 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 		y+=sign(vsp)
 	}
 	vsp = 0;
+}
+
+if instance_exists(obj_block_wshell) {
+	if place_meeting(x,y+vsp,obj_block_wshell) {
+		var block = instance_place(x,y+vsp,obj_block_wshell);
+		if !block.player_has_shell {
+		    while (!place_meeting(x,y+sign(vsp),obj_block_wshell)) y+=sign(vsp);
+		    vsp = 0;
+		}
+	}
 }
 
 if (place_meeting(x,y+vsp,obj_spring) && vsp > 0 && !place_meeting(x,y,obj_spring)) {

@@ -40,6 +40,14 @@ switch(movedir) {
 				}
 			}
 		}
+		
+		with (obj_spring) {
+			if (!place_meeting(x+other.hsp,y,obj_solid)) {
+				if (place_meeting(x,y+1,other) && !place_meeting(x,y,other)) {
+					x+=other.hsp;
+				}
+			}
+		}
 	break;
 	
 	case "vertical":

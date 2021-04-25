@@ -38,6 +38,34 @@ if death {
 		//drawDeathCircleDim = 0;
 		instance_destroy();
 		instance_create_layer(global.lastCheckpointX,global.lastCheckpointY,"Player",obj_player)
+		lifting = false;
+		with (obj_box) {
+			lifted = false;
+			x = xstart;
+			y = ystart;
+		}
+		with (obj_activator) {
+			status = start_status;
+		}
+		with (obj_activable_limited) {
+			status = start_status;
+			x = xstart;
+			y = ystart;
+		}
+		with (obj_activable_limited_horizontal) {
+			status = start_status;
+			x = xstart;
+			y = ystart;
+		}
+		with (obj_activable) {
+			status = start_status;
+			x = xstart;
+			y = ystart;
+		}
+		with (obj_spring) {
+			x = xstart;
+			y = ystart;
+		}
 		//instance_change(obj_player, true);
 	}
 }

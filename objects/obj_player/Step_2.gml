@@ -33,7 +33,7 @@ if (!move_lock) {
 	}
 
 	//Jump
-	if (kJump) {
+	if (kJump) && !place_meeting(x,y,obj_semi_solid) {
 		buffer_counter = buffer_max;
 	} 
 
@@ -218,6 +218,16 @@ if (place_meeting(x,y+vsp,obj_solid)) {
 	vsp = 0;
 }
 
+if instance_exists(obj_box) {
+	if (place_meeting(x,y+vsp,obj_box)) && !place_meeting(x,y,obj_box) {
+		while (!place_meeting(x,y+sign(vsp),obj_box)) {
+			y+=sign(vsp)
+		}
+		vsp = 0;
+		onGround = true;
+	}
+}
+
 if instance_exists(obj_block_wshell) {
 	if place_meeting(x,y+vsp,obj_block_wshell) {
 		var block = instance_place(x,y+vsp,obj_block_wshell);
@@ -228,7 +238,7 @@ if instance_exists(obj_block_wshell) {
 	}
 }
 
-if (place_meeting(x,y+vsp,obj_spring) && vsp > 0 && !place_meeting(x,y,obj_spring)) {
+if (place_meeting(x,y+vsp,obj_spring) && vsp > 0 && !place_meeting(x,y,obj_spring)) && !death {
 	var inst = instance_place(x,y+vsp,obj_spring);
 	with (inst) {
 		coll = true;

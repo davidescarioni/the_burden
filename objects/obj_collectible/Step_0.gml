@@ -1,6 +1,8 @@
-if place_meeting(x,y,obj_player) && !taken {
+if place_meeting(x,y,obj_player) && !taken && !obj_player.death {
 	taken = true;
-	audio_play_sound(snd_collect,1,false);
+	if !audio_is_playing(snd_collect) {
+		audio_play_sound(snd_collect,1,false);
+	}
 } 
 if !taken {
 	y  = y + sin(timer * 0.1) * 0.25;

@@ -6,3 +6,5 @@ active = true;
 //movespd = .5;
 hsp = 0;
 vsp = 0;
+
+start_status = status;

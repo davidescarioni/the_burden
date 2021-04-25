@@ -33,7 +33,7 @@ if (!move_lock) {
 	}
 
 	//Jump
-	if (kJump) && !place_meeting(x,y,obj_semi_solid) {
+	if ((kJump) && !place_meeting(x,y,obj_semi_solid)) || ((kJump) && onGround) {
 		buffer_counter = buffer_max;
 	} 
 

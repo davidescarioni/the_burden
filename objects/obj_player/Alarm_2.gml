@@ -1,5 +1,8 @@
 /// @description Exit Shop
 move_lock = true;
+if !audio_is_playing(snd_cash_register) {
+	audio_play_sound(snd_cash_register,1,false);
+}
 if (room==rm_lv1) {
 	global.tasklvl1 = true;
 	buying = false;

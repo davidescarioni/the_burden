@@ -203,6 +203,7 @@
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":6,},
     {"id":{"name":"obj_cutsceneFinale","path":"objects/obj_cutsceneFinale/obj_cutsceneFinale.yy",},"order":6,},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":11,},
+    {"id":{"name":"snd_cash_register","path":"sounds/snd_cash_register/snd_cash_register.yy",},"order":7,},
     {"id":{"name":"spr_key_door","path":"sprites/spr_key_door/spr_key_door.yy",},"order":8,},
     {"id":{"name":"spr_spring","path":"sprites/spr_spring/spr_spring.yy",},"order":4,},
     {"id":{"name":"spr_semi_solid_wood31","path":"sprites/spr_semi_solid_wood31/spr_semi_solid_wood31.yy",},"order":7,},

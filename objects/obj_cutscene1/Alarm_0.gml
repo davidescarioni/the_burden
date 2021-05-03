@@ -3,7 +3,7 @@ newTextBox("Cosa è successo, nipote?",c_olive,spr_thumb_grandfather);
 newTextBox("I miei amici conigli sono andati tutti a giocare giù in paese..",c_green,spr_thumb_turtle);
 newTextBox("E..",c_olive,spr_thumb_grandfather);
 newTextBox("E volevo andare con loro, ma questo grosso fardello mi impedisce di saltare!",c_green,spr_thumb_turtle);
-newTextBox("Quale fardello?",c_olive,spr_thumb_grandfather);
+newTextBox("... quale fardello?",c_olive,spr_thumb_grandfather);
 newTextBox("Il guscio, no? E' grosso, pesante e inutile!",c_green,spr_thumb_turtle);
 newTextBox("Come vorrei non averlo..",c_green,spr_thumb_turtle);
 newTextBox("Ma sei una tartaruga, è parte di te!",c_olive,spr_thumb_grandfather);

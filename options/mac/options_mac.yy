@@ -11,7 +11,7 @@
   "option_mac_installer_background_png": "${base_options_dir}/mac/splash/installer_background.png",
   "option_mac_menu_dock": false,
   "option_mac_display_cursor": true,
-  "option_mac_start_fullscreen": true,
+  "option_mac_start_fullscreen": false,
   "option_mac_allow_fullscreen": true,
   "option_mac_interpolate_pixels": false,
   "option_mac_vsync": false,

@@ -152,14 +152,14 @@ function change_volume() {
 function change_resolution() {
 	switch (argument0) {
 		case 0:
-			 window_set_size(256,144);
-			 break;
-		case 1:
 			window_set_size(512,288);
-			 break;
-		case 2:
+			break;
+		case 1:
 			window_set_size(1024,576);
-			 break;
+			break;
+		default:
+			window_set_size(1024,576);
+			break;
 	}
 	window_center();
 }

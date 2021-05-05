@@ -11,7 +11,9 @@ onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1,
 
 scr_input();
 
-onGround = place_meeting(x,y+1,obj_solid) || place_meeting(x,y+1,obj_semi_solid);
+onGround = place_meeting(x,y+1,obj_solid) || 
+		   (place_meeting(x,y+1,obj_semi_solid) && !place_meeting(x,y,obj_semi_solid)) || 
+		   (place_meeting(x,y+1,obj_box) && !place_meeting(x,y,obj_box));
 
 #region Enter Shop
 if place_meeting(x,y,obj_fakedoor) && (keyboard_check_released(global.key_up)) {
@@ -89,7 +91,14 @@ if (onGround) {
 }
 
 if (!launch) {
-	hsp = move * walksp;
+	if move>0 {
+		hsp = lerp(hsp, walksp, 0.05)
+	} else if move < 0 {
+		hsp = lerp(hsp, -walksp, 0.05)
+	} else {
+		hsp = 0;
+	}
+	//hsp = move * walksp;
 	vsp = vsp + grav;
 } else {
 	hsp = 0;

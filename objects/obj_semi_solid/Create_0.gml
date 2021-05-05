@@ -12,6 +12,9 @@ minx=x;
 miny=y;
 maxx=x+sprite_width
 i=0;
+create_spring = false;
+increased_value = current_time;
+start_increased_value = increased_value
 
 left_d = 0;
 while !(instance_place(x+left_d,y,obj_solid)) {

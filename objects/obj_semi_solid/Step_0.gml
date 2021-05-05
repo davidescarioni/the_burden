@@ -1,7 +1,14 @@
+if add_spring && !create_spring {
+	instance_create_layer(x-1,y,layer,obj_spring);
+	create_spring = true;
+}
+
 if instance_exists(obj_player) {
 	//if (obj_player.ladder) {
 		if (movedir=="horizontal") {
-			x = xstart-abs((left_d+1)/2)+sin(current_time/1000)*abs(left_d/2);
+			x = xstart-abs((left_d+1)/2)+sin(increased_value/1000)*abs(left_d/2);
+			increased_value+=15;
+
 			//hsp = movespd * dir;
 			
 			//if (dir==1) {

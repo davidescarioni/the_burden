@@ -46,11 +46,21 @@ if death {
 		}
 		with (obj_activator) {
 			status = start_status;
-		}
-		with (obj_activable_limited) {
-			status = start_status;
-			x = xstart;
-			y = ystart;
+			with (obj_one) {
+				status = start_status;
+				x = xstart;
+				y = ystart;
+			}
+			with (obj_two) {
+				status = start_status;
+				x = xstart;
+				y = ystart;
+			}
+			with (obj_three) {
+				status = start_status;
+				x = xstart;
+				y = ystart;
+			}
 		}
 		with (obj_activable_limited_horizontal) {
 			status = start_status;
@@ -59,6 +69,10 @@ if death {
 		}
 		with (obj_activable) {
 			status = start_status;
+			x = xstart;
+			y = ystart;
+		}
+		with (obj_semi_solid) {
 			x = xstart;
 			y = ystart;
 		}

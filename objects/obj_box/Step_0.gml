@@ -26,6 +26,22 @@ if (lifted) {
 	}
 	y += vsp;
 	
+	if (place_meeting(x,y+vsp,obj_spring) && vsp > 0 && !place_meeting(x,y,obj_spring)) {
+		var inst = instance_place(x,y+vsp,obj_spring);
+		with (inst) {
+			coll = true;
+			alarm[0] = 5;
+			if !audio_is_playing(snd_bonk) {
+				audio_play_sound(snd_bonk,1,false)
+			}
+		}
+		while (!place_meeting(x,y+sign(vsp),obj_spring)) {
+			y+=sign(vsp)
+		}
+		vsp = inst.jumpPower;
+	}
+
+	
 	//Adjusting x pos
 	if place_meeting(x,y,obj_solid) {
 		block = instance_place(x,y,obj_solid);

@@ -6,7 +6,7 @@ if reading exit;
 
 onGround = false;
 
-onWall = place_meeting(x + 1, y, obj_solid) && !onGround || place_meeting(x - 1, y, obj_solid) && !onGround;
+onWall = (place_meeting(x + 1, y, obj_solid) && !onGround && keyboard_check(global.key_right)) || (place_meeting(x - 1, y, obj_solid) && !onGround && keyboard_check(global.key_left));
 
 
 scr_input();
@@ -91,14 +91,17 @@ if (onGround) {
 }
 
 if (!launch) {
-	if move>0 {
-		hsp = lerp(hsp, walksp, 0.05)
-	} else if move < 0 {
-		hsp = lerp(hsp, -walksp, 0.05)
+	if onGround {
+		if move>0 {
+			hsp = lerp(hsp, walksp, 0.08)
+		} else if move < 0 {
+			hsp = lerp(hsp, -walksp, 0.08)
+		} else {
+			hsp = lerp(hsp, 0, 0.5);
+		}
 	} else {
-		hsp = 0;
+		hsp = move * walksp;
 	}
-	//hsp = move * walksp;
 	vsp = vsp + grav;
 } else {
 	hsp = 0;

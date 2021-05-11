@@ -29,10 +29,10 @@
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":4,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+    {"varType":4,"value":"inst_62C6C70D","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMObject",
       ],"resourceVersion":"1.0","name":"obj_one","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":4,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"obj_two","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"inst_25BEDC5E","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"obj_two","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":4,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"obj_three","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],

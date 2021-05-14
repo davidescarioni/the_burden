@@ -80,6 +80,12 @@ if death {
 			x = xstart;
 			y = ystart;
 		}
+		with (obj_collectible) {
+			taken = false;
+			x = xstart;
+			y = ystart;
+			speed = 0;
+		}
 		//instance_change(obj_player, true);
 	}
 }

@@ -15,6 +15,11 @@ if (instance_exists(obj_player)) {
 		with (obj_checkpoint) {
 			checkpoint = false;
 		}
+		with (obj_collectible) {
+			if taken {
+				instance_destroy();
+			}
+		}
 		checkpoint = true;
 		// Salvare checkpoint
 	}

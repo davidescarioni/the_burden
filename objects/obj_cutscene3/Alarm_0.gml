@@ -8,6 +8,3 @@ newTextBox("Suvvia, sei forte e giovane.. Lancialo, no?",c_olive,spr_thumb_grand
 newTextBox("Lanciarlo??",c_green,spr_thumb_turtle);
 
 can_escape = true;
-if global.maxLevel <= 3 {
-	global.maxLevel = 3
-}

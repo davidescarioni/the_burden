@@ -30,7 +30,7 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":0,"value":"-5.5","rangeEnabled":false,"rangeMin":-5.0,"rangeMax":-6.0,"listItems":[
+    {"varType":0,"value":"-5.0","rangeEnabled":false,"rangeMin":-5.0,"rangeMax":-6.0,"listItems":[
         "\"Item 0\"",
       ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"jumpPower","tags":[],"resourceType":"GMObjectProperty",},
   ],

@@ -13,6 +13,3 @@ newTextBox("Ma non posso prenderla in paese?",c_green,spr_thumb_turtle);
 newTextBox("Per la nonna solo gli ingredienti migliori!",c_olive,spr_thumb_grandfather);
 
 can_escape = true;
-if global.maxLevel <= 2 {
-	global.maxLevel = 2
-}

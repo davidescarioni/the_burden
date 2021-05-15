@@ -1,9 +1,9 @@
-count_taken = 0;
-with (obj_collectible) {
-	if taken {
-		other.count_taken+=1;
-	}
-}
+
+//with (obj_collectible) {
+//	if taken {
+//		other.count_taken+=1;
+//	}
+//}
 
 if (count_taken  == count_total) {
 	if room=rm_lv1 global.completeLevel1 = true;

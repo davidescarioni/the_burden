@@ -16,8 +16,8 @@ with (obj_player) {
 			audio_play_sound(snd_bonk,1,false);
 		}
 
-		while (!place_meeting(x,y+sign(vsp),other)) {
-			y+=sign(vsp)
+		while (!place_meeting(x,y+1,other)) {
+			y+=1
 		}
 		
 		vsp = other.jumpPower;

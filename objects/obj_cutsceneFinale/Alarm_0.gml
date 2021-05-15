@@ -14,6 +14,3 @@ newTextBox("Sapevo di avere un nipote intelligente.. bravo!",c_olive,spr_thumb_g
 newTextBox("(Sfide? Insegnare? Io volevo solo mangiare i Tartascotti.. :D)",c_olive,spr_thumb_grandfather);
 
 can_escape = true;
-if global.maxLevel <= 3 {
-	global.maxLevel = 3
-}

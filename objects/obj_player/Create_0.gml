@@ -1,6 +1,6 @@
 hsp = 0;
 vsp = 0;
-grav = 0.3;
+grav = 0.25;
 walksp = 2;
 jumpsp = -4;
 acc = 0.02;

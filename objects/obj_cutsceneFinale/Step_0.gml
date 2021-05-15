@@ -3,10 +3,6 @@ if keyboard_check_released(global.key_enter) || keyboard_check_released(global.k
 	if !instance_exists(obj_text) && !instance_exists(obj_text_queued) {
 		with (instance_create_depth(x,y,-1000,obj_fade)) {
 			rm = rm_finale;
-			if (global.maxLevel <= 3) {
-				global.maxLevel = 3;
-				saveGame();
-			}
 		}
 	}
 }

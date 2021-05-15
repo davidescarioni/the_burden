@@ -1,0 +1,1 @@
+obj_counter_coll.count_taken+=1;

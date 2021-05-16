@@ -82,6 +82,9 @@ if (buffer_counter > 0) {
 		if place_meeting(x,y,obj_water) && !has_shell {
 			vsp = jumpsp*(2/3);
 			onGround = true;
+			grav = 0.1
+		} else {
+			grav = 0.25;
 		}
 	}
 }

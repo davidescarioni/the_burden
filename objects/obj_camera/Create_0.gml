@@ -9,3 +9,7 @@ xmin = view_w_half;
 ymin = view_h_half;
 xmax = room_width - view_w_half;
 ymax = room_height - view_h_half;
+
+ shakeLength = 0;
+ shakeMagnitude = 0;
+ shakeRemain = 0;

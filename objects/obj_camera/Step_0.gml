@@ -13,6 +13,12 @@ y += (yTo - y)// / 25;
 x = clamp(x,xmin,xmax);
 y = clamp(y,ymin,ymax);
 
+//Screenshake
+x += random_range(-shakeRemain, +shakeRemain);
+y += random_range(-shakeRemain, +shakeRemain);
+
+shakeRemain = max(0, shakeRemain - ((1/shakeLength) * shakeMagnitude));
+
 // Update camera view
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half)
 

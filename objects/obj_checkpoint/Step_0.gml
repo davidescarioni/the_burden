@@ -17,7 +17,7 @@ if (instance_exists(obj_player)) {
 		}
 		with (obj_collectible) {
 			if taken {
-				instance_destroy();
+				sprite_index = spr_collectible_explode;
 			}
 		}
 		checkpoint = true;

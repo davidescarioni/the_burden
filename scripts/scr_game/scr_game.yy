@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "key_to_string",
+  "name": "scr_game",
   "tags": [],
   "resourceType": "GMScript",
 }

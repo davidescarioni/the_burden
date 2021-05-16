@@ -19,6 +19,8 @@ dust_time = 5;
 buying = false;
 reading = false;
 can_remove_shell = false;
+bubbles = false;
+bubbling= false;
 if (room!=rm_lv1) {
 	can_remove_shell = true;
 }

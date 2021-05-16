@@ -273,6 +273,19 @@ if instance_exists(obj_waterballs) {
 	}
 }
 
+if place_meeting(x,y,obj_water) {
+	if (!bubbles) && (!bubbling) {
+		bubbles = true;
+	}
+	if bubbles && !bubbling {
+		alarm[3]=room_speed;
+		bubbling = true;
+	}
+} else {
+	bubbles = false;
+	bubbling = false;
+}
+
 y += vsp;
 
 #endregion

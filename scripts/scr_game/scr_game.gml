@@ -1,3 +1,15 @@
+function screenShake(magnitude, frames) {
+	var _magnitude = magnitude;
+	var _frames = frames;
+	with (obj_camera) {
+		if (_magnitude > shakeRemain) {
+			shakeMagnitude = _magnitude;
+			shakeRemain = shakeMagnitude;
+			shakeLength = _frames;
+		}
+	}
+}
+
 function key_to_string(key) {
 /// key_to_string( key )
 /*//
@@ -70,4 +82,25 @@ argument0 should be a keyboard key such as vk_enter or ord('Z').
 	    case 221: return "]";
 	    case 222: return "'";
 	}
+}
+
+function newTextBox(text,color,sprite){
+	var _obj;
+	if instance_exists(obj_text) {
+		_obj = obj_text_queued;
+	} else {
+		_obj = obj_text;
+	}
+	
+	with (instance_create_layer(0,0,"Player",_obj)) {
+		message = text;
+		col = color;
+		spr = sprite;
+		if instance_exists(other) {
+			originInstance = other.id;
+		} else {
+			originInstance = noone;
+		}
+	}
+	
 }

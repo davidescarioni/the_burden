@@ -15,6 +15,7 @@
     {"id":{"name":"spr_press_button","path":"sprites/spr_press_button/spr_press_button.yy",},"order":10,},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"order":14,},
     {"id":{"name":"obj_semi_solid","path":"objects/obj_semi_solid/obj_semi_solid.yy",},"order":6,},
+    {"id":{"name":"fnt_new","path":"fonts/fnt_new/fnt_new.yy",},"order":4,},
     {"id":{"name":"spr_thumb_turtle70","path":"sprites/spr_thumb_turtle70/spr_thumb_turtle70.yy",},"order":2,},
     {"id":{"name":"spr_start_block_vertical","path":"sprites/spr_start_block_vertical/spr_start_block_vertical.yy",},"order":12,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":0,},
@@ -303,6 +304,7 @@
   "IncludedFiles": [
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fnt_default.yy","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fnt_normal.yy","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"fnt_new.yy","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.2.560",

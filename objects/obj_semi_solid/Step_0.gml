@@ -1,5 +1,10 @@
 if add_spring && !create_spring {
-	instance_create_layer(x-1,y,layer,obj_spring);
+	var spring = instance_create_layer(x-1,y,layer,obj_spring);
+	if super_spring {
+		with (spring) {
+			jumpPower = -7;
+		}
+	}
 	create_spring = true;
 }
 

@@ -9,7 +9,7 @@ var x_buffer = 16;
 
 var start_y = (gheight/2) - ((((ds_height-1)/2)*y_buffer));
 
-draw_set_font(fnt_game)
+draw_set_font(fnt_new)
 
 // Sfondo Menu
 //var c = c_blue;

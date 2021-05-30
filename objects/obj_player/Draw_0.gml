@@ -68,7 +68,7 @@ if death {
 			y = ystart;
 		}
 		with (obj_activable) {
-			status = start_status;
+			//status = start_status;
 			x = xstart;
 			y = ystart;
 		}

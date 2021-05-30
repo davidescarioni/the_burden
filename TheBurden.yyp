@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"fnt_new_title","path":"fonts/fnt_new_title/fnt_new_title.yy",},"order":5,},
     {"id":{"name":"spr_semi_solid_wood","path":"sprites/spr_semi_solid_wood/spr_semi_solid_wood.yy",},"order":7,},
     {"id":{"name":"rm_finale","path":"rooms/rm_finale/rm_finale.yy",},"order":9,},
     {"id":{"name":"obj_fake_square_3","path":"objects/obj_fake_square_3/obj_fake_square_3.yy",},"order":6,},

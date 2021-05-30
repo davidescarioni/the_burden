@@ -180,6 +180,19 @@ if instance_exists(obj_semi_solid) && (ladder==false) {
 		} 
 	}
 }
+
+if instance_exists(obj_box) && (ladder==false) {
+	if (!keyboard_check(global.key_down)) {
+		
+		scr_jumpThrougCollision(obj_box);
+
+		with (obj_box) {
+			if place_meeting(x,y-1,other) && !place_meeting(x,y,other) {
+				other.onGround = true;
+			} 
+		}
+	}
+}
 #endregion
 
 #region Collisioni
@@ -209,14 +222,14 @@ if instance_exists(obj_block_wshell) {
 }
 
 
+
+
 //if place_meeting(x+hsp,y,obj_spring) {
 //    while (!place_meeting(x+sign(hsp),y,obj_spring)) {
 //		x+=sign(hsp);
 //	}
 //	hsp = 0
 //}
-
-x += hsp;
 
 // Smooth Slopes Down
 if !place_meeting(x,y,obj_solid) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),obj_solid) {
@@ -286,6 +299,16 @@ if place_meeting(x,y,obj_water) {
 	bubbling = false;
 }
 
+//Adjusting x pos
+if place_meeting(x,y,obj_activable_limited) {
+	move_lock = true;
+	death_x = x;
+	death_y = y;
+	death = true;
+	hsp = 0;
+	vsp = 0;
+}
+x += hsp;
 y += vsp;
 
 #endregion
@@ -515,3 +538,4 @@ if place_meeting(x,y,obj_enemies) {
 	loadCollectibles();
 }
 #endregion
+

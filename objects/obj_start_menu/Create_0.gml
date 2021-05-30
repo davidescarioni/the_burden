@@ -26,7 +26,7 @@ if (global.maxLevel==0) {
 		["OPZIONI", menu_element_type.page_transfer, menu_page.settings],
 		["ESCI", menu_element_type.script_runner, exit_game]
 	);
-} else if (global.maxLevel>=3) && !(global.completeLevel1) && !(global.completeLevel2) &&  !(global.completeLevel3)  {
+} else if (global.maxLevel>=3) && (!(global.completeLevel1) || !(global.completeLevel2) ||  !(global.completeLevel3))  {
 	ds_menu_main = create_menu_page(
 		["SCEGLI LIVELLO", menu_element_type.script_runner, sel_level],
 		["CONTINUA", menu_element_type.script_runner, loadGame],

@@ -13,7 +13,7 @@ function saveGame() {
 	var _string = json_stringify(_saveData);
 	var _buffer = buffer_create(string_byte_length(_string) + 1, buffer_fixed, 1);
 	buffer_write(_buffer, buffer_string, _string);
-	buffer_save(_buffer,"game.burden"); 
+	buffer_save(_buffer,"theburden.burden"); 
 	buffer_delete(_buffer);
 	//saveCollectibles();
 
@@ -21,8 +21,8 @@ function saveGame() {
 }
 
 function loadDataGame() {
-	if file_exists("game.burden") {
-		var _buffer = buffer_load("game.burden");
+	if file_exists("theburden.burden") {
+		var _buffer = buffer_load("theburden.burden");
 		var _string = buffer_read( _buffer, buffer_string);
 		buffer_delete(_buffer);
 	
@@ -38,8 +38,8 @@ function loadDataGame() {
 }
 
 function loadGame() {
-	if file_exists("game.burden") {
-		var _buffer = buffer_load("game.burden");
+	if file_exists("theburden.burden") {
+		var _buffer = buffer_load("theburden.burden");
 		var _string = buffer_read( _buffer, buffer_string);
 		buffer_delete(_buffer);
 	

@@ -14,11 +14,22 @@ for (i=1; i<=max_sel; i++) {
 	} else {
 		draw_set_color(c_white)
 	}
-	draw_text(20,h*i,"Level " + string(i));
-	var spr = spr_collectible;
-	var xpos = 90;
+	draw_set_valign(fa_center)
+	var nome = "";
+	if (i==1) {
+		nome = "La scorciatoia"
+	}
+	if (i==2) {
+		nome = "Grotta Azzurra"
+	}
+	if (i==3) {
+		nome = "Grande Cima"
+	}
+	draw_text(40,h*i,nome);
+	var spr = spr_collectible_menu;
+	var xpos = 30;
 	if i == 1 && global.completeLevel1 {
-		draw_sprite_ext(spr,image_index,xpos,h*i,image_xscale, image_yscale, image_angle, image_blend, 1)
+		draw_sprite_ext(spr,image_index,xpos,h+2*i,image_xscale, image_yscale, image_angle, image_blend, 1)
 	} else if i == 2 && global.completeLevel2 {
 		draw_sprite_ext(spr,image_index,xpos,h*i,image_xscale, image_yscale, image_angle, image_blend, 1)
 	} else if i == 3 && global.completeLevel3 {

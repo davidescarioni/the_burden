@@ -11,7 +11,7 @@ sel = clamp(sel,1,max_sel);
 if keyboard_check_released(global.key_jump) || keyboard_check_released(global.key_enter) {
 	switch (sel) {
 		case 1:
-			room_goto(rm_cutscene_lvl1);
+			room_goto(rm_lv1);
 		break;
 		
 		case 2:

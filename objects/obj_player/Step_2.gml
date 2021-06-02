@@ -300,38 +300,34 @@ if place_meeting(x,y,obj_water) {
 }
 
 //Adjusting x pos
-if place_meeting(x,y,obj_activable_limited) {
-	move_lock = true;
-	death_x = x;
-	death_y = y;
-	death = true;
-	hsp = 0;
-	vsp = 0;
-}
+//if place_meeting(x,y,obj_activable_limited) {
+//	move_lock = true;
+//	death_x = x;
+//	death_y = y;
+//	death = true;
+//	hsp = 0;
+//	vsp = 0;
+//}
 
 if instance_place(x,y,obj_solid) && !death {
     var ii = instance_place(x,y,obj_solid)
     if x > ii.bbox_right {
         if (bbox_left <= ii.bbox_right) {
-            ii.image_blend = c_red
             x += 1;
         }
     }
     if x < ii.bbox_left {
         if (bbox_right >= ii.bbox_left) {
-            ii.image_blend = c_red;
             x -= 1;
         }
     }
     if bbox_top < ii.bbox_top {
         if (bbox_bottom >= ii.bbox_top) {
-            ii.image_blend = c_red
             y -= 1;
         }
     }
     if bbox_bottom > ii.bbox_bottom {
         if (bbox_top <= ii.bbox_bottom) {
-            ii.image_blend = c_red
             y += 1;
         }
     }

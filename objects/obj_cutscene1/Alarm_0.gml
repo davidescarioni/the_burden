@@ -19,6 +19,6 @@ newTextBox("Tartascotti? Ma non saprei da dove cominciare..",c_green,spr_thumb_t
 newTextBox("Ti aiuto io, ho una ricetta fantastica!",c_olive,spr_thumb_grandfather);
 newTextBox("Corri giù in paese a prendere  la farina!",c_olive,spr_thumb_grandfather);
 newTextBox("Ma questa volta non seguire i conigli, prendi la scorciatoia dietro casa",c_olive,spr_thumb_grandfather);
-newTextBox("Scorciatoria??",c_green,spr_thumb_turtle);
+newTextBox("Scorciatoia??",c_green,spr_thumb_turtle);
 
 can_escape = true;

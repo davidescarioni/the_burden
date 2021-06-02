@@ -1,6 +1,10 @@
 display_set_gui_size(global.view_width, global.view_height);
 load_data();
 
+// Reset tasks 
+global.tasklvl1 = false;
+global.tasklvl2 = false;
+
 enum menu_page {
 	main,
 	settings,

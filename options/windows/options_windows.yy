@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "The Burden",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "1.3.2.0",
+  "option_windows_version": "1.4.0.0",
   "option_windows_company_info": "Davide Scarioni",
   "option_windows_product_info": "The Burden",
   "option_windows_copyright_info": "",
@@ -11,7 +11,7 @@
   "option_windows_save_location": 0,
   "option_windows_splash_screen": "${base_options_dir}/windows/splash/splash.png",
   "option_windows_use_splash": false,
-  "option_windows_start_fullscreen": false,
+  "option_windows_start_fullscreen": true,
   "option_windows_allow_fullscreen_switching": true,
   "option_windows_interpolate_pixels": false,
   "option_windows_vsync": false,
